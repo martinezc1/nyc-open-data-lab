@@ -1,8 +1,4 @@
 ---
-
----
-
-![]()---
 title: "NYC Open Data Lab"
 subtitle: "Turning NYC Open Data into reproducible research, public insights, and student-driven publications."
 ---
