@@ -1,4 +1,8 @@
 ---
+
+---
+
+![]()---
 title: "NYC Open Data Lab"
 subtitle: "Turning NYC Open Data into reproducible research, public insights, and student-driven publications."
 ---
@@ -7,7 +11,7 @@ The NYC Open Data Lab is a public-facing initiative focused on transforming New 
 
 Built at the intersection of data science, education, and storytelling, the Lab brings together student research, open-source tools, and real-world analyses using data from the NYC Open Data Portal. Our work emphasizes reproducibility, transparency, and public impact—ensuring that data-driven work doesn’t end in the classroom, but continues to live, evolve, and contribute to conversations about the city.
 
-![A connected ecosystem linking teaching, tools, and public-facing research.](diagram.png)
+![A connected ecosystem linking teaching, tools, and public-facing research.](images/diagram.png){fig-alt="A connected ecosystem linking teaching, tools, and public-facing research."}
 
 ------------------------------------------------------------------------
 
