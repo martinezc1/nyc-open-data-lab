@@ -1,0 +1,16 @@
+---
+title: "Stories"
+listing:
+  contents: stories
+  sort: "date desc"
+  type: grid
+  fields: [title, date, description]
+---
+
+NYC Open Data Stories is a public-facing collection of civic data analyses exploring New York City through reproducible workflows in R and Quarto.
+
+Each story begins with a question and uses publicly available data from the NYC Open Data Portal to produce clear, accessible, and transparent insights about the city.
+
+These projects are developed by students and contributors of the NYC Open Data Lab and are designed to be reproducible, interpretable, and meaningful beyond the classroom.
+
+Browse the latest stories below.

@@ -1,0 +1,37 @@
+---
+title: "Projects"
+---
+
+The NYC Open Data Lab produces a range of public-facing projects that connect teaching, research, and civic data analysis.
+
+These projects are designed to be reproducible, accessible, and meaningful beyond the classroom—transforming individual work into part of a broader, growing ecosystem.
+
+---
+
+## NYC Open Data Student Gallery
+
+The NYC Open Data Student Gallery is a collection of graduate student research projects developed using NYC Open Data. Each project explores a unique question about New York City through data analysis, visualization, and reproducible workflows.
+
+All projects are published as part of a cohesive, public-facing body of work.
+
+👉 [View the Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/)
+
+---
+
+## Student Portfolio Books
+
+As part of the Lab’s reproducible workflow model, students develop personal portfolio books using Quarto. These books compile their work into a single, polished, and shareable artifact—designed to showcase their skills in data analysis, storytelling, and reproducible research.
+
+Each portfolio represents not just completed assignments, but a cohesive narrative of the student’s work.
+
+## Featured Portfolios
+
+- **[Crystal Adote](../contributors/crystal-adote.qmd)** — [View Portfolio](https://019c7e87-9883-6209-abee-7d4f43167df7.share.connect.posit.cloud/)
+- **[Jonah Dratfield](../contributors/jonah-dratfield.qmd)** — [View Portfolio](https://connect.posit.cloud/jdratfield38/content/019c6c0a-422b-4619-247b-d5dc28e84b0a)
+- **[Joyce Escatel-Flores](../contributors/joyce-escatel-flores.qmd)** — [View Portfolio](https://019c7e86-1345-35d0-799d-de52723a9aa3.share.connect.posit.cloud/)
+- **[Robert Hutto](../contributors/robert-hutto.qmd)** — [View Portfolio](https://posit.cloud/content/11909755)
+- **[Isley Jean-Pierre](../contributors/isley-jean-pierre.qmd)** — [View Portfolio](https://posit.cloud/content/11961159)
+- **[Shannon Joyce](../contributors/shannon-joyce.qmd)** — [View Portfolio](https://connect.posit.cloud/shannonjoyce/content/019c7f53-4be2-1e5f-eb67-bc25d711ee72)
+- **[Emma Tupone](../contributors/emma-tupone.qmd)** — [View Portfolio](https://1c0ef0df1b0e4e15bef2672beb1a98ab.app.posit.cloud/p/6fb81912/)
+- **[Xinru Wang](../contributors/xinru-wang.qmd)** — [View Portfolio](https://019c7c8e-197b-0c55-fbf6-d685497e25bb.share.connect.posit.cloud/)
+- **[Laura Rose Werner](../contributors/laura-rose-werner.qmd)** — [View Portfolio](https://connect.posit.cloud/laurarosewerner/content/019c7ca5-9872-3f70-0ff8-780f5f216b2e)

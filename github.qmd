@@ -1,0 +1,18 @@
+---
+title: "Github Integration"
+---
+
+# Tools
+-   [nycOpenData](https://github.com/martinezc1/nycOpenData)
+-   [nysOpenData](https://github.com/martinezc1/nysOpenData)
+-   [mtaOpenData](https://github.com/martinezc1/mtaOpenData)
+-   [chiOpenData](https://github.com/martinezc1/chiOpenData)
+-   [laOpenData](https://github.com/martinezc1/laOpenData)
+
+# Teaching & OER
+-   [Reproducible Research Using R](https://github.com/martinezc1/Reproducible-Research-Using-R)
+-   [Teaching Reproducible Research Using R](https://github.com/martinezc1/teaching-reproducible-research-using-R)
+-   [reproresearchR](https://github.com/martinezc1/reproresearchR)
+
+# Projects
+-   [NYC Open Data Student Gallery](https://github.com/martinezc1/NYC-Open-Data-Student-Gallery)

@@ -1,0 +1,33 @@
+---
+title: "Christian Martinez"
+description: "Founder of the NYC Open Data Lab and creator of the OpenData R package ecosystem"
+---
+
+## Projects & Publications
+
+-   **Welcome to NYC Open Data**\
+    👉 ../stories/intro-to-nycOpenData.qmd
+
+------------------------------------------------------------------------
+
+## Portfolio & Work
+
+-   Creator of NYC Open Data Stories\
+-   Creator of the NYC Open Data Student Gallery\
+-   Developer of open data R package ecosystem
+
+------------------------------------------------------------------------
+
+## Contributions to the Lab
+
+-   Founder, NYC Open Data Lab\
+-   Creator of nycOpenData and related packages\
+-   Designer of reproducible teaching and publishing workflow
+
+------------------------------------------------------------------------
+
+## Links
+
+-   [GitHub](https://github.com/martinezc1)
+-   [LinkedIn](https://www.linkedin.com/in/christian-a-martinez/)
+-   [ORCID](https://orcid.org/0009-0005-6026-6454)

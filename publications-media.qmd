@@ -1,0 +1,27 @@
+---
+title: "Publications & Media"
+---
+
+The NYC Open Data Lab and its tools have been featured in external publications and community platforms focused on open data, data science, and education.
+
+These features highlight the Lab’s approach to reproducible research, open data accessibility, and public-facing scholarship.
+
+------------------------------------------------------------------------
+
+## Featured Publications & Media
+
+-   [Relevance Drives Rigor: Lessons from Teaching with Open Data](https://aea365.org/blog/relevance-drives-rigor-lessons-from-teaching-with-open-data-by-christian-martinez/)
+
+    -   AEA365 (American Evaluation Association)
+
+-   [Faculty Member Launches Open-Source Tool to Transform Access to New York City Civic Data](https://www.brooklyn.edu/bc-brief/faculty-member-launches-open-source-tool-to-transform-access-to-new-york-city-civic-data/)
+
+    -   **Brooklyn College News**
+
+-   [nycOpenData: A Unified R Interface to NYC Open Data APIs](https://antoinesoetewey.medium.com/nycopendata-a-unified-r-interface-to-nyc-open-data-apis-fc63c6d32b90)
+
+    -   **Medium (Antoine Soetewey)**
+
+-   [nycOpenData: A Unified R Interface to NYC Open Data APIs](https://statsandr.com/blog/nycopendata-a-unified-r-interface-to-nyc-open-data-apis/)
+
+    -   **Stats and R**

@@ -1,0 +1,48 @@
+project:
+  type: website
+
+website:
+  title: "NYC Open Data Lab"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: stories.qmd
+        text: Stories
+      - href: projects.qmd
+        text: Projects
+      - href: tools.qmd
+        text: Tools
+      - href: teaching-oer.qmd
+        text: Teaching & OER
+      - href: contributors.qmd
+        text: Contributors
+      - href: talks.qmd
+        text: Talks
+      - href: publications-media.qmd
+        text: Publications & Media
+    right:
+      - icon: github
+        href: https://github.com/martinezc1
+  page-footer:
+    left: |
+      © 2026 NYC Open Data Lab  
+      Built with Quarto  
+      *Founded by Christian A. Martinez (CUNY)*
+
+    right: |
+      [GitHub](https://github.com/martinezc1)  
+      [LinkedIn](https://www.linkedin.com/in/christian-a-martinez/)  
+      [Email](mailto:c.martinez0@outlook.com)
+
+format:
+  html:
+    theme:
+      - quartz
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual

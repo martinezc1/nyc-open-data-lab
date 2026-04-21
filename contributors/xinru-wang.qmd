@@ -1,0 +1,35 @@
+---
+title: "Xinru Wang"
+description: "Contributor to the NYC Open Data Lab"
+---
+
+## Projects & Publications
+
+-   [Beating Around the Bush: Uncovering the Hidden Link Between Urban Trees and Wildlife Activity](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/08-Beating-Around-the-Bush--Uncovering-the-Hidden-Link-Between-Urban-Trees-and-Wildlife-Activity-Xinru.html)
+
+---
+
+## Portfolio
+
+A curated collection of work developed using reproducible workflows in R and Quarto.
+
+-   📘 [View Portfolio Book](https://019c7e87-9883-6209-abee-7d4f43167df7.share.connect.posit.cloud/)
+
+---
+
+## Contributions to the Lab
+
+-   Contributor to the NYC Open Data Student Gallery\
+-   Contributor to the development of the nycOpenData R package
+
+---
+
+## Links
+
+-   [GitHub](https://github.com/xrwangxr)\
+-   [LinkedIn](https://www.linkedin.com/in/xinru-wang-798937393/)\
+-   [ORCID](https://orcid.org/0009-0006-3833-8199)
+
+
+
+

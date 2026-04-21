@@ -1,0 +1,31 @@
+---
+title: "Contributors"
+page-layout: full
+listing:
+  contents: contributors
+  type: grid
+  fields: [title, description]
+---
+
+The NYC Open Data Lab is built through the work of student researchers and contributors who develop original analyses using public data and reproducible workflows.
+
+Each contributor represents part of a growing, public-facing body of civic data research—transforming coursework into published, portfolio-ready work.
+
+---
+
+## A Community of Contributors
+
+Contributors to the Lab:
+
+- explore real-world questions about New York City  
+- analyze publicly available datasets  
+- develop reproducible research using R and Quarto  
+- publish their work as part of the Lab’s ecosystem  
+
+This model creates a collaborative environment where individual work contributes to a larger, evolving platform.
+
+---
+
+## Explore Contributors
+
+Browse contributor profiles below to learn more about their work and projects.

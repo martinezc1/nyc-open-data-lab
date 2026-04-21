@@ -1,0 +1,65 @@
+---
+title: "Tools"
+---
+
+The NYC Open Data Lab develops open-source tools that make public data more accessible, reproducible, and easier to work with.
+
+These tools are designed to remove the technical barriers associated with open data APIs, allowing users to focus on analysis, insight, and storytelling rather than data retrieval.
+
+------------------------------------------------------------------------
+
+# Open Data R Packages
+
+The Lab maintains a growing ecosystem of R packages that provide a consistent, streamlined interface for accessing open data across cities and systems.
+
+Each package follows a unified design, allowing users to:
+
+-   browse available datasets\
+-   pull data directly into R\
+-   apply filters and queries with minimal setup
+
+------------------------------------------------------------------------
+
+## Available Packages
+
+---
+
+### Open Data Tools
+
+-   [nycOpenData](https://martinezc1.github.io/nycOpenData/) — Access datasets from the NYC Open Data Portal\
+
+-   [nysOpenData](https://martinezc1.github.io/nysOpenData/) — Access datasets from New York State Open Data
+
+-   [mtaOpenData](https://martinezc1.github.io/mtaOpenData/) — Access datasets from Mass Transit Authority (MTA)-related open data sources
+
+-   [chiOpenData](https://martinezc1.github.io/chiOpenData/) — Access datasets from the Chicago Open Data Portal
+
+-   [laOpenData](https://martinezc1.github.io/laOpenData/) — Access datasets from Los Angeles open data portals
+
+---
+
+### Reproducible Research Tools
+
+-   [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1) — Tools and utilities supporting reproducible research workflows in R and Quarto
+
+------------------------------------------------------------------------
+
+# A Unified Approach to Open Data
+
+Rather than treating each data source as a separate system, these tools are designed around a consistent workflow and interface.
+
+This allows for:
+
+-   faster onboarding for new users\
+-   easier cross-city analysis\
+-   more reproducible data workflows
+
+The goal is to create a scalable framework where open data from different cities can be accessed and analyzed in a consistent, predictable way.
+
+------------------------------------------------------------------------
+
+# Looking Ahead
+
+This work is part of a broader effort to build a unified open data ecosystem, including the potential development of a meta-package that brings multiple data sources together under a single interface.
+
+As the ecosystem grows, the focus remains the same: making open data easier to access, easier to use, and more impactful.

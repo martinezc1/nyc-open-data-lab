@@ -1,0 +1,64 @@
+---
+title: "Teaching & OER"
+---
+
+The NYC Open Data Lab is built on a teaching model that integrates reproducible research, open data, and public-facing outputs into a single, connected workflow.
+
+Rather than treating assignments as isolated tasks, this approach is designed so that student work is continuously developed, refined, and ultimately published as part of a broader ecosystem.
+
+------------------------------------------------------------------------
+
+# A Reproducible Learning Model
+
+Courses within the Lab use R and Quarto to guide students through end-to-end reproducible workflows.
+
+Students move from:
+
+-   asking meaningful questions about New York City\
+-   to analyzing real-world data\
+-   to producing fully reproducible research\
+-   to publishing their work publicly
+
+This model ensures that learning is not only technical, but also applied, transparent, and impactful.
+
+------------------------------------------------------------------------
+
+# Open Educational Resources
+
+The Lab supports this approach through the development of open educational resources (OER), including textbooks designed around reproducible research workflows.
+
+These resources provide structure, guidance, and accessibility—allowing both students and external learners to engage with the same tools and methods.
+
+---
+
+## Core Textbooks
+
+-   [Reproducible Research Using R](https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/)
+
+-   [Teaching Reproducible Research Using R](https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/)
+
+---
+
+## Tools
+
+The Lab also develops tools that directly support its teaching model, such as the [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1) package, which provides functions and workflows designed to reinforce reproducible research practices in the classroom.
+
+---
+
+# From Coursework to Public Work
+
+A key goal of this model is to move beyond “one-and-done” assignments.
+
+Student work is designed to: - persist beyond the semester\
+- contribute to public-facing platforms\
+- serve as portfolio-ready artifacts
+
+This approach connects directly to the Lab’s broader ecosystem, including NYC Open Data Stories and the Student Gallery.
+
+---
+
+# Relevance Drives Rigor
+
+When students work with real data about real systems, engagement increases—and so does the quality of their analysis.
+
+By grounding technical skills in meaningful context, the Lab creates an environment where rigor emerges naturally from relevance.

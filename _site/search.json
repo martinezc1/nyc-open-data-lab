@@ -1,0 +1,702 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NYC Open Data Lab",
+    "section": "",
+    "text": "The NYC Open Data Lab is a public-facing initiative focused on transforming New York City’s open data into reproducible research, civic insights, and accessible public scholarship.\nBuilt at the intersection of data science, education, and storytelling, the Lab brings together student research, open-source tools, and real-world analyses using data from the NYC Open Data Portal. Our work emphasizes reproducibility, transparency, and public impact—ensuring that data-driven work doesn’t end in the classroom, but continues to live, evolve, and contribute to conversations about the city."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The NYC Open Data Lab is a public-facing initiative dedicated to transforming New York City’s open data into reproducible research, civic insights, and accessible public scholarship.\nThe Lab brings together teaching, tool development, and real-world analysis into a single, connected ecosystem. Using data from the NYC Open Data Portal, we focus not just on making data available—but on making it usable, understandable, and meaningful.\nAt its core, the Lab is built on a simple idea: data work should be transparent, reproducible, and publicly visible."
+  },
+  {
+    "objectID": "stories/intro-to-nycOpenData.html",
+    "href": "stories/intro-to-nycOpenData.html",
+    "title": "Welcome To NYC Open Data!",
+    "section": "",
+    "text": "Author: Christian Martinez\nNew York City (NYC) is one of the largest metropolitan cities in the entire world, home to over eight million people. If you look at any block in Manhattan, there are any number of different things you can identify - trash cans, taxi’s, potholes…\nBut what keeps NYC really running? All of the pedestrian pathways? Public transportation? Roads?\nData.\nOne of the most powerful components of NYC is it’s data collection, all of which can be found on the NYC Open Data Portal. This portal contains over 2,000 individual datasets, ranging from City Government, Education, to Social Services.\nFigure 1: Number of NYC Open Data datasets by category.\nAnyone with access to the internet can access this website, and any of the information on it, whether a native new yorker or someone who’s never visited the city.\nBut, this wasn’t always the case."
+  },
+  {
+    "objectID": "stories/intro-to-nycOpenData.html#history-of-nyc-open-data",
+    "href": "stories/intro-to-nycOpenData.html#history-of-nyc-open-data",
+    "title": "Welcome To NYC Open Data!",
+    "section": "History of NYC Open Data",
+    "text": "History of NYC Open Data\nThe NYC Open Data Portal is a fantastic tool, however, it wasn’t always available. There were a lot of trials and tribulations to get us here.\n\nThe City Record and Progressive Era of Government Reform\nIn the late 1800’s, William “Boss” Tweed was the mayor of NYC, and arguably the most corrupt politician NYC has ever seen - known for embezzlement, nepotism, and hoarding many of the opportunities within the city. With change needed, the progressive era of government reform began to take place, and the creation of The City Record happened. Dating all the way back to 1873, The City Record was a publication dedicated to making government more transparent - for instance, announcing city building projects that were happening.\nFor the first time, NYC was putting their work on display. The City Record is still going strong today, available in print and online. But, this was only the beginning.\n\n\nFreedom of Information Laws\nJumping almost 100 years later, Freedom of Information legislation (FOIL) is passed at the federal level, and at the state level in New York (1974). This now made government information available on request.\nSo, if you had something you were looking for that existed and could be shared (not sensitive information), you’d be able to request it from the government. This was a huge shift in regard to government information. But how would one know what options were on file?\n\n\nPublic Data Directory\nMoving to the 90’s, NYC created and disseminated the Public Data Directory, a huge edition to FOIL. It was an exhaustive list of city agency data so the average person could understand the available data options.\n\n\nNYC Open Data Law\nIn 2012, New York City’s Open Data Law was signed into effect, which meant that you no longer needed to request data from the government - it was available to anyone at anytime. This is the foundation of the NYC Open Data portal."
+  },
+  {
+    "objectID": "stories/intro-to-nycOpenData.html#the-data-inside-nyc-open-data",
+    "href": "stories/intro-to-nycOpenData.html#the-data-inside-nyc-open-data",
+    "title": "Welcome To NYC Open Data!",
+    "section": "The Data Inside NYC Open Data",
+    "text": "The Data Inside NYC Open Data\nThe portal currently has thousands of datasets (and counting). These datasets have:\n\nover six billion rows of data\nover 50 thousand columns (essentially different datapoints)\nover 22 million downloads\nover 37 million visits\n\nWow.\nTo put that into perspective, that means that there are over three hundred fifty-four trillion individual datapoints currently on the platform, about forty four million per NYC resident.\nWith access to all of this data on the NYC Open Data portal, what is actually possible?\nAnything.\nYou can answer questions such as:\n\nWhich neighborhoods get the most 311 complaints?\nAre certain areas under-resourced?\nWhich borough has the most motor-vehicle collisions?\n\nAnd that is just scratching the surface. Of course, having data is one thing — using it is another."
+  },
+  {
+    "objectID": "stories/intro-to-nycOpenData.html#working-with-nyc-open-data",
+    "href": "stories/intro-to-nycOpenData.html#working-with-nyc-open-data",
+    "title": "Welcome To NYC Open Data!",
+    "section": "Working with NYC Open Data",
+    "text": "Working with NYC Open Data\nThe simplest way to work with NYC Open Data is to utilize their portal. It is a very user-friendly platform. Additionally, there are introductory classes hosted by NYC Open Data Ambassadors to help anyone get started with exploring.\n\nExporting NYC Open Data\nOne of the fantastic things about the NYC Open Data portal is the ability to work with and export the raw data. There are a few ways to do so:\n\nCSV\nExcel file\nAPI (Application Programming Interface)\n\nNote: Sometimes a given dataset might have too much data to download.\nFor example, currently, each new 311 request made to the city is tracked in the 311 Service Requests from 2020 to Present dataset, but currently has almost 21 million rows of data, which can be a lot for your computer to handle.\nYou can also use API’s, but that requires knowledge on how to use them, which can be a battle within itself.\nTo help, there is another tool that helps fix the technical complication that comes with API’s and the limitations (both financially and structurally) with programs such as Microsoft Excel for working with NYC Open Data.\n\n\nnycOpenData package\nTo make accessing NYC Open Data even easier, without the use of API’s, the nycOpenData package can be used. This is a package inside of the programming language R.\nR is an open-source platform that was designed to specifically work with data. One of the best features is that it is free, and in my family we have the saying, “if it’s for free, it’s for me.”\nWith this package, you can easily access any of the datasets found on the portal, with no need for an API or file. This is how we’ll explore NYC Open Data in future publications with The Advocate."
+  },
+  {
+    "objectID": "stories/intro-to-nycOpenData.html#the-advocate-nyc-open-data-series",
+    "href": "stories/intro-to-nycOpenData.html#the-advocate-nyc-open-data-series",
+    "title": "Welcome To NYC Open Data!",
+    "section": "The Advocate NYC Open Data Series",
+    "text": "The Advocate NYC Open Data Series\nNYC Open Data is an incredibly powerful tool that allows anyone with even an inkling of curiosity embark on a journey of discovery. In future articles we’ll dive into the data to answer questions regarding NYC. For instance, we may try to uncover how NY Sports impact 311 requests in their respective neighborhoods, or how these “pothole” blitz actually impact people’s lives.\nIn fact, we’d love to help answer any questions you have about the city!"
+  },
+  {
+    "objectID": "stories.html",
+    "href": "stories.html",
+    "title": "Stories",
+    "section": "",
+    "text": "NYC Open Data Stories is a public-facing collection of civic data analyses exploring New York City through reproducible workflows in R and Quarto.\nEach story begins with a question and uses publicly available data from the NYC Open Data Portal to produce clear, accessible, and transparent insights about the city.\nThese projects are developed by students and contributors of the NYC Open Data Lab and are designed to be reproducible, interpretable, and meaningful beyond the classroom.\nBrowse the latest stories below.\n\n\n\n\n\n\n\n\n\n\n\nWelcome To NYC Open Data!\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "contributors/jonah-dratfield.html",
+    "href": "contributors/jonah-dratfield.html",
+    "title": "Jonah Dratfield",
+    "section": "",
+    "text": "Social Infrastructure & Well-Being"
+  },
+  {
+    "objectID": "contributors/jonah-dratfield.html#project",
+    "href": "contributors/jonah-dratfield.html#project",
+    "title": "Jonah Dratfield",
+    "section": "",
+    "text": "Social Infrastructure & Well-Being"
+  },
+  {
+    "objectID": "contributors/jonah-dratfield.html#links",
+    "href": "contributors/jonah-dratfield.html#links",
+    "title": "Jonah Dratfield",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html",
+    "href": "contributors/laura-rose-werner.html",
+    "title": "Laura Rose Werner",
+    "section": "",
+    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#project",
+    "href": "contributors/laura-rose-werner.html#project",
+    "title": "Laura Rose Werner",
+    "section": "",
+    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#links",
+    "href": "contributors/laura-rose-werner.html#links",
+    "title": "Laura Rose Werner",
+    "section": "Links",
+    "text": "Links\n\nGitHub\nLinkedIn"
+  },
+  {
+    "objectID": "contributors/christian-martinez.html",
+    "href": "contributors/christian-martinez.html",
+    "title": "Christian Martinez",
+    "section": "",
+    "text": "Welcome to NYC Open Data\n👉 ../stories/intro-to-nycOpenData.qmd"
+  },
+  {
+    "objectID": "contributors/christian-martinez.html#project",
+    "href": "contributors/christian-martinez.html#project",
+    "title": "Christian Martinez",
+    "section": "",
+    "text": "Welcome To NYC Open Data!\n\n\n\n\nGitHub\nLinkedIn\nORCID"
+  },
+  {
+    "objectID": "contributors/xinru-wang.html",
+    "href": "contributors/xinru-wang.html",
+    "title": "Xinru Wang",
+    "section": "",
+    "text": "Beating Around the Bush: Uncovering the Hidden Link Between Urban Trees and Wildlife Activity"
+  },
+  {
+    "objectID": "contributors/xinru-wang.html#project",
+    "href": "contributors/xinru-wang.html#project",
+    "title": "Xinru Wang",
+    "section": "",
+    "text": "Beating Around the Bush: Uncovering the Hidden Link Between Urban Trees and Wildlife Activity"
+  },
+  {
+    "objectID": "contributors/xinru-wang.html#links",
+    "href": "contributors/xinru-wang.html#links",
+    "title": "Xinru Wang",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
+  },
+  {
+    "objectID": "contributors/shannon-joyce.html",
+    "href": "contributors/shannon-joyce.html",
+    "title": "Shannon Joyce",
+    "section": "",
+    "text": "Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC"
+  },
+  {
+    "objectID": "contributors/shannon-joyce.html#project",
+    "href": "contributors/shannon-joyce.html#project",
+    "title": "Shannon Joyce",
+    "section": "",
+    "text": "Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC"
+  },
+  {
+    "objectID": "contributors/shannon-joyce.html#links",
+    "href": "contributors/shannon-joyce.html#links",
+    "title": "Shannon Joyce",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
+  },
+  {
+    "objectID": "contributors/isley-jean-pierre.html",
+    "href": "contributors/isley-jean-pierre.html",
+    "title": "Isley Jean-Pierre",
+    "section": "",
+    "text": "From School To Juvenile Incarceration"
+  },
+  {
+    "objectID": "contributors/isley-jean-pierre.html#project",
+    "href": "contributors/isley-jean-pierre.html#project",
+    "title": "Isley Jean-Pierre",
+    "section": "",
+    "text": "From School To Juvenile Incarceration"
+  },
+  {
+    "objectID": "contributors/isley-jean-pierre.html#links",
+    "href": "contributors/isley-jean-pierre.html#links",
+    "title": "Isley Jean-Pierre",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
+  },
+  {
+    "objectID": "contributors/crystal-adote.html",
+    "href": "contributors/crystal-adote.html",
+    "title": "Crystal Adote",
+    "section": "",
+    "text": "Leading Causes of Death and Indoor Environmental Complaints"
+  },
+  {
+    "objectID": "contributors/crystal-adote.html#project",
+    "href": "contributors/crystal-adote.html#project",
+    "title": "Crystal Adote",
+    "section": "",
+    "text": "Leading Causes of Death and Indoor Environmental Complaints"
+  },
+  {
+    "objectID": "contributors/crystal-adote.html#links",
+    "href": "contributors/crystal-adote.html#links",
+    "title": "Crystal Adote",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
+  },
+  {
+    "objectID": "contributors/emma-tupone.html",
+    "href": "contributors/emma-tupone.html",
+    "title": "Emma Tupone",
+    "section": "",
+    "text": "Environmental Stressors and Social Complaints in New York City"
+  },
+  {
+    "objectID": "contributors/emma-tupone.html#project",
+    "href": "contributors/emma-tupone.html#project",
+    "title": "Emma Tupone",
+    "section": "",
+    "text": "Environmental Stressors and Social Complaints in New York City"
+  },
+  {
+    "objectID": "contributors/emma-tupone.html#links",
+    "href": "contributors/emma-tupone.html#links",
+    "title": "Emma Tupone",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
+  },
+  {
+    "objectID": "contributors/robert-hutto.html",
+    "href": "contributors/robert-hutto.html",
+    "title": "Robert Hutto",
+    "section": "",
+    "text": "The Madison Square Garden Effect in the NBA"
+  },
+  {
+    "objectID": "contributors/robert-hutto.html#project",
+    "href": "contributors/robert-hutto.html#project",
+    "title": "Robert Hutto",
+    "section": "",
+    "text": "The Madison Square Garden Effect in the NBA"
+  },
+  {
+    "objectID": "contributors/robert-hutto.html#links",
+    "href": "contributors/robert-hutto.html#links",
+    "title": "Robert Hutto",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
+  },
+  {
+    "objectID": "contributors/joyce-escatel-flores.html",
+    "href": "contributors/joyce-escatel-flores.html",
+    "title": "Joyce Escatel-Flores",
+    "section": "",
+    "text": "NYC Restaurants and Museums"
+  },
+  {
+    "objectID": "contributors/joyce-escatel-flores.html#project",
+    "href": "contributors/joyce-escatel-flores.html#project",
+    "title": "Joyce Escatel-Flores",
+    "section": "",
+    "text": "NYC Restaurants and Museums"
+  },
+  {
+    "objectID": "contributors/joyce-escatel-flores.html#links",
+    "href": "contributors/joyce-escatel-flores.html#links",
+    "title": "Joyce Escatel-Flores",
+    "section": "Links",
+    "text": "Links\n\nGitHub\n\nLinkedIn"
+  },
+  {
+    "objectID": "contributors.html",
+    "href": "contributors.html",
+    "title": "Contributors",
+    "section": "",
+    "text": "The NYC Open Data Lab is built through the work of student researchers and contributors who develop original analyses using public data and reproducible workflows.\nEach contributor represents part of a growing, public-facing body of civic data research—transforming coursework into published, portfolio-ready work."
+  },
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "Tools",
+    "section": "",
+    "text": "The NYC Open Data Lab develops open-source tools that make public data more accessible, reproducible, and easier to work with.\nThese tools are designed to remove the technical barriers associated with open data APIs, allowing users to focus on analysis, insight, and storytelling rather than data retrieval."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "The NYC Open Data Lab produces a range of public-facing projects that connect teaching, research, and civic data analysis.\nThese projects are designed to be reproducible, accessible, and meaningful beyond the classroom—transforming individual work into part of a broader, growing ecosystem."
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "The NYC Open Data Lab is actively shared through conference presentations, public talks, and community events focused on open data, reproducible research, and data science education.\nThese talks highlight the Lab’s approach to building a connected ecosystem of teaching, tools, and public-facing research."
+  },
+  {
+    "objectID": "teaching-oer.html",
+    "href": "teaching-oer.html",
+    "title": "Teaching & OER",
+    "section": "",
+    "text": "The NYC Open Data Lab is built on a teaching model that integrates reproducible research, open data, and public-facing outputs into a single, connected workflow.\nRather than treating assignments as isolated tasks, this approach is designed so that student work is continuously developed, refined, and ultimately published as part of a broader ecosystem."
+  },
+  {
+    "objectID": "github.html",
+    "href": "github.html",
+    "title": "Github Integration",
+    "section": "",
+    "text": "Tools\n\nnycOpenData\nnysOpenData\nmtaOpenData\nchiOpenData\nlaOpenData\n\n\n\nTeaching & OER\n\nReproducible Research Using R\nTeaching Reproducible Research Using R\nreproresearchR\n\n\n\nProjects\n\nNYC Open Data Student Gallery"
+  },
+  {
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "NYC Open Data Lab",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\nPublish Civic Data Stories — through NYC Open Data Stories, a living collection of analyses exploring New York City through public datasets\nDevelop Open-Source Tools — including R packages designed to make NYC and other open data more accessible and reproducible\nBuild Public-Facing Student Research — transforming coursework into polished, shareable, and citable work\nTeach Reproducible Workflows — using R and Quarto to create end-to-end research pipelines\nPresent & Contribute Publicly — through conferences, publications, and civic data events"
+  },
+  {
+    "objectID": "index.html#why-this-exists",
+    "href": "index.html#why-this-exists",
+    "title": "NYC Open Data Lab",
+    "section": "Why This Exists",
+    "text": "Why This Exists\nToo often, data work—especially student work—is temporary. It lives in assignments, disappears after grading, and never reaches a broader audience.\nThe NYC Open Data Lab exists to change that.\nBy designing courses and workflows around reproducibility and public output, the Lab creates a system where work is not only completed, but published, shared, and built upon. The result is a growing ecosystem of civic data research that is open, accessible, and continuously expanding."
+  },
+  {
+    "objectID": "index.html#explore-the-lab",
+    "href": "index.html#explore-the-lab",
+    "title": "NYC Open Data Lab",
+    "section": "Explore the Lab",
+    "text": "Explore the Lab\n\nStart with Stories to see NYC data brought to life through analysis and visualization\nVisit Projects to explore the broader ecosystem of work\nCheck out Tools for open-source packages supporting reproducible data access\nLearn more in Teaching & OER about the methodology behind the Lab\n\nStart by exploring the Stories, or learn more about the Lab’s tools and teaching approach."
+  },
+  {
+    "objectID": "teaching-oer.html#core-textbooks",
+    "href": "teaching-oer.html#core-textbooks",
+    "title": "Teaching & OER",
+    "section": "Core Textbooks",
+    "text": "Core Textbooks\n\nReproducible Research Using R\nTeaching Reproducible Research Using R"
+  },
+  {
+    "objectID": "tools.html#available-packages",
+    "href": "tools.html#available-packages",
+    "title": "Tools",
+    "section": "Available Packages",
+    "text": "Available Packages\n\n\nOpen Data Tools\n\nnycOpenData — Access datasets from the NYC Open Data Portal\n\nnysOpenData — Access datasets from New York State Open Data\nmtaOpenData — Access datasets from Mass Transit Authority (MTA)-related open data sources\nchiOpenData — Access datasets from the Chicago Open Data Portal\nlaOpenData — Access datasets from Los Angeles open data portals\n\n\n\n\nReproducible Research Tools\n\nreproresearchR — Tools and utilities supporting reproducible research workflows in R and Quarto"
+  },
+  {
+    "objectID": "talks.html#nyc-open-data-week-2026",
+    "href": "talks.html#nyc-open-data-week-2026",
+    "title": "Talks",
+    "section": "NYC Open Data Week 2026",
+    "text": "NYC Open Data Week 2026\nPresentation on teaching with open data and publishing student research through reproducible workflows.\n\n🎥 Watch the talk\n\n📊 View slides"
+  },
+  {
+    "objectID": "talks.html#positconf2026",
+    "href": "talks.html#positconf2026",
+    "title": "Talks",
+    "section": "posit::conf(2026)",
+    "text": "posit::conf(2026)\nPresentation on integrating reproducible workflows, open data, and tool development into data science education.\n\n🔗 Conference sessions"
+  },
+  {
+    "objectID": "talks.html#user-2026",
+    "href": "talks.html#user-2026",
+    "title": "Talks",
+    "section": "useR! 2026",
+    "text": "useR! 2026\nInternational conference presentation focused on end-to-end reproducible workflows using Quarto, open data, and package development.\n\n🔗 Conference site"
+  },
+  {
+    "objectID": "projects.html#featured-portfolios",
+    "href": "projects.html#featured-portfolios",
+    "title": "Projects",
+    "section": "Featured Portfolios",
+    "text": "Featured Portfolios\n\nCrystal Adote — View Portfolio\nJonah Dratfield — View Portfolio\nJoyce Escatel-Flores — View Portfolio\nRobert Hutto — View Portfolio\nIsley Jean-Pierre — View Portfolio\nShannon Joyce — View Portfolio\nEmma Tupone — View Portfolio\nXinru Wang — View Portfolio\nLaura Rose Werner — View Portfolio"
+  },
+  {
+    "objectID": "contributors.html#a-community-of-contributors",
+    "href": "contributors.html#a-community-of-contributors",
+    "title": "Contributors",
+    "section": "A Community of Contributors",
+    "text": "A Community of Contributors\nContributors to the Lab:\n\nexplore real-world questions about New York City\n\nanalyze publicly available datasets\n\ndevelop reproducible research using R and Quarto\n\npublish their work as part of the Lab’s ecosystem\n\nThis model creates a collaborative environment where individual work contributes to a larger, evolving platform."
+  },
+  {
+    "objectID": "contributors.html#explore-contributors",
+    "href": "contributors.html#explore-contributors",
+    "title": "Contributors",
+    "section": "Explore Contributors",
+    "text": "Explore Contributors\nBrowse contributor profiles below to learn more about their work and projects."
+  },
+  {
+    "objectID": "projects.html#nyc-open-data-student-gallery",
+    "href": "projects.html#nyc-open-data-student-gallery",
+    "title": "Projects",
+    "section": "NYC Open Data Student Gallery",
+    "text": "NYC Open Data Student Gallery\nThe NYC Open Data Student Gallery is a collection of graduate student research projects developed using NYC Open Data. Each project explores a unique question about New York City through data analysis, visualization, and reproducible workflows.\nAll projects are published as part of a cohesive, public-facing body of work.\n👉 View the Student Gallery"
+  },
+  {
+    "objectID": "projects.html#student-portfolio-books",
+    "href": "projects.html#student-portfolio-books",
+    "title": "Projects",
+    "section": "Student Portfolio Books",
+    "text": "Student Portfolio Books\nAs part of the Lab’s reproducible workflow model, students develop personal portfolio books using Quarto. These books compile their work into a single, polished, and shareable artifact—designed to showcase their skills in data analysis, storytelling, and reproducible research.\nEach portfolio represents not just completed assignments, but a cohesive narrative of the student’s work."
+  },
+  {
+    "objectID": "about.html#about-the-nyc-open-data-lab",
+    "href": "about.html#about-the-nyc-open-data-lab",
+    "title": "About",
+    "section": "",
+    "text": "The NYC Open Data Lab is a public-facing initiative dedicated to transforming New York City’s open data into reproducible research, civic insights, and accessible public scholarship.\nThe Lab brings together teaching, tool development, and real-world analysis into a single, connected ecosystem. Using data from the NYC Open Data Portal, we focus not just on making data available—but on making it usable, understandable, and meaningful.\nAt its core, the Lab is built on a simple idea: data work should be transparent, reproducible, and publicly visible."
+  },
+  {
+    "objectID": "about.html#a-reproducible-approach-to-civic-data",
+    "href": "about.html#a-reproducible-approach-to-civic-data",
+    "title": "About",
+    "section": "A Reproducible Approach to Civic Data",
+    "text": "A Reproducible Approach to Civic Data\nAll work within the Lab is built using reproducible research workflows in R and Quarto. Each project integrates code, data, and narrative into a single, cohesive document—ensuring that analyses are not only readable, but also verifiable and reusable.\nThis approach allows others to:\n\nunderstand how results were produced\nreplicate findings\nextend existing work\n\nReproducibility is not treated as an add-on—it is the foundation of the Lab’s design."
+  },
+  {
+    "objectID": "about.html#from-coursework-to-public-scholarship",
+    "href": "about.html#from-coursework-to-public-scholarship",
+    "title": "About",
+    "section": "From Coursework to Public Scholarship",
+    "text": "From Coursework to Public Scholarship\nA central component of the Lab is the transformation of student work into public-facing research.\nGraduate students develop original projects using NYC Open Data, which are then refined, published, and shared through the Lab. These projects are designed to be:\n\nPublic-facing\nReproducible\nPortfolio-ready\n\nRather than disappearing at the end of a semester, student work becomes part of a growing body of civic data research—contributing to ongoing conversations about New York City."
+  },
+  {
+    "objectID": "about.html#tools-for-open-data-access",
+    "href": "about.html#tools-for-open-data-access",
+    "title": "About",
+    "section": "Tools for Open Data Access",
+    "text": "Tools for Open Data Access\nThe Lab also develops open-source tools to support reproducible data workflows.\nOne example is the nycOpenData R package, which provides a streamlined interface for accessing datasets from the NYC Open Data Portal. By simplifying interactions with open data APIs, the package allows users to focus on analysis and insight rather than data retrieval.\nThis work extends beyond a single package, contributing to a broader ecosystem of tools designed to make open data more accessible across cities and contexts."
+  },
+  {
+    "objectID": "about.html#an-integrated-ecosystem",
+    "href": "about.html#an-integrated-ecosystem",
+    "title": "About",
+    "section": "An Integrated Ecosystem",
+    "text": "An Integrated Ecosystem\n\nThe NYC Open Data Lab connects multiple components into a unified system:\nNYC Open Data Stories — a public-facing collection of civic data analyses\nStudent research and publications — developed through coursework and published openly\nOpen-source tools — supporting reproducible access to public data\nTeaching and OER — designed around end-to-end reproducible workflows\nPublic engagement — through conferences, writing, and civic data events\n\nEach piece reinforces the others, creating a model where teaching, research, and public scholarship are fully integrated."
+  },
+  {
+    "objectID": "about.html#vision",
+    "href": "about.html#vision",
+    "title": "About",
+    "section": "Vision",
+    "text": "Vision\nThe NYC Open Data Lab is part of a broader effort to rethink how data work is taught, shared, and sustained.\nThe goal is to build a model where:\n\ndata projects are not temporary\nstudent work contributes to public knowledge\ntools lower barriers to entry\nresearch is open, reproducible, and accessible\n\nBy connecting education with real-world data and public output, the Lab aims to create a sustainable and scalable approach to civic data science."
+  },
+  {
+    "objectID": "talks.html#featured-talks",
+    "href": "talks.html#featured-talks",
+    "title": "Talks",
+    "section": "Featured Talks",
+    "text": "Featured Talks\n\nNYC Open Data Week 2026\nTeaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows\n\n🎥 Watch the talk\n\n📊 View slides\n\n\n\n\nposit::conf(2026)\nDesigning Reproducible Learning Ecosystems with R and Quarto\n\n🔗 Conference sessions\n\n\n\n\nuseR! 2026\nTeaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development\n\n🔗 Conference site"
+  },
+  {
+    "objectID": "publications-media.html",
+    "href": "publications-media.html",
+    "title": "Publications & Media",
+    "section": "",
+    "text": "The NYC Open Data Lab and its tools have been featured in external publications and community platforms focused on open data, data science, and education.\nThese features highlight the Lab’s approach to reproducible research, open data accessibility, and public-facing scholarship."
+  },
+  {
+    "objectID": "publications-media.html#featured-publications-media",
+    "href": "publications-media.html#featured-publications-media",
+    "title": "Publications & Media",
+    "section": "Featured Publications & Media",
+    "text": "Featured Publications & Media\n\nRelevance Drives Rigor: Lessons from Teaching with Open Data\nAEA365 (American Evaluation Association)\n👉 https://aea365.org/blog/relevance-drives-rigor-lessons-from-teaching-with-open-data-by-christian-martinez/\nFaculty Member Launches Open-Source Tool to Transform Access to New York City Civic Data\nBrooklyn College News\n👉 https://www.brooklyn.edu/bc-brief/faculty-member-launches-open-source-tool-to-transform-access-to-new-york-city-civic-data/\nnycOpenData: A Unified R Interface to NYC Open Data APIs\nMedium (Antoine Soetewey)\n👉 https://antoinesoetewey.medium.com/nycopendata-a-unified-r-interface-to-nyc-open-data-apis-fc63c6d32b90\nnycOpenData: A Unified R Interface to NYC Open Data APIs\nStats and R\n👉 https://statsandr.com/blog/nycopendata-a-unified-r-interface-to-nyc-open-data-apis/"
+  },
+  {
+    "objectID": "contributors/joyce-escatel-flores.html#projects-publications",
+    "href": "contributors/joyce-escatel-flores.html#projects-publications",
+    "title": "Joyce Escatel-Flores",
+    "section": "",
+    "text": "NYC Restaurants and Museums"
+  },
+  {
+    "objectID": "contributors/joyce-escatel-flores.html#portfolio",
+    "href": "contributors/joyce-escatel-flores.html#portfolio",
+    "title": "Joyce Escatel-Flores",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/joyce-escatel-flores.html#contributions-to-the-lab",
+    "href": "contributors/joyce-escatel-flores.html#contributions-to-the-lab",
+    "title": "Joyce Escatel-Flores",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/robert-hutto.html#projects-publications",
+    "href": "contributors/robert-hutto.html#projects-publications",
+    "title": "Robert Hutto",
+    "section": "",
+    "text": "The Madison Square Garden Effect in the NBA"
+  },
+  {
+    "objectID": "contributors/robert-hutto.html#portfolio",
+    "href": "contributors/robert-hutto.html#portfolio",
+    "title": "Robert Hutto",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/robert-hutto.html#contributions-to-the-lab",
+    "href": "contributors/robert-hutto.html#contributions-to-the-lab",
+    "title": "Robert Hutto",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/emma-tupone.html#projects-publications",
+    "href": "contributors/emma-tupone.html#projects-publications",
+    "title": "Emma Tupone",
+    "section": "",
+    "text": "Environmental Stressors and Social Complaints in New York City"
+  },
+  {
+    "objectID": "contributors/emma-tupone.html#portfolio",
+    "href": "contributors/emma-tupone.html#portfolio",
+    "title": "Emma Tupone",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/emma-tupone.html#contributions-to-the-lab",
+    "href": "contributors/emma-tupone.html#contributions-to-the-lab",
+    "title": "Emma Tupone",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/crystal-adote.html#projects-publications",
+    "href": "contributors/crystal-adote.html#projects-publications",
+    "title": "Crystal Adote",
+    "section": "",
+    "text": "Leading Causes of Death and Indoor Environmental Complaints"
+  },
+  {
+    "objectID": "contributors/crystal-adote.html#portfolio",
+    "href": "contributors/crystal-adote.html#portfolio",
+    "title": "Crystal Adote",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/crystal-adote.html#contributions-to-the-lab",
+    "href": "contributors/crystal-adote.html#contributions-to-the-lab",
+    "title": "Crystal Adote",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/isley-jean-pierre.html#projects-publications",
+    "href": "contributors/isley-jean-pierre.html#projects-publications",
+    "title": "Isley Jean-Pierre",
+    "section": "",
+    "text": "From School To Juvenile Incarceration"
+  },
+  {
+    "objectID": "contributors/isley-jean-pierre.html#portfolio",
+    "href": "contributors/isley-jean-pierre.html#portfolio",
+    "title": "Isley Jean-Pierre",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/isley-jean-pierre.html#contributions-to-the-lab",
+    "href": "contributors/isley-jean-pierre.html#contributions-to-the-lab",
+    "title": "Isley Jean-Pierre",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/shannon-joyce.html#projects-publications",
+    "href": "contributors/shannon-joyce.html#projects-publications",
+    "title": "Shannon Joyce",
+    "section": "",
+    "text": "Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC"
+  },
+  {
+    "objectID": "contributors/shannon-joyce.html#portfolio",
+    "href": "contributors/shannon-joyce.html#portfolio",
+    "title": "Shannon Joyce",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/shannon-joyce.html#contributions-to-the-lab",
+    "href": "contributors/shannon-joyce.html#contributions-to-the-lab",
+    "title": "Shannon Joyce",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/xinru-wang.html#projects-publications",
+    "href": "contributors/xinru-wang.html#projects-publications",
+    "title": "Xinru Wang",
+    "section": "",
+    "text": "Beating Around the Bush: Uncovering the Hidden Link Between Urban Trees and Wildlife Activity"
+  },
+  {
+    "objectID": "contributors/xinru-wang.html#portfolio",
+    "href": "contributors/xinru-wang.html#portfolio",
+    "title": "Xinru Wang",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/xinru-wang.html#contributions-to-the-lab",
+    "href": "contributors/xinru-wang.html#contributions-to-the-lab",
+    "title": "Xinru Wang",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/christian-martinez.html#projects-publications",
+    "href": "contributors/christian-martinez.html#projects-publications",
+    "title": "Christian Martinez",
+    "section": "",
+    "text": "Welcome to NYC Open Data\n👉 ../stories/intro-to-nycOpenData.qmd"
+  },
+  {
+    "objectID": "contributors/christian-martinez.html#portfolio-work",
+    "href": "contributors/christian-martinez.html#portfolio-work",
+    "title": "Christian Martinez",
+    "section": "Portfolio & Work",
+    "text": "Portfolio & Work\n\nCreator of NYC Open Data Stories\n\nCreator of the NYC Open Data Student Gallery\n\nDeveloper of open data R package ecosystem"
+  },
+  {
+    "objectID": "contributors/christian-martinez.html#contributions-to-the-lab",
+    "href": "contributors/christian-martinez.html#contributions-to-the-lab",
+    "title": "Christian Martinez",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nFounder, NYC Open Data Lab\n\nCreator of nycOpenData and related packages\n\nDesigner of reproducible teaching and publishing workflow"
+  },
+  {
+    "objectID": "contributors/christian-martinez.html#links",
+    "href": "contributors/christian-martinez.html#links",
+    "title": "Christian Martinez",
+    "section": "Links",
+    "text": "Links\n\nGitHub\nLinkedIn\nORCID"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#projects-publications",
+    "href": "contributors/laura-rose-werner.html#projects-publications",
+    "title": "Laura Rose Werner",
+    "section": "",
+    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#portfolio",
+    "href": "contributors/laura-rose-werner.html#portfolio",
+    "title": "Laura Rose Werner",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#contributions-to-the-lab",
+    "href": "contributors/laura-rose-werner.html#contributions-to-the-lab",
+    "title": "Laura Rose Werner",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/jonah-dratfield.html#projects-publications",
+    "href": "contributors/jonah-dratfield.html#projects-publications",
+    "title": "Jonah Dratfield",
+    "section": "",
+    "text": "Social Infrastructure & Well-Being"
+  },
+  {
+    "objectID": "contributors/jonah-dratfield.html#portfolio",
+    "href": "contributors/jonah-dratfield.html#portfolio",
+    "title": "Jonah Dratfield",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/jonah-dratfield.html#contributions-to-the-lab",
+    "href": "contributors/jonah-dratfield.html#contributions-to-the-lab",
+    "title": "Jonah Dratfield",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "teaching-oer.html#r-packages",
+    "href": "teaching-oer.html#r-packages",
+    "title": "Teaching & OER",
+    "section": "R Packages",
+    "text": "R Packages"
+  },
+  {
+    "objectID": "about.html#collaborating",
+    "href": "about.html#collaborating",
+    "title": "About",
+    "section": "Collaborating",
+    "text": "Collaborating\nInterested in collaborating, teaching, or speaking?\nEmail me"
+  },
+  {
+    "objectID": "teaching-oer.html#tools",
+    "href": "teaching-oer.html#tools",
+    "title": "Teaching & OER",
+    "section": "Tools",
+    "text": "Tools\nThe Lab also develops tools that directly support its teaching model, such as the reproresearchR package, which provides functions and workflows designed to reinforce reproducible research practices in the classroom."
+  },
+  {
+    "objectID": "index.html#get-involved",
+    "href": "index.html#get-involved",
+    "title": "NYC Open Data Lab",
+    "section": "Get Involved",
+    "text": "Get Involved\nInterested in collaborating, teaching, or speaking about reproducible research and open data?\nEmail me"
+  }
+]

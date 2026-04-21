@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/stories.html",
+    "items": [
+      "/stories/intro-to-nycOpenData.html"
+    ]
+  },
+  {
+    "listing": "/contributors.html",
+    "items": [
+      "/contributors/christian-martinez.html",
+      "/contributors/crystal-adote.html",
+      "/contributors/emma-tupone.html",
+      "/contributors/isley-jean-pierre.html",
+      "/contributors/jonah-dratfield.html",
+      "/contributors/joyce-escatel-flores.html",
+      "/contributors/laura-rose-werner.html",
+      "/contributors/robert-hutto.html",
+      "/contributors/shannon-joyce.html",
+      "/contributors/xinru-wang.html"
+    ]
+  }
+]
