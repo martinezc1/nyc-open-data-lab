@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the book below."
+title: "NYC Open Data Lab"
+authors:
+  - family-names: "Martinez"
+    given-names: "Christian"
+    orcid: "https://orcid.org/0009-0005-6026-6454"
+url: "https://github.com/martinezc1/nyc-open-data-lab"
+
+preferred-citation:
+  type: book
+  title: "NYC Open Data Lab"
+  authors:
+    - family-names: "Martinez"
+      given-names: "Christian"
+      orcid: "https://orcid.org/0009-0005-6026-6454"
+  year: 2026
+  date-released: 2026-04-21
+  url: "https://martinezc1-nyc-open-data-lab.share.connect.posit.cloud/"
