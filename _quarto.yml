@@ -3,6 +3,7 @@ project:
 
 website:
   title: "NYC Open Data Lab"
+  google-analytics: "G-F3NM2QR1Y0"
   navbar:
     left:
       - href: index.qmd
