@@ -193,7 +193,7 @@ final_analysis_df1 <- crashes_final1 %>%
 #| label: analysis-prep
 analysis_df <- final_analysis_df1 %>%
   mutate(
-    crash_date_clean = mdy(`CRASH DATE`),
+    crash_date_clean = mdy(crash_date),
     activation_date_clean = ymd(clean_date)
   ) %>%
   filter(!is.na(crash_date_clean) & !is.na(activation_date_clean)) %>%
@@ -203,9 +203,9 @@ analysis_df <- final_analysis_df1 %>%
 
 analysis_df <- analysis_df %>%
   mutate(
-    total_injuries = `NUMBER OF PERSONS INJURED`,
-    total_deaths = `NUMBER OF PERSONS KILLED`,
-    total_casualties = `NUMBER OF PERSONS INJURED` + `NUMBER OF PERSONS KILLED`
+    total_injuries = number_of_persons_injured,
+    total_deaths = number_of_persons_killed,
+    total_casualties = number_of_persons_injured + number_of_persons_killed
   )
 
 year_window <- analysis_df %>%
@@ -239,7 +239,7 @@ ggplot(crash_plot, aes(x = period, y = total_crashes, fill = period)) +
 # DEATHS ALONE
 processed_deaths <- year_window %>%
   group_by(period) %>%
-  summarize(total_deaths = sum(`NUMBER OF PERSONS KILLED`, na.rm = TRUE))
+  summarize(total_deaths = sum(number_of_persons_killed, na.rm = TRUE))
 ```
 
 ```{r}
@@ -263,7 +263,7 @@ death_its_model <- glm(deaths ~ month_rel + camera_active + time_after,
 # INJURIES + DEATHS COMBINED (CASUALTIES)
 processed_casualties <- year_window %>%
   group_by(period) %>%
-  summarize(total_casualties = sum(`NUMBER OF PERSONS INJURED`, `NUMBER OF PERSONS KILLED`, na.rm = TRUE))
+  summarize(total_casualties = sum(number_of_persons_injured, number_of_persons_killed, na.rm = TRUE))
 ```
 
 ```{r}
