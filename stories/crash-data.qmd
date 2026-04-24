@@ -1,0 +1,309 @@
+---
+title: "Speed Cameras"
+subtitle: "The Impact Speed Cameras Have on Safety"
+author: Jonah Dratfield & Shannon Joyce
+categories: ["NYC Open Data","Government", "Urban Data", "Public Policy"]
+execute:
+  echo: false
+  message: false
+  warning: false
+---
+
+[Road collisions](https://www.cdc.gov/transportation-safety/about/index.html) are one of the leading causes of preventable death in the US. Yet, short of completely overhauling our car-centered infrastructure, is there anything we can do about them?
+
+Speed cameras are an obvious solution. Since excessive speed is at the root of many car collisions, it’s reasonable to think that speed cameras can reduce drivers’ speeds and bring down both the total number of road collisions and the number of fatal road collisions. But, what does the empirical evidence say about this intervention? Do speed cameras actually have this effect?
+
+Based on the past evidence, they do. [A 2010 overview of thirty-five separate studies](https://www.cochrane.org/evidence/CD004607_do-speed-cameras-reduce-road-traffic-crashes-injuries-and-deaths) found that speed cameras tended to reduce both the speed of drivers and the rate of collisions in nearby areas. More recently, a [2025 New York City-specific study](https://www.pnas.org/doi/10.1073/pnas.2520328122) found that speed cameras reduced collisions around 5% per month. This study used the “staggered rollout” of speed cameras in over 1,800 New York City school zones to compare collision rates between monitored and yet-to-be-monitored areas.
+
+Using the metrics available to us on NYC Open Data, as well as other city-related sources, we tried to recreate these findings. Though we used slightly different methods, we came to the same conclusion as both these studies. Our analyses showed that there was a significant downwards trend in both the total number of collisions and the total number of collision-related casualties. Collisions decreased by almost 18%, and casualties dropped by around 24% after the installation of the cameras. In fact, however we sliced up the data, speed cameras appeared to have a positive impact on road safety. They seemed to stop minor collisions from turning into serious collisions and other collisions from occurring at all. You can see the trends in the two graphs below:
+
+```{r}
+#| label: libraries
+#| message: false
+#| warning: false
+library(tidyverse)
+library(lubridate)
+library(stringi)
+library(data.table)
+library(knitr)
+library(here)
+library(arrow)
+```
+
+```{r}
+#| label: loading cameras
+camera_dates_2014 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2014_20260407.csv"))
+camera_dates_2015 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2015_20260407.csv"))
+camera_dates_2016 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2016_20260407.csv"))
+camera_dates_2017 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2017_20260407.csv"))
+camera_dates_2018 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2018_20260407.csv"))
+camera_dates_2019 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2019_20260407.csv"))
+camera_dates_2020 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2020_20260407.csv"))
+camera_dates_2021 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2021_20260407.csv"))
+camera_dates_2022 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2022_20260407.csv"))
+camera_dates_2023 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2023_20260407.csv"))
+camera_dates_2024 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2024_20260407.csv"))
+camera_dates_2025 <- read_parquet(here("data", "processed", "Parking_Violations_Issued_-_Fiscal_Year_2025_20260407.csv"))
+
+
+camera_dates_2014 <- camera_dates_2014 %>% rename(Street.Name = Street)
+camera_dates_2014 <- camera_dates_2014 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2015 <- camera_dates_2015 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2016 <- camera_dates_2016 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2017 <- camera_dates_2017 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2018 <- camera_dates_2018 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2019 <- camera_dates_2019 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2020 <- camera_dates_2020 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2021 <- camera_dates_2021 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2022 <- camera_dates_2022 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2023 <- camera_dates_2023 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2024 <- camera_dates_2024 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+camera_dates_2025 <- camera_dates_2025 %>% mutate(cross_street = paste(Street.Name, Intersecting.Street))
+
+# combining all the datasets
+camera_dates_all <- bind_rows(camera_dates_2014, camera_dates_2015, camera_dates_2016, camera_dates_2017, camera_dates_2018, camera_dates_2019, camera_dates_2020, camera_dates_2021, camera_dates_2022, camera_dates_2023, camera_dates_2024, camera_dates_2025)
+```
+
+```{r}
+#| label: finding-camera-location
+sort_letters <- function(x) {
+  sapply(lapply(strsplit(x, ""), sort), paste, collapse = "")
+}
+
+df_fast1 <- camera_dates_all %>%
+  mutate(
+    clean = str_remove_all(tolower(paste0(Street.Name, Intersecting.Street)), "[^a-z0-9]"),
+    letter_id = sort_letters(clean)
+  )
+# so this is sorting them by "letter id" (all its letters put into alphanetical order) to see which ones match up right away
+
+df_deduplicated1 <- df_fast1 %>%
+  mutate(
+    clean_date = ymd_hms(min_issue_date)
+  ) %>%
+  group_by(letter_id) %>%
+  arrange(clean_date, .by_group = TRUE) %>%
+  slice(1) %>%
+  ungroup()
+# finding first instance of each camera
+
+street_fixes <- c("CENTRAL P W" = "Central Park West", "GRND CNTRL PWY" = "Grand Central Parkway", "GRAND CE" = "Grand Central", "GR CENTRAL" = "Grand Central", "HRCE HRDNG XPY" = "Horace Harding Expressway","GR AND CONCOURSE" = "Grand Concourse", "GRNDCONCRSE." = "Grand Concourse", "GRNDCONCRSE" = "Grand Concourse", "GRAN D CONCOURSE" = "Grand Concourse", "GRND CONCRSE"  = "Grand Concourse","GRNDCO NCRSE"  = "Grand Concourse","GRN DCONCRSE" = "Grand Concourse", "BRNX RVR"= "Bronx River", "HRLM RVR" = "Harlem River", "CRSS" = "Cross", "CRO SS" = "Cross", "CROS S" = "Cross", "GOULDN" = "Goulden", "NORTHRN" = "Northern", "NORT HERN" = "Northern", "NORTHER N" = "Northern", "F RANCS LEWIS" = "Francis Lewis", "FRANCS LEW IS" = "Francis Lewis", "FRNCS LWS" = "Francis Lewis", "FR NCS LWS" = "Francis Lewis", "FRANCIS LWS" = "Francis Lewis", "FRANCS L"= "Francis Lewis", "BELMNT" = "Belmont", "BELM NT" = "Belmont", "B ELMNT"= "Belmont", "LEXINGTN" = "Lexington", "LEXI NGTON" = "Lexington", "LEXING TON" = "Lexington", "LEXNG TN" = "Lexington", "D YCKMAN" = "Dyckman", "DYC KMAN"= "Dyckman", "BDFD" = "Bedford", "BEDFRD"= "Bedford", "BDFORD"= "Bedford", "BED FORD"= "Bedford", "BE DFORD"= "Bedford", "SPRINGFIE LD" = "Springfield", "S PRINGFIELD" = "Springfield", "SPRNGFLD" = "Springfield", "SPRIN GFIELD" = "Springfield", "SPRING FIELD" = "Springfield", "SPRINGFIEL"= "Springfield", "MANH ATTAN" = "Manhattan", "GUY BREWER" = "Guy R Brewer", "PLEASNT" = "Pleasant", "PL EASANT" = "Pleasant", "MALCLM" = "Malcolm", "MLCOLM" = "Malcolm", "AMST ERDAM" = "Amsterdam", "AMSTRDM" = "Amsterdam", "AMSTERDM" = "Amsterdam", "AMSTRDAM" = "Amsterdam", "AMSTE RDAM" = "Amsterdam", "WOODHAVN" = "Woodhaven", "WO ODHVN" = "Woodhaven", "WOOD HVN" = "Woodhaven", "W OODHAVEN" = "Woodhaven", "WOODHVN" = "Woodhaven", "WOODHV N" = "Woodhaven", "WOODH AVEN"= "Woodhaven", "WOOD HAVEN"= "Woodhaven", "FARMRS" = "Farmers", "FA RMERS"= "Farmers", "YELLOWSTNE" = "Yellowstone", "WASHNGTN" = "Washington", "WASHINGTO N" = "Washington", "WSHNGTN"= "Washington", "WASH INGTON"= "Washington", "WASHI NGTON"= "Washington", "WA SHINGTON"= "Washington", "WAS HINGTON"= "Washington", "WAS HINTON"= "Washington", "FT WASHINGTON" = "Fort Washington", "FT." = "FORT", "RIVERSID E" = "Riverside", "HEMPSTD" = "Hempstead", "HEMP STD" = "Hempstead", "BCH" = "Beach", "B EACH"= "Beach", "PE NROD" = "Penrod", "LA S ALLE" = "Lasalle", "MORNINGSDE" = "Morningside", "SEAV IEW" = "Seaview", "SEAVW"  = "Seaview", "S EAVW" = "Seaview", "S EAVIEW"= "Seaview",  "ROOSEVLT" = "Roosevelt", "WARR N" = "Warren", "WARRN" = "Warren", "FREDERICK DOUGLAS S" = "Frederick Douglass", "FREDRCK DOUGLS" = "Frederick Douglass", "FRDCK DLGASS" = "Frederick Douglass", "FRED ERICK DOUGLAS" = "Frederick Douglass", "FRDCK DG LASS" = "Frederick Douglass", "FREDRCK DGLS" = "Frederick Douglass", "FRE DERICK D"  = "Frederick Douglass", "FREDERICK D" = "Frederick Douglass", "FLAT LANDS" = "Flatlands", "FLATLA NDS" = "Flatlands", "FLATLAN DS" = "Flatlands", "FL ATLANDS" = "Flatlands", "FLATLNDS"= "Flatlands", "FLTLNDS"= "Flatlands", "FLTL NDS" = "Flatlands","FLTLN DS"= "Flatlands", "S. CONDUIT" = "South Conduit", "S CO NDUT"= "South Conduit", "S CONDUT"= "South Conduit", "ROCKA WAY" = "Rockaway", "ROCKAWY" = "Rockaway", "ROCKWY" = "Rockaway", "ROCKAWA" = "Rockaway", "ROCK AWAY" = "Rockaway", "RO CKAWAY" = "Rockaway", "ROCKAWA Y" = "Rockaway", "ROC KAWAY" = "Rockaway", "EDWRD L GRNT" = "Edward L Grant", "WALTN" = "Walton", "PROSP ECT" = "Prospect", "PROSPEC T" = "Prospect", "PRO SPECT" = "Prospect", "PROS PECT" = "Prospect", "PROSPE CT"= "Prospect", "PR OSPECT"= "Prospect", "PRSPCT"= "Prospect", "TIBB ET" = "Tibbet", "BRIELL" = "Brielle", "BRIELL E"= "Brielle", "S VC" = "Service", "WHITESTNE" = "Whitestone", "MA LBA" = "Malba", "BROOK HAVEN" = "Brookhaven", "PAERD EGAT" = "Paerdegat", "FT HAMILTN" = "Fort Hamilton", "FT. HAMILTN" = "Fort Hamilton", "NOR THRN" = "Northern", "HA MILTON" = "Hamilton", "HAMILT ON"= "Hamilton", "METROPOLTN" = "Metropolitan", "MTRPOLTN" = "Metropolitan", "MTROPLTN" = "Metropolitan", "METROPO LITAN" = "Metropolitan",  "METROPLTN"= "Metropolitan", "VA N HORN" = "Van Horn", "NURG E" = "Nurge", "RE NTAR" = "Rentar", "MADISN" = "Madison", "MADI SON"= "Madison", "ADM CLAYTN PWL JR" = "Adam Clayton Powell Jr", "ADAM CLAYTN PWL J R" = "Adam Clayton Powell Jr", "ADAM CLAYTN PWL JR" = "Adam Clayton Powell Jr", "ADAM C POWELL JR" = "Adam Clayton Powell Jr", "WADSORTH" = "Wadsworth", "POWE LL" = "Powell", "BWAY" = "Broadway", "BROA DWAY" = "Broadway", "BROADWA Y" = "Broadway", "BROAD WAY" = "Broadway", "BROADW AY" = "Broadway",  "BRDW AY" = "Broadway", "BRDWAY" = "Broadway", "LIN DEN" = "Linden", "LINDE N" = "Linden", "L INDEN"= "Linden", "LI NDEN"= "Linden", "N ICHOLAS" = "Nicholas", "NICHLS" = "Nicholas", "NICH LS" = "Nicholas", "NI CHOLAS"= "Nicholas",  "NIC HOLAS"= "Nicholas", "NICHLAS"= "Nicholas", "NICH LAS"= "Nicholas", "MELR OSE" = "Melrose", "BRNXWOOD" = "Bronxwood", "BRON XWOOD" = "Bronxwood", "BRNXWD" = "Bronxwood", "BRXWD"= "Bronxwood",  "BRXNWD" = "Bronxwood", "B RONXWOOD"= "Bronxwood", "LAURE LTN" = "Laurelton", "MATI LDA" = "Matilda", "R IVERSDE" = "Riverside", "TREMNT" = "Tremont", "TREMO NT" = "Tremont", "TREM ONT"= "Tremont", "T REMONT"= "Tremont", "CL EARVW" = "Clearview", "CLERVW" = "Clearview", "ALEXNDR" = "Alexander", "ALEX ANDER" = "Alexander", "BRCKNR" = "Bruckner", "B RUCKNR"= "Bruckner",  "BRUCKNR"= "Bruckner",  "BR UCKNER"= "Bruckner", "BRUCKNE"= "Bruckner", "D ONGAN" = "Dongan", "HILLSI DE" = "Hillside", "HIL LSIDE" = "Hillside", "ME RRICK" = "Merrick", "WSTCHESTR" = "Westchester", "WSTCH ESTR" = "Westchester", "WESTSCHSTR"  = "Westchester", "WES TCHSTR" = "Westchester", "WESTCHSTR"= "Westchester", "P ARSNS" = "Parsons", "PARSO NS" = "Parsons", "PAR SONS"= "Parsons", "PA RSONS"= "Parsons", "PARS ONS"= "Parsons", "DA HILL" = "Dahill", "UN DERHILL" = "Underhill", "UNDRHILL" = "Underhill", "UNDE RHILL" = "Underhill", "UND ERHILL"= "Underhill", "UN DEHILL"= "Underhill", "H OMELAWN" = "Homelawn", "BE NSON" = "Benson", "MEADO" = "Meadow", "LITHON IA" = "Lithonia", "BRON X" = "Bronx", "EDGEW OOD" = "Edgewood", "EDGEWD"= "Edgewood", "EDGE WD"= "Edgewood", "MORR ISON" = "Morrison", "PINE GROVE" = "Pinegrove", "COUR TLANDT" = "Courtlandt", "SOUTHRN" = "Southern", "BRIDG ETON" = "Bridgeton", "UNIO N" = "Union", "FRSH MDW" = "Fresh Meadow", "BTH MEMORIAL" = "Booth Memorial", "STRO NG" = "Strong",  "STRON G" = "Strong", "O CEAN" = "Ocean", "OC EAN"= "Ocean", "OCEA N"= "Ocean", "OCE AN"= "Ocean", "FIND LAY" = "Findlay", "SHER IDAN" = "Sheridan", "COLUMBS" = "Columbus", "COLUM BUS" = "Columbus", "REVE RE" = "Revere", "REVER E" = "Revere", "FO RDHAM" = "Fordham", "FORDHM" = "Fordham", "FOR DHM" = "Fordham", "F ORDHAM"= "Fordham", "FORD HAM"= "Fordham", "PER OT" = "Perot", "MERMA ID" = "Mermaid", "M ERMAID"= "Mermaid", "HORACE HRD NG" = "Horace Harding", "HO RACE HRDNG" = "Horace Harding", "HRCE HRDNG" = "Horace Harding", "HORACE HRDING" = "Horace Harding", "HRC E HRDNG"= "Horace Harding", "HO RACE HRDING" = "Horace Harding", "HORA CE HRDG" = "Horace Harding", "HORCE HRDG" = "Horace Harding", "STRATFO RD" = "Stratford", "STRAT FORD" = "Stratford", "NEPTNE" = "Neptune", "NEPTUN E" = "Neptune", "BRGHT N" = "Brighton", "BRGHTN" = "Brighton", "BRIGHT N" = "Brighton", "WILLETSPNT" = "Willets Point", "WILLETS PNT" = "Willets Point", "CORTE LYOU" = "Cortelyou", "KINGS LAND" = "Kingsland", "KING SLAND" = "Kingsland", "BARN ES" = "Barnes", "B ARNES"= "Barnes", "BRUN ER" = "Bruner",  "BUSS ING" = "Bussing", "BU SSING"= "Bussing", "LACO NIA" = "Laconia", "LAC ONIA"= "Laconia", "MARB LE" = "Marble", "EXT ERIOR" = "Exterior", "PAUL DING" = "Paulding", "PAULD NG"= "Paulding", "PAULD ING"= "Paulding", "SCHI EFFELIN" = "Schieffelin", "SCHI EFFELN"= "Schieffelin", "KATO NAH" = "Katonah", "WHITE PLNS" = "White Plains", "WHITE PLAI" = "White Plains", "WHIT E PLAINS" = "White Plains",
+"EDEN WALD" = "Edenwald", "MURD OCK" = "Murdock", "MONT ICELLO" = "Monticello", "SKILL MN" = "Skillman", "SKILLMN" = "Skillman", "SKILLMA N" = "Skillman", "C ANEY" = "Caney", "BENSO N" = "Benson", "B AYRIDGE" = "Bayridge", "BAY RIDGE"= "Bayridge", "RYD R" = "Ryder", "RYDR" = "Ryder", "RY DER"= "Ryder", "NOSTRA ND" = "Nostrand", "NOST RAND", "NSTRN D"= "Nostrand", "NOSTRN D"= "Nostrand", "NSTRND"= "Nostrand", "NO STRAND"= "Nostrand", "BRKLYN" = "Brooklyn", "BR OOKLYN" = "Brooklyn", "BKLYN"= "Brooklyn", "BROOKLY N"= "Brooklyn", "BRO OKLYN"= "Brooklyn", "WO ODSIDE" = "Woodside", "LENWD" = "Glenwood", "GLEN WOOD" = "Glenwood", "GLENW OOD" = "Glenwood",  "GLENWOO D" = "Glenwood", "GLENWD"= "Glenwood",  "GLENWO OD"= "Glenwood", "CLARE NDON" = "Clarendon", "CLAREND ON"= "Clarendon", "CLARNDN"= "Clarendon", "CL ARENDON"= "Clarendon", "CLARN DN"= "Clarendon", "COL ONIAL" = "Colonial", "C OLONIAL"= "Colonial", "JU NIPER" = "Juniper", "ALDERTN" = "Alderton", "FILLM ORE" = "Fillmore", "FILL MORE"= "Fillmore", "CATAMAR AN" = "Catamaran", "HAR WAY" = "Harway", "K INGSBURY" = "Kingsbury", "HAMI LTON" = "Hamilton", "HAMILTN" = "Hamilton", "FLAT BUSH" = "Flatbush", "KINGS TON" = "Kingston", "KI NGSTON"= "Kingston", "KIN GSTON" = "Kingston", "KIN GSTON"= "Kingston", "HENDRIC KSON" = "Hendrickson", "UTR ECHT" = "Utrecht", "CLAREMNT" = "Claremont", "CLAREM ONT" = "Claremont", "CLERMNT" = "Clermont", "CLRMN T"= "Clermont", "WEBSTR" = "Webster", "WEB STR" = "Webster", "WE BSTR"= "Webster", "WE BSTER"= "Webster", "WEB STER"= "Webster", "FRANKLI N" = "Franklin", "FRAN KLIN"= "Franklin", "FRAN KLYN"= "Franklin", "CONEY ILND" = "Coney Island", "CONE Y ILND"= "Coney Island", "RIVINGT N" = "Rivington","RIVINGTN" = "Rivington", "SEN ATOR" = "Senator", "FLUSHIN G" = "Flushing", "THOMSN" = "Thomson", "THOMS N" = "Thomson", "RAL PH" = "Ralph", "RA LPH" = "Ralph", "RALP H"= "Ralph", "LIVERP OOL" = "Liverpool", "NEV INS" = "Nevins", "NE VINS"= "Nevins", "N EVINS"= "Nevins", "P RINCE" = "Prince", "RID GE" = "Ridge", "RIDG E"= "Ridge", "UTI CA" = "Utica", "UTIC A"= "Utica", "CHURC H" = "Church", "CHUR CH" = "Church", "CHU RCH"= "Church", "MAYFAI R" = "Mayfair", "VETERA NS" = "Veterans", "STRIC KLAND" = "Strickland", "HIGHLA WN" = "Highlawn", "RID GE" = "Ridge", "BEVERL EY" = "Beverley", "BEVE RLY" = "Beverley", "BEVER LEY"= "Beverley", "BEV ERLEY"= "Beverley", "BEVE RLEY"= "Beverley", "CR OSSBAY" = "Crossbay", "LEGIO N" = "Legion", "WILMO HR" = "Willmohr", "CA FFREY" = "Caffrey", "BO LTON" = "Bolton", "BOLTO N" = "Bolton", "BOLT ON"= "Bolton", "V ANDALIA" = "Vandalia", "GAT ES" = "Gates", "GA TES"= "Gates",  "GATE S"= "Gates", "VANDERBLT" = "Vanderbilt", "VANDERBIL T" = "Vanderbilt", "VA NDERBILT"= "Vanderbilt", "DEK ALB" = "Dekalb", "DE KALB" = "Dekalb", "DEKAL B"= "Dekalb", "DEKA LB"= "Dekalb", "SCHENE CTADY" = "Schenectady", "SC HENECTADY"= "Schenectady", "SCHENCTDY"= "Schenectady", "SCHE NECTADY"= "Schenectady", "SCHENECTA DY"= "Schenectady", "SCHCT DY"= "Schenectady", "SCHNCTDY"= "Schenectady", "SCHN CTDY"= "Schenectady", "LA CMBE" = "Lacombe", "LA COMBE" = "Lacombe", "LACO MBE" = "Lacombe", "LACMBE" = "Lacombe", "SE WARD" = "Seward", "LA FAYTTE" = "Lafayette", "LAF AYTTE" = "Lafayette", "LAFA YETTE" = "Lafayette", "LAF AYETTE" = "Lafayette", "LAFAYTTE"= "Lafayette", "LAFAY ETTE"= "Lafayette", "L AFAYETTE"= "Lafayette", "CASTLETN" = "Castleton", "CASTL ETON"= "Castleton", "OAKL AND" = "Oakland","CLARKS ON" = "Clarkson", "VANBRUN T" = "Vanbrunt", "VAN BRUNT" = "Vanbrunt", "ANNADAL E" = "Annadale", "ADELA IDE" = "Adelaide", "SOUN DVW" = "Soundview", "SOUNDVW" = "Soundview", "SOUND VIEW"= "Soundview", "CASTLHLL" = "Castlehill", "CAST LHLL" = "Castlehill", "CASTLH" = "Castlehill", "MA CDOUGAL" = "MacDougal", "GIFFOR DS" = "Giffords", "SNEDIK ER" = "Snediker", "LOUSIA NA" = "Louisiana", "LOUSIANA" = "Louisiana", "LOU ISIANA"= "Louisiana", "TRATMA N" = "Tratman", "GR EENE" = "Greene", "RA ILROAD" = "Railroad", "R AILROAD" = "Railroad", "RAILRD" = "Railroad", "HIG HLAND" = "Highland", "HIGHLND"= "Highland", "HOGHL ND"= "Highland", "CO RTLANDT" = "Cortlandt", "W ALLACE" = "Wallace", "AMBO Y" = "Amboy", "A MBOY"= "Amboy", "AMB OY"= "Amboy", "MANHAT TAN" = "Manhattan", "TAYL OR" = "Taylor", "TAY LOR"  = "Taylor",  "T AYLOR"= "Taylor", "TAYLO R"= "Taylor", "SACK T" = "Sackt", "MORR IS" = "Morris", "M ORRIS"= "Morris", "SARATGA" = "Saratoga", "SANF ORD" = "Sanford", "SANFO RD"= "Sanford", "BELA IR" = "Belair", "MARY LAND" = "Maryland", "B RINSMADE" = "Brinsmade", "OV ERBROOK" = "Overbrook", "MARATHO" = "Marathon", "BRY ANT" = "Bryant", "B RYANT"= "Bryant", "NEWLTS" = "New Lots", "NEWLOT S"= "New Lots", "PEN NSYLVANIA" = "Pennsylvania", "PNSLVANIA" = "Pennsylvania", "PNNSLVNIA" = "Pennsylvania", "PENNSYL VANIA"= "Pennsylvania", "PNNSYLVNIA"= "Pennsylvania", "PENNSYLVANNI"= "Pennsylvania", "EUCLI D" = "Euclid", "EUC LID", "FUL TN" = "Fulton", "FUL TN"= "Fulton", "FULT ON"= "Fulton", "FULTN"= "Fulton", "CL ARK" = "Clark", "CL ASSON" = "Classon", "CLAS SON" = "Classon", "CLASSN"= "Classon", "CLASS ON"= "Classon", "CO RNAGA" = "Cornaga", "FAN CHON" = "Fanchon", "ROCHSTR" = "Rochester", "ROC HESTER"= "Rochester", "ATLAN TIC" = "Atlantic", "ATLANTC" = "Atlantic", "ATLA NTC" = "Atlantic", "ATL ANTIC" = "Atlantic", "ATLNTC" = "Atlantic", "AT LNTC" = "Atlantic", "ATLANT IC"= "Atlantic", "A TLANTIC"= "Atlantic","CALHOU N" = "Calhoun", "CAL HOOUN"= "Calhoun", "CAL HOUN"= "Calhoun", "D ITMAS" = "Ditmas", "DITM AS"= "Ditmas", "HILLMA N" = "Hillman", "EDISO N" = "Edison", "E DISON"= "Edison", "VINCE NT" = "Vincent", "ACADEM Y" = "Academy", "PATCH EN" = "Patchen", "PAR K S" = "Park South", "ST UYVESNT" = "Stuyvesant", "S TUYVESANT"= "Stuyvesant", "STUY VESANT"= "Stuyvesant",  "STYVESN T"= "Stuyvesant", "ST UYVESANT" = "Stuyvesant", "STUYVESA NT"= "Stuyvesant", "M ARCY" = "Marcy", "MA RCY"= "Marcy", "MARC Y" = "Marcy", "ALL ERTON" = "Allerton", "VAN SI CLEN" = "Van Siclen", "VAN SCKLN"= "Van Siclen", "PELHM" = "Pelham", "WARIN G" = "Waring", "WA RING"= "Waring", "PI TKIN" = "Pitkin", "KEARN EY" = "Kearney", "KE ARNEY"= "Kearney", "W ILLIAMS" = "Williams", "WILL IAMS"= "Williams", "PRENT ISS" = "Prentiss", "T WNPNS" = "Twin Pines", "TWNPNS" = "Twin Pines", "TH ROOP" = "Throop", "THROO P"= "Throop", "THRO OP"= "Throop", "GEORG IA" = "Georgia", "MILLE R" = "Miller", "TIF FANY" = "Tiffany", "STEINWA Y" = "Steinway", "HUNTS PNT" = "Hunts Point", "HUN TSPNT" = "Hunts Point", "W ORTMAN" = "Wortman", "WO RTMAN"= "Wortman", "STI CKBALL" = "Stickball", "BATHGTE" = "Bathgate", "BA THGATE" = "Bathgate", "BAR RETT" ="Barrett", "HYLA N" = "Hylan", "RESRVOIR"="Reservoir", "BAINBRI DGE" = "Bainbridge", "BAINBRDG"= "Bainbridge", "BN BRIDGE"= "Bainbridge", "LEFFTRS" = "Lefferts", "LEFFER TS" = "Lefferts", "LE FFERTS"= "Lefferts", "WATERBRY" = "Waterbury", "W ATERBURY"= "Waterbury", "WEST CHSTR" = "Westchester", "WESTCHES"= "Westchester", "COMMRCE" = "Commerce", "KNICKRBCKR" = "Knickerbocker", "KNICKR BCKR" = "Knickerbocker", "CENTRL" = "Central", "CENTR AL"= "Central", "CENTR AL"= "Central", "BUTTRIC K" = "Buttrick", "HANCO CK" ="Hancock", "BAYCHSTR" = "Baychester", "BAYC HESTER" = "Baychester", "NEED HM" = "Needham", "NEEDHM" = "Needham", "ALBEMAR IE" =  "Albemarle", "AL BEMARLE" =  "Albemarle", "COOPE R" = "Cooper", "BIO NIA" = "Bionia", "BION IA"= "Bionia", "BL ACKROCK" = "Blackrock", "FARRAG T" = "Farragut", 
+"FA RRAGUT"= "Farragut", "FARRA GUT"= "Farragut", "FARR AGUT"= "Farragut", "CRAN FORD" = "Cranford", "HAVNWD" = "Havenwood",  "HAVN WD" = "Havenwood", "BO RMAN" = "Borman", "SMIT H"="Smith", "CUMB RLND" = "Cumberland", "CUMBRLND"= "Cumberland", "CORNELI A" = "Cornelia", "HYA TT" = "Hyatt", "BAL TIC" = "Baltic", "MARKHM" = "Markham", "CRS BX" = "Cross Bronx", "RODM AN" = "Rodman", "J IMMY" = "Jimmy", "HAI GHT" = "Haight", "MCBA INE" = "McBaine", "CE BRA" = "Cebra",  "TEN BROECK" = "Tenbroeck", "WICK HAM" = "Wickham", "BE AR" = "Bear", "BEA R", "NETHER LAND" = "Netherland", "NETHE RLAND"= "Netherland", "BOU NDARY" = "Boundary", "BERG LUND" = "Berglund", "A LAMEDA" = "Alameda", "RAMB LEWOOD" = "Ramblewood", "RAI LRD" = "Railroad", "DURNT" = "Durant", "ARLE NE" = "Arlene", "JER OME" = "Jerome", "JER ME"= "Jerome", "JE ROME"= "Jerome", "JERO ME"= "Jerome", "TH ERESA" = "Theresa", "BER RIMAN" = "Berriman", "HARVES T" = "Harvest", "BAR RETTO" = "Barretto", "BA RRETTO"= "Barretto", "BARET TO"= "Barretto", "FAIR LAWN" = "Fair Lawn", "AG UILAR" = "Aguilar", "N OBLE" = "Noble", "FOST ER" = "Foster", "BAYSWA TER" = "Bayswater", "CRANBE RRY" = "cranberry", "STER LING" = "Sterling", "STE RLING"= "Sterling", "ST ERLING"= "Sterling", "PL AZA" = "Plaza", "HANN IBAL" = "Hannibal", "ISLND" = "Island", "I SLND" = "Island", "SOMR S" = "Somers", "SOME RS"= "Somers", "CHAU NCY" = "Chauncey", "CHAUN CEY"= "Chauncey", "GRAVSND" = "Gravesend", "GRAVE SEND"= "Gravesend", "GRAV ESEND"= "Gravesend", "PARKSID E" = "Parkside", "SCHRDRS"  = "Schroeders", "LOCST" = "Locust", "CHRIS TOPHER"= "Christopher", "CH ARLES" = "Charles", "CL ERMONT" = "Clermont", "CAT TARAUGUS"  = "Cattaraugus", "CRO TONA" = "Crotona", "C ROTONA"= "Crotona", "SEA MAN"  = "Seaman", "SNYDR"  = "Snyder", "RICHMND" = "Richmond", "RICH MOND"= "Richmond", "RI CHMND"= "Richmond", "LARED O"  = "Laredo", "LEVRETT"  = "Leverett", "SH EFFIELD"  = "Sheffield", "SH EPHERD"  = "Shepherd", "NE ILL" = "Neill", "HAGA MAN"  = "Hagaman", "RUTL AND" = "Rutland", "RUTL ND"= "Rutland", "HI NSDALE"  = "Hinsdale", "SCHURZ"  = "Schurz", "MAYF LOWER"  = "Mayflower", "M AYFLOWER"= "Mayflower", "C ROES" = "Croes", "S HARPE"  = "Sharpe", "NE W"  = "New", "FAI LE" = "Faile", "SEN ECA"  = "Seneca", "SE NECA"= "Seneca", "AMERIC AS"  = "Americas", "EASTER N"  = "Eastern", "EASTRN" = "Eastern", "SAG ONA"  = "Sagona", "WALLAC E" = "Wallace", "RODNE Y" = "Rodney", "MAC KAY" = "Mackay", "CARL TON" = "Carlton","HAN NAH" = "Hannah", "FA RADAY"= "Faraday", "ELMWO OD"  = "Elmwood", "ELMWD"= "Elmwood", "ELMW OOD"= "Elmwood", "PA RADE" = "Parade", "SHEL DN"  = "Sheldon", "SHELDN"= "Sheldon", "PA TTERSON"  = "Patterson", "MAS ON"  = "Mason", "FERN DALE"  = "Ferndale", "FE RNDALE"= "Ferndale", "MYR TLE"  = "Myrtle", "MRTL E" = "Myrtle", "W ATSON"  = "Watson", "WATS"= "Watson", "GRAN D"  = "Grand", "GRA ND"= "Grand", "PA RK" = "Park", "P `ARK" = "Park", "ARNL D"  = "Arnold", "FORS T"  = "Forest", "FOR EST"= "Forest", "F OREST"= "Forest", "SHAK ESPEARE"  = "Shakespeare", "ZER EGA"  = "Zerega", "VAN NAM E" = "Van Name", "MAL TA" = "Malta", "WAVERL Y"  = "Waverly", "WA VERLY"= "Waverly", "WAVER LY"= "Waverly", "ST ANLEY" = "Stanley", "STANLY" ="Stanley", "STANL Y" = "Stanley", "SEMINOL E"  = "Seminole", "S EIGEL"  = "Seigel", "M IRIAM" = "Miriam", "GARRE TSON"  = "Garretson", "RENWIC K" = "Renwick", "BRE WER"  = "Brewer", "JEFF ERSN" = "jefferson", "HEFF RSN"= "jefferson", "JE FFERSON"= "jefferson", "JEFFRSN"= "jefferson", "JEFFER SON"= "jefferson", "J EFFERSON"= "jefferson", "BURB ANK"  = "Burbank", "BL ISS" = "Bliss", "AL BERTA"  = "Alberta", "HAR BOUR"  = "Harbour", "FAIR VI EW"  = "Fairview", "FA IRVIEW"= "Fairview", "MOT TE"  = "Motte", "BAIS LEY" = "Baisley", "VAN BUREN"  = "Van Buren", "SH ORE"  = "Shore", "SHOR E"= "Shore", "FE ATHERBED"  = "Featherbed", "BR ANDT"  = "Brandt", "FREEBO RN" = "Freeborn", "ARBUTU S"  = "Arbutus", "TOMPKIN S"  = "Tompkins", "TOMP KINS"= "Tompkins", "TOMPK INS"= "Tompkins", "CLINTN"  = "Clinton", "CLIN TN"  = "Clinton", "CLIN TON"= "Clinton", "CL INTON"= "Clinton", "BAYCHESTR"  = "Baychester", "DON IZTTI"  = "Donizetti", "ALD RICH"  = "Aldrich", "PO NTIAC"  = "Pontiac", "CA NTERBURY"  = "Canterbury", "SCHENC K"  = "Schenck", "S CHENCK"= "Schenck", "SCH ENCK"= "Schenck", "OLM STD"  = "Olmstead", "CHATTERTN"  = "Chatterton", "KIS WICK"  = "Kiswick", "WA TERBURY"  = "Waterbury", "BLA CKROCK"  = "Blackrock", "VERNN"  = "Vernon", "VERNO N"= "Vernon", "W ILLMOHR"="Willmohr", "WILLIAMSBRDG"  = "Williamsbridge", "WILLMSBRDG"= "Williamsbridge", "WILLIAMSBRDG"= "Williamsbridge", "RHNLNDR"  = "Rhinelander", "FENI MORE"  = "Fenimore", "FENI MRE"= "Fenimore", "FEN IMORE"= "Fenimore", "FE NIMORE"= "Fenimore", "FENIMRE"= "Fenimore", "R IDGE"  = "Ridge", "PL NS"  = "Plains", "PLNS"= "Plains", "CLEV ELAND"  = "Cleveland", "CEDARV IEW"  = "Cedarview", "EASTCH ESTER"  = "Eastchester", "EAST CHESTER"= "Eastchester", "EASTCHSTR"= "Eastchester", "BLAK E"  = "Blake", "BLA KE", "MONTR EAL"  = "Montreal", "MONT REAL"= "Montreal", "H ART" = "Hart", "GRA CE"  = "Grace", "FO RBELL"  = "Forbell", "ME NAHAN"  = "Menahan", "M ENAHAN"= "Menahan", "MA CE" = "Mace", "VAR ET"  = "Varet", "JOH NSON"  = "Johnson", "JOHNSO N"= "Johnson", "JO HNSON"= "Johnson", "WILLOU GHBY" = "Willoughby", "WILL OUGHBY"= "Willoughby", "MAU JR" = "Maujer", "MAUJE R"= "Maujer", "BLOND L"  = "Blondell", "RUDYAR D" = "Rudyard", "WOODRW" =  "Woodrow", "WO ODROW"=  "Woodrow", "ELLSWR TH" =  "Ellsworth", "ELLSWRTH"=  "Ellsworth", "ELL SWORTH"=  "Ellsworth", "BALLRD" =  "Ballard", "LY DIG" =  "Lydig", "SHE EPSHEAD" =  "Sheepshead", "VAN NST"  = "Van Nest", "DELA FIELD"  = "Delafield", "BEDEL L"  = "Bedell", "BE DELL"= "Bedell", "BULL ARD"  = "Bullard", "WES TWOOD"  = "Westwood", "A DEE" =  "Adee", "THMAS S BOYLND" =  "Thomas Boyland", "HA LL"= "Hall", "DAL Y" =  "Daly", "BOSTN" =  "Boston", "BOST N"=  "Boston", "BO STON"=  "Boston", "HAMD EN" =  "Hamden", "O LD" =  "Old", "TIEM ANN" =  "Tiemann", "TIEMAN N"=  "Tiemann", "T IEMANN"=  "Tiemann", "AL BANY" =  "Albany", "TU RNBULL"  = "Turnbull", "DU RYEA"  = "Duryea", "DE AN" =   "Dean", "EDIT H"  = "Edith", "GO ETHALS"  = "Goethals", "W ESTBROOK" =  "Westbrook", "M AGENTA" =  "Magenta", "PLHM PKWY" = "Pelham Parkway", "LENO X"=  "Lenox", "WINEGA R"  = "Winegar", "WHIT MAN"  = "Whitman", "AINS WORTH"  = "Ainsworth", "PARK INSON"  = "Parkinson", "MATTH EWS"  = "Matthews", "BU FFALO" =  "Buffalo", "BERGE N" = "Bergen", "BERG EN"= "Bergen", "ALPIN E" =  "Alpine", "T HEBES" =  "Thebes", "ENTR" =  "Enter", "BOLL ER" =  "Boller", "JANS EN"  = "Jansen", "BR ADY" = "brady", "WAL THAM" =   "Waltham", "WINT HROP" =  "Winthrop", "WIN THROP" =  "Winthrop", "HICK S" =  "Hicks", "MCDONLD" =  "McDonald", "MCD ONLD"=  "McDonald", "LIN WOOD" =  "Linwood", "LINW OOD" =  "Linwood", "L ONGFELLOW"=  "Longfellow", "LO NGFELLOW"=  "Longfellow",  "GL EASON" =  "Gleason", "MCKI NLEY" = "McKinley", "MCKIN LEY" = "McKinley", "P INTO" =  "Pinto", "PR ESCOTT" =  "Prescott", "SPENC R" =   "Spencer", "PARK WAY" =   "Parkway", "LINCO LN"=  "Lincoln", "LI NCOLN"=   "Lincoln", "L INCOLN"=   "Lincoln", "LINC OLN"=   "Lincoln", "W ARNING" = "Warning", "GR EENWOOD"=   "Greenwood", "GREE NWOOD"=   "Greenwood", "DEL AWARE" =  "Delaware", "RETFO RD"=  "Retford",
+"C URRY"=   "Curry", "THORN YCROFT"=   "Thornycroft", "NE AL"=   "Neal", "NEA L", "HOWA RD"=   "Howard", "HOWRD"=   "Howard", "HENDR X"="Hendrix", "HENDRX"= "Hendrix", "H ENDRIX"= "Hendrix", "HNDR X"="Hendrix", "OA KDALE"=   "Oakdale", "ALT OONA"=   "Altoona", "P OLIT"=   "Polit", "POMPE Y"=   "Pompey", "HA WTHORNE"=   "Hawthorne", "FI GUREA"=   "Figurea", "SA XON"=   "Saxon", "SUY DAM" =  "Suydam", "CASSI DY"=   "Cassidy", "NAGL E"=   "Nagle", "TR AVIS"=   "Travis", "DECAT UR"=   "Decatur", "DE CATUR"=   "Decatur", "DECA TUR"=   "Decatur", "S KIDMORE"=   "Skidmore", "VAN Z"=   "Van Zandt", "NIAGAR A"=   "Niagara", "H UTCHINSON"=   "Hutchinson", "SAN ILAC"=   "Sanilac", "C ASTLe"= "Castle", "MI CKLE"=   "Mickle", "VA N CLEEF"=   "Van Cleef", "CRYS TAL"=   "Crystal", "ES SEX"=   "Essex", "E SSEX"=   "Essex", "ESS EX"=   "Essex", "WILLIAM SON"=   "Williamson", "GRAH AM"=   "Graham", "SI NCLAIR"=   "Sinclair", "RIE GEMANN"=   "Riegemann", "ROGER S"=   "Rogers", "ROG ERS"= "Rogers", "RO GERS"= "Rogers", "COLGA TE"=   "Colgate", "PI NE"="Pine", "X STATE HOSP"= "Creedmoor State Hospital", "E-X STATE HOSP."= "Creedmoor State Hospital", "STATE HOSP."= "Creedmoor State Hospital", "ENT"= "entrance", "ENTRNCE"= "entrance", "N ELL IIOTT"=   "Nellie Elliott", "SCHO LES"=   "Scholes", "REMS EN"=   "Remsen", "HALSE Y"=   "Halsey", "HA LSEY"= "Halsey", "STE LL"=   "Stell", "QUIN CY"=   "Quincy", "QUI NCY"= "Quincy", "QU INCY"= "Quincy", "NE WPOERT"=   "Newport", "N EWPRT"= "Newport", "NEWPRT"= "Newport", "CLAV Er"=   "Claver", "HOLLN D"=   "Holland", "EDGEG ROVE"=   "Edgegrove", "SH ERADEN"=   "Sheraden", "SO UTH"=   "South", "TI LDEN"= "Tilden", "TIL DEN"= "Tilden", "TILD EN"= "Tilden", "TILDE N"= "Tilden", "VANDER VOORT"=   "Vandervoort", "WOO DWARD"=   "Woodward", "DE AN"=   "Dean", "HA RT"=   "Hart", "DEW EY"=   "Dewey", "GRAN DVIEW"=   "Grandview", "T WINE"=   "Twine", "HIN SDALE"=   "Hinsdale", "HIMHR OD"="Himrod", "SHIRL EY"=   "Shirley", "I RWIN"=   "Irwin", "HASPE L"=   "Haspel", "E SPLANADE"=   "Esplanade", "SUTT ER"=   "Sutter", "SU TTER" = "Sutter", "S UTTER" = "Sutter", "SUTTE R" = "Sutter", "WILL IAMS"=   "Williams", "WILLIAM S"=   "Williams", "DU MONT"= "Dumont", "DUMO NT"= "Dumont", "DUMON T"="Dumont", "DEVO N"= "Devon", "D EVON"= "Devon", "WHT NY"= "Whitney", "W HITNEY"="Whitney", "TYN DALL"=   "Tyndall", "WOODH ULL"= "Woodhull", "WOODHU LL"= "Woodhull", "W OODHULL"= "Woodhull", "RIVERD ALE"=   "Riverdale", "KING S"=   "Kings", "KIN GS"=   "Kings", "KI NGS"=   "Kings",  "MORR IS" =  "Morris", "MARI ON"=  "Marion",  "MAIN E"=   "Maine", "WATE RS"=   "Waters", "FOUN TAIN"=   "Fountain", "LU RTING"=   "Lurting", "L URTING"=   "Lurting", "SEYM OUR"=   "Seymour", "A NTHONY"=   "Anthony", "ZULE TTE"=   "Zulette",  "UNIV RSTY"= "University", "UNIVRSTY"= "University", "U NIVERSITY"= "University", "AUTU MN"=   "Autumn", "GERR ITSN"=   "Gerritson", "GERRITSN"=   "Gerritson",  "MAR INE"=   "Marine", "PR ALL"=   "Prall", "WILSO N"=   "Wilson", "WIL SON"=   "Wilson", "YO UNG"=   "Young", "AS TOR"=   "Astor", "HARKNE SS"=   "Harkness", "PUTN AM"=  "Putnam", "PULAS KI" =  "Pulaski", "NORWA Y"=   "Norway",  "T HORNHILL"=   "Thornhill",  "LORTE L"=   "Lortel", "SW AN"=   "Swan", "SUTT ON"=   "Sutton", "MOSHL U"=   "Mosholu", "BR IGGS"=   "Briggs",  "MORRIS N"=   "Morrison",  "WI LLIS" =  "Willis",  "J ARVIS"=   "Jarvis",  "FI NGERBOARD"=   "Fingerboard", "FING ERBOARD"= "Fingerboard",  "FINGE RBOARD" = "Fingerboard","FINGE RBD"= "Fingerboard", "FINGERBD"= "Fingerboard", "FINGERB D"= "Fingerboard", "ORIE NTAL"=   "Oriental", "WES TBURY"=   "Westbury", "BEDE L"=   "Bedell", "BEDE LL"=   "Bedell", "BRE NTWOOD"=   "Brentwood", "B RENTWOOD"=   "Brentwood",  "BU LWER"=   "Bulwer","ELLWO OD"="Ellwood",  "WIL LOWBROOK"=   "Willowbrook",  "ME LBOURNE"=   "Melbourne",  "BA LFOUR"=   "Balfour",  "WELLB ROOK" =  "Wellbrook",  "QUEE NS"=   "Queens", "QU EENS"=   "Queens",  "WEBBR OOK"=   "Webbrook", "MEL BA"=   "Melba", "POYE R"=   "Poyer", "BARB EY"=   "Barbey", "BU RKE"=   "Burke",  "GA BRIELLE"=  "Gabrielle",  "DRIG GS"=  "Driggs",  "VAY LER"=  "Vayler",  "PILL ING"=  "Pilling", "BOYLND"=  "Boyland",  "BLE ECKER"=  "Bleecker", "SULLI VAN"=  "Sullivan", "SUL LIVAN"=  "Sullivan", "RYMND"=  "Raymond", "RAYM OND"=  "Raymond",  "WINDE RMERE"=  "Windermere", "MANO R"=  "Manor", "MA NOR"=  "Manor", "CAULD WELL"=  "Cauldwell", "RADCL IFF"=  "Radcliff",  "RADC LIFF"="Radcliff",  "CUNN INGHAM"=  "Cunningham", "WINC HSTR"=  "Winchester", "COLE RDGE"=  "Coleridge", "COLERDGE"=  "Coleridge",  "BATCHELDE R"=  "Batchelder",  "WOO DMINE"=  "Woodmine", "FALM OUTH"=  "Falmouth", "PRIN CETON"=  "Princeton", "PRI NCETON"=  "Princeton", "LONGW OOD" = "Longwood",  "CHE SEA" = "Chelsea", "SZIC KY"=  "Szickly",  "CULO TTA"=  "Culotta",  "BACH E"=  "Bache", "ST AGG"=  "Stagg", "LOR RAINE"=  "Lorraine", "H OBART"=  "Hobart", "O’B RIEN"=  "O’Brien", "BERESF ORD"= "Beresford",  "NE GUNDO"=  "Negundo", "QUEENS DALE"= "Queensdale",  "KING DOM"=  "Kingdom",  "N BURGER"=  "North Burger",  "B LONDELL"=  "Blondell", "B URNSIDE"=  "Burnside", "BURNSI"=  "Burnside",  "DUN LOP"=  "Dunlop",  "PETE R"=  "Peter",   "HENNSSY"= "Hennessey",  "AMBE R"=  "Amber", "AMB ER"=  "Amber",  "SLEI GHT"=  "Sleight",  "HER ING"=  "Hering",  "LANG HAM" =  "Langham",  "H ASTINGS"=  "Hastings",   "POIL LON"=  "Poillon",  "UNIO N"=  "Union",  "LUTE N"=  "Luten", "VERM ONT"=  "Vermont", "VER MONT"=  "Vermont",  "ALLER TON"=  "Allerton", "BU RNETT"=  "Burnett", "BURN ETT" =  "Burnett", "LAM BRT"=  "Lambert",  "H GMAN"=  "Hegeman", "HGMAN"=  "Hegeman", "GUYO N"=  "Guyon", "BAYA RD"=  "Bayard",  "DUZE R"=  "Duzer", "SUF FOLK"=  "Suffolk", "BAY VIEW"=  "Bayview",   "BEEKMA N"=  "Beekman",  "MONR OE"=  "Monroe", "M ONROE"=  "Monroe", "BREVRT"=  "Brevert", "FO STER"=  "Foster",  "M ARKET"=  "Market", "MARKE T"=  "Market",  "NE WKIRK"=  "Newkirk", "BOYNT ON"=  "Boynton", "STILLW ELL"=  "Stillwell", "STIL LWELL"=  "Stillwell", "BAN KER"=  "Banker",  "BU SH"=  "Bush", "VI SITATION"=  "Visitation", "CORNE LIA"=  "Cornelia", "CENTR E"=  "Centre",  "DICKNSN"=  "Dickenson", "DICK SN"=  "Dickenson",  "F RIEL"=  "Friel", "JOH NS"=  "Johns", "COMMER CE"=  "Commerce",  "PACI FIC"=  "Pacific",  "C RUGER"="Cruger", "R ECTOR"=  "Rector",  "WARW ICK"=  "Warwick", "WANWCK"=  "Warwick",  "JA CKSON"=  "Jackson", "WILS ON"=  "Wilson",  "RCHMNDHILL"=  "Richmond Hill", "WCHMDH ILL"=  "Richmond Hill", "VE DDER"=  "Vedder",  "T EAKWOOD"=  "Teakwood",  "TR EADWELL"=  "Treadwell",  "TYSE N"=  "Tysen", "T YSEN"=  "Tysen",  "NER EID"=  "Nereid", "NERE ID"=  "Nereid",  "CR ESTON"=  "Creston",  "G RISWOLD"=  "Griswold",  "MIDDLTN"=  "Middleton", "GE NESEE"=  "Genesee", "M EMPHIS"=  "Memphis", "N CO NDUIT"=  "North Conduit",   "RET FORD"=  "Retford",    "SW EETGUM"=  "Sweetgum",   "PHI LIP"=  "Philip",  "MORNING STAR"=  "Morningstar", "MORN INGSTAR"=  "Morningstar", "MA XIE"=  "Maxie", "CAR LIN"=  "Carlin", "C RESTON"=  "Creston",  "CROM WELL"=  "Cromwell", "G LOVER"=  "Glover", "REGEN T"=  "Regent", "SIC KLES"=  "Sickles",  "Y ORK"=  "York",  "ELLER Y"=  "Ellery",  "NOR MAN"=  "Norman", "HUNT INGTON"=  "Huntington",   "CA STOR"=  "Castor",  "RIVINGT N"=  "Rivington", "TH OMAS"=  "Thomas",  "SCO TT"=  "Scott",  "HAR T"=  "Hart",   "CARLYL E"=  "Carlyle",  "CYP RESS"=  "Cypress", "CYPR ESS"=  "Cypress", "JULIA NA"=  "Juliana",  "TRKLEMNS"=  "Trockelmans", "TRKL EMNS"=  "Trockelmans",  "SACKM AN"=  "Sackman",  "LA NDING"=  "Landing",  "KE W GARDENS"=  "Kew Gardens",  "RA DFORD"=  "Radford", "H ENRY"=  "Henry",  "THRUW AY"=  "Thruway",   "ARDS LEY"=  "Ardsley",  "WINA NT"=  "Winant",   "DEME YER"=  "Demeyer", "SWINT ON"=  "Swinton",  "DE RUYTER"=  "Deruyter", "LE ONARD"=  "Leonard", "LEONRD"=  "Leonard", "LEO NARD"=  "Leonard", "P RESIDENT"=  "President", "PRSDENT"=  "President", "PRESI DNT"=  "President",  "PRESIDE NT"=  "President",  "MONTGO"=  "Montgomery", "MNT GOMRY"=  "Montgomery", "MON TGOMERY"=  "Montgomery", "MONTGO MERY"=  "Montgomery",  "TA RGEE"=  "Targee",  "DENK ER"=  "Denker",  "TO WNSEND"=  "Townsend",   "POP LAR"=  "Poplar", "EYLAN DT"=  "Eylandt", "ASHF ORD"=  "Ashford",  "G IVAN"=  "Givan",   "MEDIN A"=  "Medina",  "OAK T REE"=  "Oak tree", 
+"OXFO RD"=  "Oxford", "PA ULS"=  "Pauls",  "SUYD AM"=  "Suydam", "DIX ON"=  "Dixon",   "T HERIOT"=  "Theriot",  "EL VERTON"= "Elverton",  "EVERG REEN"="Evergreen",  "LE E"=  "Lee", "SIMO NSON"=  "Simonson",  "MO NSEY"="Monsey", "TR OY"=  "Troy",  "L EWIS"=  "Lewis", "ST ANWIX"=  "Stanwix", "KE NNETH"=  "Kenneth",  "T OMLINSON"=  "Tomlinson",  "VOORHIE S"=  "Voorhies", "VOORHI ES"=  "Voorhies", "JOURN EAY"=  "Journey",  "MONTA GUE"=  "Montague", "LORTE L"=  "Lortel", "WAL L"=  "Wall",  "TUCKRTN"=  "Tuckerton", "W HITE"=  "White", "WHI TE"=  "White",  "LI BERTY"=  "Liberty", "F RANICS"=  "Francis", "H OLLYWOOD"=  "Hollywood",  "F TELEY"=  "Fteley",  "BE NNETT"=  "bennett",  "BE LKNAP"=  "belknap",  "M ORRISON"=  "morrison",  "EMPIR E"=  "empire",  "BO ND"=  "bond", "B ROWVALE"=  "browvale",  "BOLLE R"=  "boller", "NEWYORK"=  "new york",  "UNIO N"=  "union", "VI CTORY"=  "victory", "THROG NECK"=  "throgs neck",  "COL LEGE"=  "college", "FOR ST" = "Forest", "RUGB Y"=  "rugby", "COVE RT"=  "covert",  "HOOK CRK"=  "hook creek", "RI DGEDALE"=  "ridgedale", "EDD Y"=  "eddy", "ED DY"=  "eddy", "CLY MER"=  "clymer", "CR EST"=  "crest",  "CO NDUIT"=  "conduit", "CON DUIT"= "conduit", "ME LVIN"=  "melvin",  "FRA NCIS"=  "francis", "CHISHO LM"=  "chisholm",  "WES T"=  "west",  "H OUSTON"=  "houston", "HOUSTO N"=  "houston",  "AUSTI N"=  "austin", "BLMNG DALE"=  "bloomingdale", "BLMNGDALE"="bloomingdale",  "HELIO S"=  "helios",  "EME RALD"=  "emerald", "DE RE IMER"=  "dereimer",  "LOR IMER"=  "lorimer", "LORIM ER"=  "lorimer", "IRE LAND"=  "ireland", "OVIN GTON"=  "ovington",  "GIRA RD"=  "girard",  "LOG AN"=  "logan", "W.KIN GSBRDG"=  "west kingsbridge", "W.KINGBRDG"= "west kingsbridge",  "K ENSINGTON"=  "kensington", "HUMBOLDT"=  "humboldt", "S TEINWAY"=  "steinway", "TYSE NS"=  "tysens",  "WOLVER INE"=  "wolverine",  "BOER UM"=  "boerum", "M ORGAN"=  "morgan", "LURTI NG"=  "lurting",  "BE RRY"="berry",  "M AIN"=  "main", "WIL LETS"=  "willets",  "BRIG HAM"=  "brigham", "VEN ICE"=  "venice", "SCHOHRI E"=  "schoharie", "LOC KWOOD"=  "lockwood", "ST.P ETRS"=  "st. peters", "ST.PETRS"=  "st. peters", "WOOD S"=  "woods", "EL LICOTT"=  "ellicott",   "COMME RCE"=  "commerce",   "COMM ONWEALTH" = "commonwealth",   "CARROL L"=  "carroll", "STE VENSON"=  "stevenson", "STEVN SN"=  "stevenson", "STEVNSN"=  "stevenson",  "FT INDE"=  "fort independence",  "C HESTNUT"=  "chestnut",  "ELR IDGE"=  "elridge",  "COLDE N"=  "colden", "FDR DR"=  "FDR drive",  "ROS E"=  "rose",  "AR CHER"=  "archer",  "CL OVE"=  "clove", "CLOV E"=  "clove", "D WIGHT"=  "dwight", "SUMMERF IELD"=  "summerfield",  "RE ADE"=  "reade",  "SOU THWEST"=  "southwest",  "HENDR ICKS"=  "hendricks",  "EUNI CE"=  "eunice",  "E RICSON"=  "ericson",  "STCKH LM"=  "stockholm", "STCKHLM"=  "stockholm",  "JE NNINGS"=  "jennings", "OSW EGO"=  "oswego",  "PECK S LIP"=  "peck slip",  "KE LLY"=  "kelly", "COYL E"=  "coyle",  "S COTT"=  "scott", "CARLISL E" = "carlisle",   "WE XFORD"= "wexford", "W EXFORD"= "wexford",  "P ILGRIM"=  "pilgrim", "HE LENA"=  "helena",  "HE NLEY"=  "henley",  "WEE D"="weed",  "QUENT IN"=  "quentin", "Q UENTIN"=  "quentin",  "DR UMGOOLE"=  "drumgoole",  "FIE LDSTON"=  "fieldstone",  "J ULES"=  "jules",  "TRO Y"=  "troy", "KILDA RE"=  "kildare",  "FAI RFIELD"=  "fairfield",  "MONITR"=  "monitor",  "U NIONPORT"=  "unionport",  "E LM"=  "elm",  "F ORD"=  "ford",  "FIR TH"=  "firth",  "G UNTHER"=  "gunther", "GUN HILL"="gunhill", "GUNH ILL"=  "gunhill", "DE ISIUS"=  "deisius",  "TELEP ORT"=  "teleport",  "STEW ART"=  "stewart", "HE WITT"=  "hewitt", "AINSL IE"=  "ainslie", "GU ERLAIN"=  "guerlain", "SHADO W"=  "shadow", "DOUGH TY"=  "doughty", "HE RKIMER"=  "herkimer", "ELLIN GTON"=  "ellington", "TREN T"= "trent", "M ILTON"=  "Milton", "Y ORK"=  "York", "THAME S"=  "Thames", "SEXT ON"=  "Sexton", "TR UXTON"=  "truxton",  "GUYBRWR" = "Guy R Brewer",  "GUYBRW R" = "Guy R Brewer", "NO LL"=  "noll", "KNAP P"=  "knapp", "SPIR IT"=  "spirit", "BR OOKVILLE"=  "brookville", "B ROOK"="Brook", "B ROWN"=  "brown", "BROW N"=  "brown", "BR ENTON"=  "brenton",  "K INGSBRDG"=  "kingsbridge", "ROSE WOOD"=  "rosewood",  "PEMBRKE"=  "pembroke",  "HEM LOCK"=  "hemlock", "SCHER MERHORN"=  "schermerhorn",  "O’D DONNELL"=  "o’ddonnell", "MIL FORD"=  "milford", "BOUL DER"=  "boulder", "WES TMINSTER"=  "westminster", 
+"FROS T"=  "frost", "CON CORD"=  "concord", "CI CRLE"=  "circle", "WEL DON"=  "weldon", "COLDS PRING"=  "coldspring", "J OHN"=  "john", "H ICKS"=  "hicks", "ORE GON"=  "oregon", "POWE LL"=  "powell", "HOM E"=  "home",  "IRVIN G"=  "irving", "S HILOH"=  "shiloh", "TH OMPSON"=  "thompson", "ROSD ALE" = "rosedale", "A LDEN" = "alden", "H UNTS" = "hunts", "S LIP"=  "slip", "A VENUE"=  "avenue", "A VE."=  "avenue",  "AV"=  "avenue", "AV."=  "avenue", "AVE."=  "avenue", "A V"= "avenue", "PLAC"=  "place", "W AY"=  "way", "S T"=  "street", "ST ."=  "street", "ST"=  "street",  "S T"=  "street",  "S TREET"=  "street", "EX PRESSWAY"=  "expressway", "EX PWY"="expressway", "EXPY"="expressway", "EXPWY"="expressway", "DRIV EWAY"=  "driveway", "TPK"=  "turnpike", "TPKE."="turnpike", "LN."=  "lane", "TE RR."=  "terrace", "HWY"=  "highway", "BLV D"=  "boulevard", "BL VD"="boulevard", "BV"="boulevard", "BV."="boulevard", "BLVD."="boulevard", "BLVD"="boulevard", "PK W."="parkway",  "PK"="parkway","P K"="parkway","DR"= "drive", "PL" = "place")
+
+# getting rid of all the directional abbreviations (EB, NB, SB, WB), anything after the hyphen, getting rid of white space at the beginning & end                  
+cameras_clean1 <- df_deduplicated1 %>%
+  mutate(
+    cross_street = toupper(as.character(cross_street)),
+    cross_street = str_remove_all(cross_street, "^\\b(EB|NB|SB|WB)\\b\\s+"),
+    cross_street = str_remove(cross_street, "-.*$") %>% str_trim()
+  )
+
+# changing the street_fixes list to a dataframe in order to apply it to the camera dataset
+street_fixes1 <- data.frame(
+  Wrong = names(street_fixes),
+  Right = as.character(street_fixes),
+  stringsAsFactors = FALSE
+)
+
+# filtering out blank values (it kept interfering when trying to apply it to the main dataset)
+street_fixes1 <- street_fixes1 %>%
+  filter(!is.na(Wrong) & Wrong != "")
+
+# creating a regex to apply to camera_clean1$cross_street
+for(i in 1:nrow(street_fixes1)) {
+  pattern_with_boundaries1 <- paste0("\\b", street_fixes1$Wrong[i], "\\b")
+  
+  cameras_clean1$cross_street <- str_replace_all(
+    string = cameras_clean1$cross_street, 
+    pattern = pattern_with_boundaries1, 
+    replacement = street_fixes1$Right[i]
+  )
+}
+
+# more cleaning happening, capitalizing everything, changing all of the "WEST" + "EACH" to "W" + "E", getting rid of lingering special characters, + adding "&" in between the two streets, trimming the ends of white space
+cameras_unique1 <- cameras_clean1 %>%
+  mutate(
+    cross_street = toupper(as.character(cross_street)),
+    cross_street = str_replace_all(cross_street, "\\bWEST\\b", "W"),
+    cross_street = str_replace_all(cross_street, "\\bEAST\\b", "E"),
+    cross_street = str_remove_all(cross_street, "[@\\.\\'/,]"),
+    cross_street = str_replace(cross_street,  "(\\bAVENUE\\b|\\bSTREET\\b|\\bROAD\\b|\\bBOULEVARD\\b|\\bPLACE\\b|\\bPARKWAY\\b|\\bEXPRESSWAY\\b|\\bHIGHWAY\\b)", "\\1 &"),
+    cross_street = str_remove(cross_street, " &\\s*$"),
+    cross_street = str_squish(cross_street)
+  )
+
+# getting rid of remaining white space, getting rid of ordinal labels, creating another letter key that splits by "&" and is identifiable by either order (1 St & Main St or Main St & 1 St)
+cameras_unique1 <- cameras_unique1 %>%
+  mutate(
+    no_space1 = str_replace_all(cross_street, " ", ""),
+    no_space1 = str_replace_all(no_space1, "(\\d)(ST(?!REET)|ND|RD|TH)", "\\1")
+  ) %>%
+  rowwise() %>%
+  mutate(match_key_nospace1 = paste(sort(str_split(no_space1, "&")[[1]]), collapse = "&")) %>%
+  ungroup()
+
+# doing a final consolidation in case there are any matches that weren't found before (there are)
+cameras_final1 <- cameras_unique1 %>%
+  filter(match_key_nospace1 != "" & !is.na(match_key_nospace1)) %>%
+  group_by(match_key_nospace1) %>%
+  summarise(
+    activation_date1 = min(clean_date, na.rm = TRUE),
+    display_name1 = first(cross_street),
+    camera_count = n(),
+    .groups = 'drop'
+  )
+```
+
+```{r}
+#| label: crashes-dataset
+crash_data <- fread(
+  here("data", "processed", "Motor_Vehicle_Collisions_-_Crashes_20260408.csv")
+)
+
+# lots of street cleaning here, capitalizing everything, changing "WEST" and "EAST" to "W" and "E", removing ordinal labels, creating a match key (identifiable in either street order) in order to match it to the camera data
+crashes_final1 <- crash_data %>%
+  filter(`ON STREET NAME` != "" & `CROSS STREET NAME` != "") %>%
+  mutate(
+    ON_CLEAN = toupper(`ON STREET NAME`) %>% 
+      str_replace_all("\\bWEST\\b", "W") %>% 
+      str_replace_all("\\bEAST\\b", "E"),
+    CROSS_CLEAN = toupper(`CROSS STREET NAME`) %>% 
+      str_replace_all("\\bWEST\\b", "W") %>% 
+      str_replace_all("\\bEAST\\b", "E"),
+    on_id = str_replace_all(ON_CLEAN, " ", ""),
+    cross_id = str_replace_all(CROSS_CLEAN, " ", ""),
+    on_id = str_replace_all(on_id, "(\\d)(ST(?!REET)|ND|RD|TH)", "\\1"),
+    cross_id = str_replace_all(cross_id, "(\\d)(ST(?!REET)|ND|RD|TH)", "\\1")
+  ) %>%
+  rowwise() %>%
+  mutate(match_key_nospace1 = paste(sort(c(on_id, cross_id)), collapse = "&")) %>%
+  ungroup()
+
+# joining crash data & camera data
+final_analysis_df1 <- crashes_final1 %>%
+  inner_join(cameras_unique1, by = "match_key_nospace1")
+```
+
+```{r}
+#| label: analysis-prep
+analysis_df <- final_analysis_df1 %>%
+  mutate(
+    crash_date_clean = mdy(`CRASH DATE`),
+    activation_date_clean = ymd(clean_date)
+  ) %>%
+  filter(!is.na(crash_date_clean) & !is.na(activation_date_clean)) %>%
+  mutate(
+    treatment = if_else(crash_date_clean >= activation_date_clean, 1, 0)
+  )
+
+analysis_df <- analysis_df %>%
+  mutate(
+    total_injuries = `NUMBER OF PERSONS INJURED`,
+    total_deaths = `NUMBER OF PERSONS KILLED`,
+    total_casualties = `NUMBER OF PERSONS INJURED` + `NUMBER OF PERSONS KILLED`
+  )
+
+year_window <- analysis_df %>%
+  mutate(days_diff = as.numeric(crash_date_clean - activation_date_clean)) %>%
+  filter(days_diff >= -365 & days_diff <= 365) %>%
+  mutate(period = if_else(days_diff < 0, "Before", "After"))
+```
+
+```{r}
+#| label: crash-plot
+crash_plot <- year_window %>%
+  group_by(period) %>%
+  summarise(total_crashes = n()) %>%
+  mutate(period = factor(period, levels = c("Before", "After")))
+
+ggplot(crash_plot, aes(x = period, y = total_crashes, fill = period)) +
+  geom_bar(stat = "identity", width = 0.6) +
+  geom_text(aes(label = scales::comma(total_crashes)), vjust = -0.5, size = 5) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+  scale_fill_manual(values = c("Before" = "#d95f02", "After" = "#1b9e77")) +
+  labs(title = "Total Crash Volume: 12-Month Comparison",
+       subtitle = "One-year window around camera activation date",
+       x = "Period",
+       y = "Number of Crashes") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+```{r}
+#| label: deaths
+# DEATHS ALONE
+processed_deaths <- year_window %>%
+  group_by(period) %>%
+  summarize(total_deaths = sum(`NUMBER OF PERSONS KILLED`, na.rm = TRUE))
+```
+
+```{r}
+#| label: deaths2
+death_its <- analysis_df %>%
+  mutate(month_rel = floor((as.numeric(crash_date_clean - activation_date_clean) / 30.44))) %>%
+  group_by(month_rel) %>%
+  summarize(deaths = sum(total_deaths, na.rm = TRUE)) %>%
+  mutate(
+    camera_active = if_else(month_rel >= 0, 1, 0),
+    time_after = pmax(0, month_rel)
+  )
+
+death_its_model <- glm(deaths ~ month_rel + camera_active + time_after, 
+                     family = poisson, 
+                     data = death_its)
+```
+
+```{r}
+#| label: casualties
+# INJURIES + DEATHS COMBINED (CASUALTIES)
+processed_casualties <- year_window %>%
+  group_by(period) %>%
+  summarize(total_casualties = sum(`NUMBER OF PERSONS INJURED`, `NUMBER OF PERSONS KILLED`, na.rm = TRUE))
+```
+
+```{r}
+#| label: casualties2
+cas_its <- analysis_df %>%
+  mutate(month_rel = floor((as.numeric(crash_date_clean - activation_date_clean) / 30.44))) %>%
+  group_by(month_rel) %>%
+  summarize(casualties = sum(total_casualties, na.rm = TRUE)) %>%
+  mutate(
+    camera_active = if_else(month_rel >= 0, 1, 0),
+    time_after = pmax(0, month_rel)
+  )
+
+cas_its_model <- glm(casualties ~ month_rel + camera_active + time_after, 
+                    family = poisson, 
+                    data = cas_its)
+```
+
+```{r}
+#| label: casualties3
+cas_its$predicted <- predict(cas_its_model, type = "response")
+
+ggplot(cas_its, aes(x = month_rel, y = casualties)) +
+  geom_point(alpha = 0.3, color = "gray") +
+  geom_line(aes(y = predicted, color = as.factor(camera_active)), size = 1.5) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "red", size = 1) +
+  scale_color_manual(values = c("0" = "blue", "1" = "darkgreen"), 
+                     labels = c("Before", "After"), name = "Camera Status") +
+  labs(title = "Impact of Speed Cameras on NYC Intersections",
+       subtitle = "Interrupted Time Series Analysis (Month 0 = Activation)",
+       x = "Months Relative to Activation",
+       y = "Total Casualties") +
+  theme_minimal()
+```
+
+So, does this mean that we should dot the streets with speed cameras? Maybe … but not necessarily. The economist [Thomas Sowell](https://www.youtube.com/watch?v=3_EtIWmja-4) famously said that “there are no solutions, there are only trade-offs,” and we believe this caveat is worth keeping in mind. There are potential downsides to all interventions—even ones as seemingly straightforward as installing speed cameras to prevent road collisions. One obvious obstacle is money: There are only so many speed cameras that can be installed in a given area, even if they do bring down collisions. That said, speed cameras (even at a large scale) may be relatively cost-efficient compared to other interventions, like increased police monitoring.
+
+There are other potential tradeoffs worth thinking about, too; tradeoffs that transcend financial cost/benefit analyses. For instance, there’s the possibility that speed cameras don’t decrease speeds outside a certain contained geographical area. In fact, there’s even the possibility that they lure drivers into a false sense of ease and increase speeds outside the speed cameras’ general vicinity. This downstream effect, if existent, would be roughly consistent with the theories of traffic engineer Hans Monderman. According to the [Project for Public Spaces website](https://www.pps.org/article/hans-monderman), Monderman advocated for “the removal of traffic lights, signs, crosswalks, lane markers, and even curbs.” He felt that drivers staying attentive was of the utmost importance for road safety—and that “shared spaces,” devoid of these markers, contributed to this goal. It’s easy to see how speed cameras, like these markers, might (counterintuitively) divert drivers’ attention from the road. Monderman’s overall theory, of course, is by no means universally endorsed —but it’s worth considering.
+
+While we were not able to examine these types of consequences based on the data available to us, the authors of the New York City-specific study were. They examined the “900 foot circular buffer zone around cameras,” as well as spillover effects in nearby zones. And, they did find a general reduction in both speed and collisions in these areas. However, it’s worth bearing in mind that these “900 foot buffer zones” only account for roughly a half minute of driving beyond the actual speed cameras, and that the evidence about nearby buffer zones is based on far weaker experimental methodology than the rest of the paper. We probably need a bit more research before we can truly rule out this “false sense of safety” hypothesis.
+
+There are some broader questions about civic complacency linked with all of this, too. It’s worth entertaining the possibility that speed cameras, while consequential short-term remedies, distract from a larger problem—why our society is ok with so many preventable car-related casualties in the first place. After all, significantly reducing the number of car-related casualties from a high baseline is not the same as bringing it down to an acceptable level. In much the same way that speed cameras might lure drivers into a false sense of ease, reductions in traffic casualties might lure citizens into a false sense of ease about just how safe car-centric design is. One potential (though somewhat paradoxical) consequence of installing more and more speed cameras may be that we end up building more, safer, car-centric infrastructure—yet actually increasing the overall number of car-related casualties.
+
+That said, the general scientific evidence about speed cameras—both in New York City and in the world at large—is fairly unequivocal. They are a reliable intervention for reducing drivers’ speeds and reducing serious collisions. And, however desirable a completely different transportation system might be, saving lives in the here and now, in this current system, is a more than worthy goal.
