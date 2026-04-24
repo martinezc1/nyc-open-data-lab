@@ -3373,7 +3373,7 @@
     "contributors/xinru-wang.qmd": {
       "checksum": "e4c9e265e868e8332dcabac854078646"
     },
-    "data/processed/crash_data.parquet": {
+    "data/processed/Motor_Vehicle_Collisions_-_Crashes_20260408.parquet": {
       "checksum": "6b759650e1d73dcebd5fe9b6a6c331c7"
     },
     "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2014_20260407.parquet": {
@@ -3412,6 +3412,48 @@
     "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2025_20260407.parquet": {
       "checksum": "f651f3d75b417955373dbcc77b8eb49a"
     },
+    "data/raw/Borough_Boundaries_20260419.csv": {
+      "checksum": "7b1d8739097a2fa2606c1f9cb7e76d07"
+    },
+    "data/raw/Motor_Vehicle_Collisions_-_Crashes_20260408.csv": {
+      "checksum": "eeccaf2582c2b322da1a167a7d80aa3a"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2014_20260407.csv": {
+      "checksum": "b34dce8f21d9d9eb0178430cda897306"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2015_20260407.csv": {
+      "checksum": "53ac29c25e91bc7fea94721f1bcc9fc2"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2016_20260407.csv": {
+      "checksum": "0c62faf337b6187df0bad0cf6391ab8c"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2017_20260407.csv": {
+      "checksum": "081a3c48eb7c90101f8d1ff93dfca16e"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2018_20260407.csv": {
+      "checksum": "6b4606062910a2101375c2ed8c619c6d"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2019_20260407.csv": {
+      "checksum": "ed5f208dcead74483fee6637dde718e9"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2020_20260407.csv": {
+      "checksum": "b837580e1fe921d18b8ac7b8b7c463fc"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2021_20260407.csv": {
+      "checksum": "11560299f678664e8e10a670a4739e03"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2022_20260407.csv": {
+      "checksum": "f7d7aadb49b8ba0dda0d06b7ad8f74d3"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2023_20260407.csv": {
+      "checksum": "d0eb5dbb3163e7d17c2b655ccb25ce79"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2024_20260407.csv": {
+      "checksum": "b2a09f57f8fef08967c382f95d8233c3"
+    },
+    "data/raw/Parking_Violations_Issued_-_Fiscal_Year_2025_20260407.csv": {
+      "checksum": "0c8d1dfc1337d10ddb7405ef0db6508b"
+    },
     "images/diagram.png": {
       "checksum": "6034d0a2fcb02f4c5332a95d5775811b"
     },
@@ -3439,11 +3481,14 @@
     "README.Rmd": {
       "checksum": "9981af8becf752eb4662822ca6763b97"
     },
+    "scripts/creating-parquets.R": {
+      "checksum": "172aa431dbdf80091c5f59f932d3d966"
+    },
     "stories.qmd": {
       "checksum": "74bb73f415c1a677424b0b80a809f7e6"
     },
     "stories/crash-data.qmd": {
-      "checksum": "a546cfdafa4ff42911df0ec1bb336802"
+      "checksum": "cf257fb1438a7e5450ca178c09f234b1"
     },
     "stories/intro-to-nycOpenData.qmd": {
       "checksum": "207f4340fee4c00ce82b27495acb619f"

@@ -28,6 +28,7 @@ library(data.table)
 library(knitr)
 library(here)
 library(arrow)
+library(janitor)
 ```
 
 ```{r}
@@ -160,18 +161,18 @@ cameras_final1 <- cameras_unique1 %>%
 
 ```{r}
 #| label: crashes-dataset
-crash_data <- fread(
+crash_data <- read_parquet(
   here("data", "processed", "Motor_Vehicle_Collisions_-_Crashes_20260408.parquet")
-)
+) %>% clean_names()
 
 # lots of street cleaning here, capitalizing everything, changing "WEST" and "EAST" to "W" and "E", removing ordinal labels, creating a match key (identifiable in either street order) in order to match it to the camera data
 crashes_final1 <- crash_data %>%
-  filter(`ON STREET NAME` != "" & `CROSS STREET NAME` != "") %>%
+  filter(on_street_name != "" & cross_street_name != "") %>%
   mutate(
-    ON_CLEAN = toupper(`ON STREET NAME`) %>% 
+    ON_CLEAN = toupper(on_street_name) %>% 
       str_replace_all("\\bWEST\\b", "W") %>% 
       str_replace_all("\\bEAST\\b", "E"),
-    CROSS_CLEAN = toupper(`CROSS STREET NAME`) %>% 
+    CROSS_CLEAN = toupper(cross_street_name) %>% 
       str_replace_all("\\bWEST\\b", "W") %>% 
       str_replace_all("\\bEAST\\b", "E"),
     on_id = str_replace_all(ON_CLEAN, " ", ""),
