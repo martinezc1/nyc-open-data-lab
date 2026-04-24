@@ -9,6 +9,8 @@ execute:
   warning: false
 ---
 
+**Authors:** [Jonah Dratfield](../contributors/jonah-dratfield.qmd) & [Shannon Joyce](../contributors/shannon-joyce.qmd)
+
 [Road collisions](https://www.cdc.gov/transportation-safety/about/index.html) are one of the leading causes of preventable death in the US. Yet, short of completely overhauling our car-centered infrastructure, is there anything we can do about them?
 
 Speed cameras are an obvious solution. Since excessive speed is at the root of many car collisions, it’s reasonable to think that speed cameras can reduce drivers’ speeds and bring down both the total number of road collisions and the number of fatal road collisions. But, what does the empirical evidence say about this intervention? Do speed cameras actually have this effect?
