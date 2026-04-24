@@ -132,6 +132,45 @@
         "Archs": "S7.so.dSYM"
       }
     },
+    "arrow": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "arrow",
+        "Title": "Integration to 'Apache' 'Arrow'",
+        "Version": "22.0.0.1",
+        "Authors@R": "c(\n    person(\"Neal\", \"Richardson\", email = \"neal.p.richardson@gmail.com\", role = c(\"aut\")),\n    person(\"Ian\", \"Cook\", email = \"ianmcook@gmail.com\", role = c(\"aut\")),\n    person(\"Nic\", \"Crane\", email = \"thisisnic@gmail.com\", role = c(\"aut\")),\n    person(\"Dewey\", \"Dunnington\", role = c(\"aut\"), email = \"dewey@fishandwhistle.net\", comment = c(ORCID = \"0000-0002-9415-4582\")),\n    person(\"Romain\", \"Fran\\u00e7ois\", role = c(\"aut\"), comment = c(ORCID = \"0000-0002-2444-4226\")),\n    person(\"Jonathan\", \"Keane\", email = \"jkeane@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Bryce\", \"Mecum\", email = \"brycemecum@gmail.com\", role = c(\"aut\")),\n    person(\"Drago\\u0219\", \"Moldovan-Gr\\u00fcnfeld\", email = \"dragos.mold@gmail.com\", role = c(\"aut\")),\n    person(\"Jeroen\", \"Ooms\", email = \"jeroen@berkeley.edu\", role = c(\"aut\")),\n    person(\"Jacob\", \"Wujciak-Jens\", email = \"jacob@wujciak.de\", role = c(\"aut\")),\n    person(\"Javier\", \"Luraschi\", email = \"javier@rstudio.com\", role = c(\"ctb\")),\n    person(\"Karl\", \"Dunkle Werner\", email = \"karldw@users.noreply.github.com\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0003-0523-7309\")),\n    person(\"Jeffrey\", \"Wong\", email = \"jeffreyw@netflix.com\", role = c(\"ctb\")),\n    person(\"Apache Arrow\", email = \"dev@arrow.apache.org\", role = c(\"aut\", \"cph\"))\n  )",
+        "Description": "'Apache' 'Arrow' <https://arrow.apache.org/> is a cross-language\n    development platform for in-memory data. It specifies a standardized\n    language-independent columnar memory format for flat and hierarchical data,\n    organized for efficient analytic operations on modern hardware. This\n    package provides an interface to the 'Arrow C++' library.",
+        "Depends": "R (>= 4.1)",
+        "License": "Apache License (>= 2.0)",
+        "URL": "https://github.com/apache/arrow/, https://arrow.apache.org/docs/r/",
+        "BugReports": "https://github.com/apache/arrow/issues",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "SystemRequirements": "C++17; for AWS S3 support on Linux, libcurl and\nopenssl (optional); cmake >= 3.26 (build-time only, and only\nfor full source build)",
+        "Biarch": "true",
+        "Imports": "assertthat, bit64 (>= 0.9-7), glue, methods, purrr, R6, rlang\n(>= 1.0.0), stats, tidyselect (>= 1.0.0), utils, vctrs",
+        "RoxygenNote": "7.3.3",
+        "Config/testthat/edition": "3",
+        "Config/build/bootstrap": "TRUE",
+        "Suggests": "blob, curl, cli, DBI, dbplyr, decor, distro, dplyr, duckdb\n(>= 0.2.8), hms, jsonlite, knitr, lubridate, pillar, pkgload,\nreticulate, rmarkdown, stringi, stringr, sys, testthat (>=\n3.1.0), tibble, tzdb, withr",
+        "LinkingTo": "cpp11 (>= 0.4.2)",
+        "Collate": "'arrowExports.R' 'enums.R' 'arrow-object.R' 'type.R'\n'array-data.R' 'arrow-datum.R' 'array.R' 'arrow-info.R'\n'arrow-package.R' 'arrow-tabular.R' 'buffer.R'\n'chunked-array.R' 'io.R' 'compression.R' 'scalar.R' 'compute.R'\n'config.R' 'csv.R' 'dataset.R' 'dataset-factory.R'\n'dataset-format.R' 'dataset-partition.R' 'dataset-scan.R'\n'dataset-write.R' 'dictionary.R' 'dplyr-across.R'\n'dplyr-arrange.R' 'dplyr-by.R' 'dplyr-collect.R'\n'dplyr-count.R' 'dplyr-datetime-helpers.R' 'dplyr-distinct.R'\n'dplyr-eval.R' 'dplyr-filter.R' 'dplyr-funcs-agg.R'\n'dplyr-funcs-augmented.R' 'dplyr-funcs-conditional.R'\n'dplyr-funcs-datetime.R' 'dplyr-funcs-doc.R'\n'dplyr-funcs-math.R' 'dplyr-funcs-simple.R'\n'dplyr-funcs-string.R' 'dplyr-funcs-type.R' 'expression.R'\n'dplyr-funcs.R' 'dplyr-glimpse.R' 'dplyr-group-by.R'\n'dplyr-join.R' 'dplyr-mutate.R' 'dplyr-select.R'\n'dplyr-slice.R' 'dplyr-summarize.R' 'dplyr-union.R'\n'record-batch.R' 'table.R' 'dplyr.R' 'duckdb.R' 'extension.R'\n'feather.R' 'field.R' 'filesystem.R' 'flight.R'\n'install-arrow.R' 'ipc-stream.R' 'json.R' 'memory-pool.R'\n'message.R' 'metadata.R' 'parquet.R' 'python.R'\n'query-engine.R' 'record-batch-reader.R'\n'record-batch-writer.R' 'reexports-bit64.R'\n'reexports-tidyselect.R' 'schema.R' 'udf.R' 'util.R'",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-12-22 20:14:22 UTC; nic",
+        "Author": "Neal Richardson [aut],\n  Ian Cook [aut],\n  Nic Crane [aut],\n  Dewey Dunnington [aut] (ORCID: <https://orcid.org/0000-0002-9415-4582>),\n  Romain François [aut] (ORCID: <https://orcid.org/0000-0002-2444-4226>),\n  Jonathan Keane [aut, cre],\n  Bryce Mecum [aut],\n  Dragoș Moldovan-Grünfeld [aut],\n  Jeroen Ooms [aut],\n  Jacob Wujciak-Jens [aut],\n  Javier Luraschi [ctb],\n  Karl Dunkle Werner [ctb] (ORCID:\n    <https://orcid.org/0000-0003-0523-7309>),\n  Jeffrey Wong [ctb],\n  Apache Arrow [aut, cph]",
+        "Maintainer": "Jonathan Keane <jkeane@gmail.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-12-23 13:40:02 UTC",
+        "Built": "R 4.5.2; aarch64-apple-darwin20; 2025-12-23 15:01:53 UTC; unix",
+        "Archs": "arrow.so.dSYM",
+        "RemoteType": "standard",
+        "RemotePkgRef": "arrow",
+        "RemoteRef": "arrow",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemoteSha": "22.0.0.1"
+      }
+    },
     "askpass": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -158,6 +197,34 @@
         "Date/Publication": "2024-10-04 07:20:03 UTC",
         "Built": "R 4.5.0; aarch64-apple-darwin20; 2025-04-01 06:33:14 UTC; unix",
         "Archs": "askpass.so.dSYM"
+      }
+    },
+    "assertthat": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "assertthat",
+        "Title": "Easy Pre and Post Assertions",
+        "Version": "0.2.1",
+        "Authors@R": "\n  person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", c(\"aut\", \"cre\"))",
+        "Description": "An extension to stopifnot() that makes it easy to declare \n    the pre and post conditions that you code should satisfy, while also \n    producing friendly error messages so that your users know what's gone\n    wrong.",
+        "License": "GPL-3",
+        "Imports": "tools",
+        "Suggests": "testthat, covr",
+        "RoxygenNote": "6.0.1",
+        "Collate": "'assert-that.r' 'on-failure.r' 'assertions-file.r'\n'assertions-scalar.R' 'assertions.r' 'base.r'\n'base-comparison.r' 'base-is.r' 'base-logical.r' 'base-misc.r'\n'utils.r' 'validate-that.R'",
+        "NeedsCompilation": "no",
+        "Packaged": "2019-03-21 13:11:01 UTC; hadley",
+        "Author": "Hadley Wickham [aut, cre]",
+        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2019-03-21 14:53:46 UTC",
+        "Built": "R 4.5.0; ; 2025-03-31 21:57:52 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "assertthat",
+        "RemoteRef": "assertthat",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemoteSha": "0.2.1"
       }
     },
     "backports": {
@@ -1189,6 +1256,40 @@
         "Date/Publication": "2025-05-30 14:10:02 UTC",
         "Built": "R 4.5.0; aarch64-apple-darwin20; 2025-05-30 15:14:34 UTC; unix",
         "Archs": "haven.so.dSYM"
+      }
+    },
+    "here": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "here",
+        "Title": "A Simpler Way to Find Your Files",
+        "Version": "1.0.2",
+        "Date": "2025-09-06",
+        "Authors@R": "\n    c(person(given = \"Kirill\",\n             family = \"M\\u00fcller\",\n             role = c(\"aut\", \"cre\"),\n             email = \"kirill@cynkra.com\",\n             comment = c(ORCID = \"0000-0002-1416-3412\")),\n      person(given = \"Jennifer\",\n             family = \"Bryan\",\n             role = \"ctb\",\n             email = \"jenny@rstudio.com\",\n             comment = c(ORCID = \"0000-0002-6983-2759\")))",
+        "Description": "Constructs paths to your project's files.\n    Declare the relative path of a file within your project with 'i_am()'.\n    Use the 'here()' function as a drop-in replacement for 'file.path()',\n    it will always locate the files relative to your project root.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://here.r-lib.org/, https://github.com/r-lib/here",
+        "BugReports": "https://github.com/r-lib/here/issues",
+        "Imports": "rprojroot (>= 2.1.0)",
+        "Suggests": "conflicted, covr, fs, knitr, palmerpenguins, plyr, readr,\nrlang, rmarkdown, testthat, uuid, withr",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.3.9000",
+        "Config/testthat/edition": "3",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-09-14 18:48:53 UTC; kirill",
+        "Author": "Kirill Müller [aut, cre] (ORCID:\n    <https://orcid.org/0000-0002-1416-3412>),\n  Jennifer Bryan [ctb] (ORCID: <https://orcid.org/0000-0002-6983-2759>)",
+        "Maintainer": "Kirill Müller <kirill@cynkra.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-09-15 05:10:09 UTC",
+        "Built": "R 4.5.0; ; 2025-09-15 07:48:10 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "here",
+        "RemoteRef": "here",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemoteSha": "1.0.2"
       }
     },
     "highr": {
@@ -2227,6 +2328,41 @@
         "RemoteSha": "2.30"
       }
     },
+    "rprojroot": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "rprojroot",
+        "Title": "Finding Files in Project Subdirectories",
+        "Version": "2.1.1",
+        "Authors@R": "\n    person(given = \"Kirill\",\n           family = \"M\\u00fcller\",\n           role = c(\"aut\", \"cre\"),\n           email = \"kirill@cynkra.com\",\n           comment = c(ORCID = \"0000-0002-1416-3412\"))",
+        "Description": "Robust, reliable and flexible paths to files below\n    a project root. The 'root' of a project is defined as a directory that\n    matches a certain criterion, e.g., it contains a certain regular file.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://rprojroot.r-lib.org/, https://github.com/r-lib/rprojroot",
+        "BugReports": "https://github.com/r-lib/rprojroot/issues",
+        "Depends": "R (>= 3.0.0)",
+        "Suggests": "covr, knitr, lifecycle, rlang, rmarkdown, testthat (>=\n3.2.0), withr",
+        "VignetteBuilder": "knitr",
+        "Config/testthat/edition": "3",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2.9000",
+        "Config/autostyle/scope": "line_breaks",
+        "Config/autostyle/strict": "true",
+        "Config/Needs/website": "tidyverse/tidytemplate",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-08-26 15:22:42 UTC; kirill",
+        "Author": "Kirill Müller [aut, cre] (ORCID:\n    <https://orcid.org/0000-0002-1416-3412>)",
+        "Maintainer": "Kirill Müller <kirill@cynkra.com>",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-08-26 16:20:02 UTC",
+        "Built": "R 4.5.0; ; 2025-08-26 16:42:40 UTC; unix",
+        "RemoteType": "standard",
+        "RemotePkgRef": "rprojroot",
+        "RemoteRef": "rprojroot",
+        "RemoteRepos": "https://cran.rstudio.com",
+        "RemoteSha": "2.1.1"
+      }
+    },
     "rstudioapi": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -3052,7 +3188,7 @@
   },
   "files": {
     "_quarto.yml": {
-      "checksum": "3ecdc6d869ae7e127c17eae568f07e4d"
+      "checksum": "396ce5449c0b86b528df981c712b6b8f"
     },
     "_site/about.html": {
       "checksum": "255f50b5d0e1a356de9dce43f481f758"
@@ -3195,8 +3331,14 @@
     "_site/tools.html": {
       "checksum": "54e802bb5119d7db3980827682a7a496"
     },
+    ".RData": {
+      "checksum": "1d937922795504cdb32ce9c5c339992f"
+    },
     "about.qmd": {
       "checksum": "c0d0f5a2060b16359a857f80a626b5ff"
+    },
+    "CITATION.cff": {
+      "checksum": "e1063fbfaaf6b44e86167dd0bf804497"
     },
     "contributors.qmd": {
       "checksum": "27420d65d99c98e8495bffbd7c01a959"
@@ -3231,14 +3373,56 @@
     "contributors/xinru-wang.qmd": {
       "checksum": "e4c9e265e868e8332dcabac854078646"
     },
-    "diagram.png": {
+    "data/processed/crash_data.parquet": {
+      "checksum": "6b759650e1d73dcebd5fe9b6a6c331c7"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2014_20260407.parquet": {
+      "checksum": "3a7bf4d409796c0a52eefcd182d73407"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2015_20260407.parquet": {
+      "checksum": "d74196e068c16835dc96b26b7ee3be7a"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2016_20260407.parquet": {
+      "checksum": "77a2e3a2c68d28a6e07315d2e8f60322"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2017_20260407.parquet": {
+      "checksum": "1ad6c7fa12ab0835bda01624939f34d6"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2018_20260407.parquet": {
+      "checksum": "7bcf5daddc68b3c909c478d6ed5665ff"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2019_20260407.parquet": {
+      "checksum": "e2618fe995d1b4fffd2b487349845b60"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2020_20260407.parquet": {
+      "checksum": "483c9055756d4d2f66784da1b26fd3d0"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2021_20260407.parquet": {
+      "checksum": "91927cfccb40eb93efc75c461c64cfb7"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2022_20260407.parquet": {
+      "checksum": "fc90eddd5338747187f1c67adb59d979"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2023_20260407.parquet": {
+      "checksum": "8679aa39ba114886958aba4eb2ab8661"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2024_20260407.parquet": {
+      "checksum": "b5861d53493dd811bc3e7836be1221b1"
+    },
+    "data/processed/Parking_Violations_Issued_-_Fiscal_Year_2025_20260407.parquet": {
+      "checksum": "f651f3d75b417955373dbcc77b8eb49a"
+    },
+    "images/diagram.png": {
       "checksum": "6034d0a2fcb02f4c5332a95d5775811b"
     },
-    "github.qmd": {
-      "checksum": "b7626af084fe07847e1bd366d1920d2f"
-    },
     "index.qmd": {
-      "checksum": "dea9616657b899055dbecf52b1f2774d"
+      "checksum": "298ee4d9b6247aded7050fea02bd68a6"
+    },
+    "LICENSE": {
+      "checksum": "30af09970c4a1aaf2fd2f967b212bf09"
+    },
+    "LICENSE.md": {
+      "checksum": "dcd12884c5194cec877077513f0b2412"
     },
     "projects.qmd": {
       "checksum": "0e78709514608359094dcc5b6fb6667f"
@@ -3246,8 +3430,20 @@
     "publications-media.qmd": {
       "checksum": "86debee9c407bfce392495495d015b52"
     },
+    "Readme.html": {
+      "checksum": "2a2a4a28ac1d6c44595c3cbcc3d3f225"
+    },
+    "README.md": {
+      "checksum": "8654031368d9af8da3775a582c06512d"
+    },
+    "README.Rmd": {
+      "checksum": "9981af8becf752eb4662822ca6763b97"
+    },
     "stories.qmd": {
       "checksum": "74bb73f415c1a677424b0b80a809f7e6"
+    },
+    "stories/crash-data.qmd": {
+      "checksum": "a546cfdafa4ff42911df0ec1bb336802"
     },
     "stories/intro-to-nycOpenData.qmd": {
       "checksum": "207f4340fee4c00ce82b27495acb619f"
