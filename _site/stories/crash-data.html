@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jonah Dratfield &amp; Shannon Joyce">
 
-<title>Stories – NYC Open Data Lab</title>
+<title>Speed Cameras – NYC Open Data Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1e2d4cd4c0c187b7887ec59d340d0036.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-1e2d4cd4c0c187b7887ec59d340d0036.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F3NM2QR1Y0"></script>
 
 <script type="text/javascript">
@@ -109,37 +79,8 @@ gtag('js', new Date());
 gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -149,9 +90,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">NYC Open Data Lab</span>
     </a>
   </div>
@@ -162,39 +103,39 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./stories.html" aria-current="page"> 
+    <a class="nav-link" href="../stories.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tools.html"> 
+    <a class="nav-link" href="../tools.html"> 
 <span class="menu-text">Tools</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching-oer.html"> 
+    <a class="nav-link" href="../teaching-oer.html"> 
 <span class="menu-text">Teaching &amp; OER</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contributors.html"> 
+    <a class="nav-link" href="../contributors.html"> 
 <span class="menu-text">Contributors</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
+    <a class="nav-link" href="../talks.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications-media.html"> 
+    <a class="nav-link" href="../publications-media.html"> 
 <span class="menu-text">Publications &amp; Media</span></a>
   </li>  
 </ul>
@@ -223,13 +164,26 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Stories</h1>
-</div>
+<h1 class="title">Speed Cameras</h1>
+<p class="subtitle lead">The Impact Speed Cameras Have on Safety</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">NYC Open Data</div>
+    <div class="quarto-category">Government</div>
+    <div class="quarto-category">Urban Data</div>
+    <div class="quarto-category">Public Policy</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jonah Dratfield &amp; Shannon Joyce </p>
+          </div>
+  </div>
     
   
     
@@ -240,45 +194,38 @@ window.Quarto = {
 </header>
 
 
-<p>NYC Open Data Stories is a public-facing collection of civic data analyses exploring New York City through reproducible workflows in R and Quarto.</p>
-<p>Each story begins with a question and uses publicly available data from the NYC Open Data Portal to produce clear, accessible, and transparent insights about the city.</p>
-<p>These projects are developed by students and contributors of the NYC Open Data Lab and are designed to be reproducible, interpretable, and meaningful beyond the classroom.</p>
-<p>Browse the latest stories below.</p>
+<p><strong>Authors:</strong> <a href="../contributors/jonah-dratfield.html">Jonah Dratfield</a> &amp; <a href="../contributors/shannon-joyce.html">Shannon Joyce</a></p>
+<p><a href="https://www.cdc.gov/transportation-safety/about/index.html">Road collisions</a> are one of the leading causes of preventable death in the US. Yet, short of completely overhauling our car-centered infrastructure, is there anything we can do about them?</p>
+<p>Speed cameras are an obvious solution. Since excessive speed is at the root of many car collisions, it’s reasonable to think that speed cameras can reduce drivers’ speeds and bring down both the total number of road collisions and the number of fatal road collisions. But, what does the empirical evidence say about this intervention? Do speed cameras actually have this effect?</p>
+<p>Based on the past evidence, they do. <a href="https://www.cochrane.org/evidence/CD004607_do-speed-cameras-reduce-road-traffic-crashes-injuries-and-deaths">A 2010 overview of thirty-five separate studies</a> found that speed cameras tended to reduce both the speed of drivers and the rate of collisions in nearby areas. More recently, a <a href="https://www.pnas.org/doi/10.1073/pnas.2520328122">2025 New York City-specific study</a> found that speed cameras reduced collisions around 5% per month. This study used the “staggered rollout” of speed cameras in over 1,800 New York City school zones to compare collision rates between monitored and yet-to-be-monitored areas.</p>
+<p>Using the metrics available to us on NYC Open Data, as well as other city-related sources, we tried to recreate these findings. Though we used slightly different methods, we came to the same conclusion as both these studies. Our analyses showed that there was a significant downwards trend in both the total number of collisions and the total number of collision-related casualties. Collisions decreased by almost 18%, and casualties dropped by around 24% after the installation of the cameras. In fact, however we sliced up the data, speed cameras appeared to have a positive impact on road safety. They seemed to stop minor collisions from turning into serious collisions and other collisions from occurring at all. You can see the trends in the two graphs below:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="crash-data_files/figure-html/crash-plot-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="crash-data_files/figure-html/casualties3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>So, does this mean that we should dot the streets with speed cameras? Maybe … but not necessarily. The economist <a href="https://www.youtube.com/watch?v=3_EtIWmja-4">Thomas Sowell</a> famously said that “there are no solutions, there are only trade-offs,” and we believe this caveat is worth keeping in mind. There are potential downsides to all interventions—even ones as seemingly straightforward as installing speed cameras to prevent road collisions. One obvious obstacle is money: There are only so many speed cameras that can be installed in a given area, even if they do bring down collisions. That said, speed cameras (even at a large scale) may be relatively cost-efficient compared to other interventions, like increased police monitoring.</p>
+<p>There are other potential tradeoffs worth thinking about, too; tradeoffs that transcend financial cost/benefit analyses. For instance, there’s the possibility that speed cameras don’t decrease speeds outside a certain contained geographical area. In fact, there’s even the possibility that they lure drivers into a false sense of ease and increase speeds outside the speed cameras’ general vicinity. This downstream effect, if existent, would be roughly consistent with the theories of traffic engineer Hans Monderman. According to the <a href="https://www.pps.org/article/hans-monderman">Project for Public Spaces website</a>, Monderman advocated for “the removal of traffic lights, signs, crosswalks, lane markers, and even curbs.” He felt that drivers staying attentive was of the utmost importance for road safety—and that “shared spaces,” devoid of these markers, contributed to this goal. It’s easy to see how speed cameras, like these markers, might (counterintuitively) divert drivers’ attention from the road. Monderman’s overall theory, of course, is by no means universally endorsed —but it’s worth considering.</p>
+<p>While we were not able to examine these types of consequences based on the data available to us, the authors of the New York City-specific study were. They examined the “900 foot circular buffer zone around cameras,” as well as spillover effects in nearby zones. And, they did find a general reduction in both speed and collisions in these areas. However, it’s worth bearing in mind that these “900 foot buffer zones” only account for roughly a half minute of driving beyond the actual speed cameras, and that the evidence about nearby buffer zones is based on far weaker experimental methodology than the rest of the paper. We probably need a bit more research before we can truly rule out this “false sense of safety” hypothesis.</p>
+<p>There are some broader questions about civic complacency linked with all of this, too. It’s worth entertaining the possibility that speed cameras, while consequential short-term remedies, distract from a larger problem—why our society is ok with so many preventable car-related casualties in the first place. After all, significantly reducing the number of car-related casualties from a high baseline is not the same as bringing it down to an acceptable level. In much the same way that speed cameras might lure drivers into a false sense of ease, reductions in traffic casualties might lure citizens into a false sense of ease about just how safe car-centric design is. One potential (though somewhat paradoxical) consequence of installing more and more speed cameras may be that we end up building more, safer, car-centric infrastructure—yet actually increasing the overall number of car-related casualties.</p>
+<p>That said, the general scientific evidence about speed cameras—both in New York City and in the world at large—is fairly unequivocal. They are a reliable intervention for reducing drivers’ speeds and reducing serious collisions. And, however desirable a completely different transportation system might be, saving lives in the here and now, in this current system, is a more than worthy goal.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="TllDJTIwT3BlbiUyMERhdGElMkNHb3Zlcm5tZW50JTJDVXJiYW4lMjBEYXRhJTJDUHVibGljJTIwUG9saWN5" data-listing-file-modified-sort="1777008734543" data-listing-reading-time-sort="41" data-listing-word-count-sort="8194">
-<a href="./stories/crash-data.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Speed Cameras
-</h5>
-<div class="card-text listing-description delink">
-<strong>Authors:</strong> Jonah Dratfield &amp; Shannon Joyce
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="TllDJTIwT3BlbiUyMERhdGElMkNEYXRhJTIwTGl0ZXJhY3klMkNDaXZpYyUyMFRlY2hub2xvZ3klMkNHb3Zlcm5tZW50JTIwVHJhbnNwYXJlbmN5JTJDVXJiYW4lMjBEYXRhJTJDUHVibGljJTIwUG9saWN5JTJDRGF0YSUyMFNjaWVuY2UlMkNFZHVjYXRpb24=" data-listing-file-modified-sort="1777008738197" data-listing-reading-time-sort="6" data-listing-word-count-sort="1047">
-<a href="./stories/intro-to-nycOpenData.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Welcome To NYC Open Data!
-</h5>
-<div class="card-text listing-description delink">
-<strong>Author:</strong> Christian Martinez
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -2,6 +2,7 @@
   {
     "listing": "/stories.html",
     "items": [
+      "/stories/crash-data.html",
       "/stories/intro-to-nycOpenData.html"
     ]
   },

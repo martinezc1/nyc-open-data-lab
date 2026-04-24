@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "contributors/*.qmd"
 
 website:
   title: "NYC Open Data Lab"

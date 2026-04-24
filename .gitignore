@@ -5,3 +5,6 @@
 .DS_Store
 .quarto
 Data/raw/
+
+/.quarto/
+**/*.quarto_ipynb
