@@ -8,11 +8,17 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
 ------------------------------------------------------------------------
 
-## Featured Publications & Media
+## Podcasts
+
+-   [Relevance Drives RigorL Exploring Open Data With R](https://civictech.chat/episodes/relevance-drives-rigor-exploring-open-data-with-r)
+
+    -   **Civic Tech Chat**
+    
+## Publications
 
 -   [Relevance Drives Rigor: Lessons from Teaching with Open Data](https://aea365.org/blog/relevance-drives-rigor-lessons-from-teaching-with-open-data-by-christian-martinez/)
 
-    -   AEA365 (American Evaluation Association)
+    -   **AEA365 (American Evaluation Association)**
 
 -   [Faculty Member Launches Open-Source Tool to Transform Access to New York City Civic Data](https://www.brooklyn.edu/bc-brief/faculty-member-launches-open-source-tool-to-transform-access-to-new-york-city-civic-data/)
 
