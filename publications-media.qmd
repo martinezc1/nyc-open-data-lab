@@ -10,10 +10,10 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
 ## Podcasts
 
--   [Relevance Drives RigorL Exploring Open Data With R](https://civictech.chat/episodes/relevance-drives-rigor-exploring-open-data-with-r)
+-   [Relevance Drives Rigor: Exploring Open Data With R](https://civictech.chat/episodes/relevance-drives-rigor-exploring-open-data-with-r)
 
     -   **Civic Tech Chat**
-    
+
 ## Publications
 
 -   [Relevance Drives Rigor: Lessons from Teaching with Open Data](https://aea365.org/blog/relevance-drives-rigor-lessons-from-teaching-with-open-data-by-christian-martinez/)
