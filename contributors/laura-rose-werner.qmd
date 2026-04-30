@@ -13,7 +13,7 @@ description: "Contributor to the NYC Open Data Lab"
 
 A curated collection of work developed using reproducible workflows in R and Quarto.
 
--   📘 [View Portfolio Book](https://019c7e87-9883-6209-abee-7d4f43167df7.share.connect.posit.cloud/)
+-   📘 [View Portfolio Book](https://019c7ca5-9872-3f70-0ff8-780f5f216b2e.share.connect.posit.cloud/)
 
 ---
 

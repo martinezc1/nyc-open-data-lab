@@ -8,3 +8,4 @@ Data/raw/
 
 /.quarto/
 **/*.quarto_ipynb
+.positai
