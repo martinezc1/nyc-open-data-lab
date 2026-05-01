@@ -389,7 +389,7 @@
     "href": "projects.html#student-portfolio-books",
     "title": "Projects",
     "section": "Student Portfolio Books",
-    "text": "Student Portfolio Books\nAs part of the Lab’s reproducible workflow model, students develop personal portfolio books using Quarto. These books compile their work into a single, polished, and shareable artifact—designed to showcase their skills in data analysis, storytelling, and reproducible research.\nEach portfolio represents not just completed assignments, but a cohesive narrative of the student’s work."
+    "text": "Student Portfolio Books\nAs part of the Lab’s reproducible workflow model, students develop personal portfolio books using Quarto. These books compile their work into a single, polished, and shareable artifact—designed to showcase their skills in data analysis, storytelling, and reproducible research.\nEach portfolio represents not just completed assignments, but a cohesive narrative of the student’s work.\n👉 Explore the full Student Portfolio Volume:\nReproducible Research in Practice: Student Portfolio Volume I"
   },
   {
     "objectID": "about.html#about-the-nyc-open-data-lab",
@@ -705,5 +705,47 @@
     "title": "Speed Cameras",
     "section": "",
     "text": "Authors: Jonah Dratfield & Shannon Joyce\nRoad collisions are one of the leading causes of preventable death in the US. Yet, short of completely overhauling our car-centered infrastructure, is there anything we can do about them?\nSpeed cameras are an obvious solution. Since excessive speed is at the root of many car collisions, it’s reasonable to think that speed cameras can reduce drivers’ speeds and bring down both the total number of road collisions and the number of fatal road collisions. But, what does the empirical evidence say about this intervention? Do speed cameras actually have this effect?\nBased on the past evidence, they do. A 2010 overview of thirty-five separate studies found that speed cameras tended to reduce both the speed of drivers and the rate of collisions in nearby areas. More recently, a 2025 New York City-specific study found that speed cameras reduced collisions around 5% per month. This study used the “staggered rollout” of speed cameras in over 1,800 New York City school zones to compare collision rates between monitored and yet-to-be-monitored areas.\nUsing the metrics available to us on NYC Open Data, as well as other city-related sources, we tried to recreate these findings. Though we used slightly different methods, we came to the same conclusion as both these studies. Our analyses showed that there was a significant downwards trend in both the total number of collisions and the total number of collision-related casualties. Collisions decreased by almost 18%, and casualties dropped by around 24% after the installation of the cameras. In fact, however we sliced up the data, speed cameras appeared to have a positive impact on road safety. They seemed to stop minor collisions from turning into serious collisions and other collisions from occurring at all. You can see the trends in the two graphs below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSo, does this mean that we should dot the streets with speed cameras? Maybe … but not necessarily. The economist Thomas Sowell famously said that “there are no solutions, there are only trade-offs,” and we believe this caveat is worth keeping in mind. There are potential downsides to all interventions—even ones as seemingly straightforward as installing speed cameras to prevent road collisions. One obvious obstacle is money: There are only so many speed cameras that can be installed in a given area, even if they do bring down collisions. That said, speed cameras (even at a large scale) may be relatively cost-efficient compared to other interventions, like increased police monitoring.\nThere are other potential tradeoffs worth thinking about, too; tradeoffs that transcend financial cost/benefit analyses. For instance, there’s the possibility that speed cameras don’t decrease speeds outside a certain contained geographical area. In fact, there’s even the possibility that they lure drivers into a false sense of ease and increase speeds outside the speed cameras’ general vicinity. This downstream effect, if existent, would be roughly consistent with the theories of traffic engineer Hans Monderman. According to the Project for Public Spaces website, Monderman advocated for “the removal of traffic lights, signs, crosswalks, lane markers, and even curbs.” He felt that drivers staying attentive was of the utmost importance for road safety—and that “shared spaces,” devoid of these markers, contributed to this goal. It’s easy to see how speed cameras, like these markers, might (counterintuitively) divert drivers’ attention from the road. Monderman’s overall theory, of course, is by no means universally endorsed —but it’s worth considering.\nWhile we were not able to examine these types of consequences based on the data available to us, the authors of the New York City-specific study were. They examined the “900 foot circular buffer zone around cameras,” as well as spillover effects in nearby zones. And, they did find a general reduction in both speed and collisions in these areas. However, it’s worth bearing in mind that these “900 foot buffer zones” only account for roughly a half minute of driving beyond the actual speed cameras, and that the evidence about nearby buffer zones is based on far weaker experimental methodology than the rest of the paper. We probably need a bit more research before we can truly rule out this “false sense of safety” hypothesis.\nThere are some broader questions about civic complacency linked with all of this, too. It’s worth entertaining the possibility that speed cameras, while consequential short-term remedies, distract from a larger problem—why our society is ok with so many preventable car-related casualties in the first place. After all, significantly reducing the number of car-related casualties from a high baseline is not the same as bringing it down to an acceptable level. In much the same way that speed cameras might lure drivers into a false sense of ease, reductions in traffic casualties might lure citizens into a false sense of ease about just how safe car-centric design is. One potential (though somewhat paradoxical) consequence of installing more and more speed cameras may be that we end up building more, safer, car-centric infrastructure—yet actually increasing the overall number of car-related casualties.\nThat said, the general scientific evidence about speed cameras—both in New York City and in the world at large—is fairly unequivocal. They are a reliable intervention for reducing drivers’ speeds and reducing serious collisions. And, however desirable a completely different transportation system might be, saving lives in the here and now, in this current system, is a more than worthy goal."
+  },
+  {
+    "objectID": "projects.html#textbooks",
+    "href": "projects.html#textbooks",
+    "title": "Projects",
+    "section": "Textbooks",
+    "text": "Textbooks\nThe Lab supports this approach through the development of open educational resources (OER), including textbooks designed around reproducible research workflows.\nThese resources provide structure, guidance, and accessibility—allowing both students and external learners to engage with the same tools and methods.\n\nReproducible Research Using R\n\nThis is accompanied by the R package reproresearchR\n\nTeaching Reproducible Research Using R"
+  },
+  {
+    "objectID": "projects.html#available-r-packages",
+    "href": "projects.html#available-r-packages",
+    "title": "Projects",
+    "section": "Available R Packages",
+    "text": "Available R Packages\nThe Lab maintains a growing ecosystem of R packages that provide a consistent, streamlined interface for accessing open data across cities and systems.\nEach package follows a unified design, allowing users to:\n\nbrowse available datasets\n\npull data directly into R\n\napply filters and queries with minimal setup\n\n\n\nOpen Data Tools\n\nnycOpenData — Access datasets from the NYC Open Data Portal\n\nnysOpenData — Access datasets from New York State Open Data\nmtaOpenData — Access datasets from Mass Transit Authority (MTA)-related open data sources\nchiOpenData — Access datasets from the Chicago Open Data Portal\nlaOpenData — Access datasets from Los Angeles open data portals\n\n\n\n\nReproducible Research Tools\n\nreproresearchR — Tools and utilities supporting reproducible research workflows in R and Quarto"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2026 Christian Martinez\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "publications-media.html#featured-talks",
+    "href": "publications-media.html#featured-talks",
+    "title": "Publications & Media",
+    "section": "Featured Talks",
+    "text": "Featured Talks\n\nNYC Open Data Week 2026\nTeaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows\n\n🎥 Watch the talk\n\n📊 View slides\n\n\n\n\nposit::conf(2026)\nDesigning Reproducible Learning Ecosystems with R and Quarto\n\n🔗 Conference sessions\n\n\n\n\nuseR! 2026\nTeaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development\n\n🔗 Conference site"
+  },
+  {
+    "objectID": "publications-media.html#podcasts",
+    "href": "publications-media.html#podcasts",
+    "title": "Publications & Media",
+    "section": "Podcasts",
+    "text": "Podcasts\n\nRelevance Drives Rigor: Exploring Open Data With R\n\nCivic Tech Chat"
+  },
+  {
+    "objectID": "publications-media.html#publications",
+    "href": "publications-media.html#publications",
+    "title": "Publications & Media",
+    "section": "Publications",
+    "text": "Publications\n\nRelevance Drives Rigor: Lessons from Teaching with Open Data\n\nAEA365 (American Evaluation Association)\n\nFaculty Member Launches Open-Source Tool to Transform Access to New York City Civic Data\n\nBrooklyn College News\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nMedium (Antoine Soetewey)\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nStats and R"
   }
 ]

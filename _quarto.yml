@@ -14,10 +14,6 @@ website:
         text: Stories
       - href: projects.qmd
         text: Projects
-      - href: tools.qmd
-        text: Tools
-      - href: teaching-oer.qmd
-        text: Teaching & OER
       - href: contributors.qmd
         text: Contributors
       - href: publications-media.qmd
