@@ -5,28 +5,27 @@ description: "Contributor to the NYC Open Data Lab"
 
 ## Projects & Publications
 
--   [Social Infrastructure & Well-Being](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/02-Final-Social-Infrastructure-and-Well-Being-Jonah.html)
+- [Social Infrastructure & Well-Being](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/02-Final-Social-Infrastructure-and-Well-Being-Jonah.html)
 
----
+------------------------------------------------------------------------
 
 ## Portfolio
 
 A curated collection of work developed using reproducible workflows in R and Quarto.
 
--   📘 [View Portfolio Book](https://connect.posit.cloud/jdratfield38/content/019c6c0a-422b-4619-247b-d5dc28e84b0a)
+- 📘 [View Portfolio Book](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/chapters/jonah-dratfield.html)
 
----
+------------------------------------------------------------------------
 
 ## Contributions to the Lab
 
--   Contributor to the NYC Open Data Student Gallery\
--   Contributor to the development of the nycOpenData R package
+- Contributor to the NYC Open Data Student Gallery\
+- Contributor to the development of the nycOpenData R package
 
----
+------------------------------------------------------------------------
 
 ## Links
 
--   [GitHub](https://github.com/jdratfield38)\
--   [LinkedIn](https://www.linkedin.com/in/jonah-dratfield-932584167/)\
--   [ORCID](https://orcid.org/0009-0005-6153-2590)
-
+- [GitHub](https://github.com/jdratfield38)\
+- [LinkedIn](https://www.linkedin.com/in/jonah-dratfield-932584167/)\
+- [ORCID](https://orcid.org/0009-0005-6153-2590)

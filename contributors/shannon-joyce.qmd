@@ -5,30 +5,27 @@ description: "Contributor to the NYC Open Data Lab"
 
 ## Projects & Publications
 
--   [Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/06-ToxicHomes-Shannon.html)
+- [Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/06-ToxicHomes-Shannon.html)
 
----
+------------------------------------------------------------------------
 
 ## Portfolio
 
 A curated collection of work developed using reproducible workflows in R and Quarto.
 
--   📘 [View Portfolio Book](https://019c7f53-4be2-1e5f-eb67-bc25d711ee72.share.connect.posit.cloud/)
+- 📘 [View Portfolio Book](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/chapters/shannon-joyce.html)
 
----
+------------------------------------------------------------------------
 
 ## Contributions to the Lab
 
--   Contributor to the NYC Open Data Student Gallery\
--   Contributor to the development of the nycOpenData R package
+- Contributor to the NYC Open Data Student Gallery\
+- Contributor to the development of the nycOpenData R package
 
----
+------------------------------------------------------------------------
 
 ## Links
 
--   [GitHub](https://github.com/shannonjoyce)\
--   [LinkedIn](https://www.linkedin.com/in/shannon-joyce-aba12a1b5/)\
--   [ORCID](https://orcid.org/0009-0000-5548-4952)
-
-
-
+- [GitHub](https://github.com/shannonjoyce)\
+- [LinkedIn](https://www.linkedin.com/in/shannon-joyce-aba12a1b5/)\
+- [ORCID](https://orcid.org/0009-0000-5548-4952)

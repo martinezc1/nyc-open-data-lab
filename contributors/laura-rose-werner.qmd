@@ -5,26 +5,26 @@ description: "Contributor to the NYC Open Data Lab"
 
 ## Projects & Publications
 
--   [Domestic Violence Incidents vs Recourse Allocation Across NYC](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/09-Domestic-Violence-Incidents-vs-Recourse-Allocation-Across-NYC-Laura.html)
+- [Domestic Violence Incidents vs Recourse Allocation Across NYC](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/09-Domestic-Violence-Incidents-vs-Recourse-Allocation-Across-NYC-Laura.html)
 
----
+------------------------------------------------------------------------
 
 ## Portfolio
 
 A curated collection of work developed using reproducible workflows in R and Quarto.
 
--   📘 [View Portfolio Book](https://019c7ca5-9872-3f70-0ff8-780f5f216b2e.share.connect.posit.cloud/)
+- 📘 [View Portfolio Book](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/chapters/laura-rose-werner.html)
 
----
+------------------------------------------------------------------------
 
 ## Contributions to the Lab
 
--   Contributor to the NYC Open Data Student Gallery\
--   Contributor to the development of the nycOpenData R package
+- Contributor to the NYC Open Data Student Gallery\
+- Contributor to the development of the nycOpenData R package
 
----
+------------------------------------------------------------------------
 
 ## Links
 
--   [GitHub](https://github.com/laurarosewerner)
--   [LinkedIn](https://www.linkedin.com/in/laura-werner-9a21b73ba/)
+- [GitHub](https://github.com/laurarosewerner)
+- [LinkedIn](https://www.linkedin.com/in/laura-werner-9a21b73ba/)

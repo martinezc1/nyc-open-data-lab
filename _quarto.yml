@@ -20,8 +20,6 @@ website:
         text: Teaching & OER
       - href: contributors.qmd
         text: Contributors
-      - href: talks.qmd
-        text: Talks
       - href: publications-media.qmd
         text: Publications & Media
     right:

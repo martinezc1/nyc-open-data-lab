@@ -8,11 +8,40 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
 ------------------------------------------------------------------------
 
+## Featured Talks
+
+### NYC Open Data Week 2026
+
+**Teaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows**
+
+- 🎥 [Watch the talk](https://www.youtube.com/watch?v=FjDyCY4MAO4)\
+- 📊 [View slides](https://martinezc1.github.io/nyc-open-data-week-2026/#/title-slide)
+
+------------------------------------------------------------------------
+
+### posit::conf(2026)
+
+**Designing Reproducible Learning Ecosystems with R and Quarto**
+
+- 🔗 [Conference sessions](https://conf.posit.co/2026/sessions/)
+
+------------------------------------------------------------------------
+
+### useR! 2026
+
+**Teaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development**
+
+- 🔗 [Conference site](https://user2026.r-project.org/)
+
+------------------------------------------------------------------------
+
 ## Podcasts
 
 -   [Relevance Drives Rigor: Exploring Open Data With R](https://civictech.chat/episodes/relevance-drives-rigor-exploring-open-data-with-r)
 
     -   **Civic Tech Chat**
+
+------------------------------------------------------------------------
 
 ## Publications
 

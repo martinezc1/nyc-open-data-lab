@@ -5,29 +5,27 @@ description: "Contributor to the NYC Open Data Lab"
 
 ## Projects & Publications
 
--   [The Madison Square Garden Effect in the NBA](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/04-MSG-effect-Robert.html)
+- [The Madison Square Garden Effect in the NBA](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/04-MSG-effect-Robert.html)
 
----
+------------------------------------------------------------------------
 
 ## Portfolio
 
 A curated collection of work developed using reproducible workflows in R and Quarto.
 
--   📘 [View Portfolio Book](https://posit.cloud/content/11909755)
+- 📘 [View Portfolio Book](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/chapters/robert-hutto.html)
 
----
+------------------------------------------------------------------------
 
 ## Contributions to the Lab
 
--   Contributor to the NYC Open Data Student Gallery\
--   Contributor to the development of the nycOpenData R package
+- Contributor to the NYC Open Data Student Gallery\
+- Contributor to the development of the nycOpenData R package
 
----
+------------------------------------------------------------------------
 
 ## Links
 
--   [GitHub](https://github.com/robhutto)\
--   [LinkedIn](https://www.linkedin.com/in/robert-hutto-2497ab181/)\
--   [ORCID](https://orcid.org/0009-0000-6343-6459)
-
-
+- [GitHub](https://github.com/robhutto)\
+- [LinkedIn](https://www.linkedin.com/in/robert-hutto-2497ab181/)\
+- [ORCID](https://orcid.org/0009-0000-6343-6459)

@@ -5,7 +5,7 @@ description: "Contributor to the NYC Open Data Lab"
 
 ## Projects & Publications
 
--   [Environmental Stressors and Social Complaints in New York City](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/07-EnvironmentalStressorsandSocialComplaintsNYC-Emma.html)
+- [Environmental Stressors and Social Complaints in New York City](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/07-EnvironmentalStressorsandSocialComplaintsNYC-Emma.html)
 
 ------------------------------------------------------------------------
 
@@ -13,19 +13,19 @@ description: "Contributor to the NYC Open Data Lab"
 
 A curated collection of work developed using reproducible workflows in R and Quarto.
 
--   📘 [View Portfolio Book](https://019b2f1f-f2b9-d61a-d328-03690c0bd6da.share.connect.posit.cloud/index.html)
+- 📘 [View Portfolio Book](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/chapters/emma-tupone.html)
 
 ------------------------------------------------------------------------
 
 ## Contributions to the Lab
 
--   Contributor to the NYC Open Data Student Gallery\
--   Contributor to the development of the nycOpenData R package
+- Contributor to the NYC Open Data Student Gallery\
+- Contributor to the development of the nycOpenData R package
 
 ------------------------------------------------------------------------
 
 ## Links
 
--   [GitHub](https://github.com/emmatup0205)\
--   [LinkedIn](https://www.linkedin.com/in/emma-tupone-1353a1291/)\
--   [ORCID](https://orcid.org/0009-0001-7207-0986)
+- [GitHub](https://github.com/emmatup0205)\
+- [LinkedIn](https://www.linkedin.com/in/emma-tupone-1353a1291/)\
+- [ORCID](https://orcid.org/0009-0001-7207-0986)

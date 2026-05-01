@@ -5,27 +5,27 @@ description: "Contributor to the NYC Open Data Lab"
 
 ## Projects & Publications
 
--   [From School To Juvenile Incarceration](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/05-Final-Project-Isley.html)
+- [From School To Juvenile Incarceration](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/05-Final-Project-Isley.html)
 
----
+------------------------------------------------------------------------
 
 ## Portfolio
 
 A curated collection of work developed using reproducible workflows in R and Quarto.
 
--   📘 [View Portfolio Book](https://bookdown.org/content/44ef55ba-9048-4d19-a9b2-78c7ff7c557a/)
+- 📘 [View Portfolio Book](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/chapters/isley-jean-pierre.html)
 
----
+------------------------------------------------------------------------
 
 ## Contributions to the Lab
 
--   Contributor to the NYC Open Data Student Gallery\
--   Contributor to the development of the nycOpenData R package
+- Contributor to the NYC Open Data Student Gallery\
+- Contributor to the development of the nycOpenData R package
 
----
+------------------------------------------------------------------------
 
 ## Links
 
--   [GitHub](https://github.com/ijpier)\
--   [LinkedIn](https://www.linkedin.com/in/isley-jean-pierre-21aa00396/)\
--   [ORCID](https://orcid.org/0009-0003-2584-0292)
+- [GitHub](https://github.com/ijpier)\
+- [LinkedIn](https://www.linkedin.com/in/isley-jean-pierre-21aa00396/)\
+- [ORCID](https://orcid.org/0009-0003-2584-0292)
