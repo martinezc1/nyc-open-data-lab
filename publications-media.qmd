@@ -63,6 +63,14 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
   - **Civic Tech Chat**
 
+- [From Homework to Portfolio: NYC Open Data in the Classroom](https://policyviz.com/podcast/christian-martinez-shannon-joyce-nyc-open-data/)
+
+  - **PolicyViz**
+
+- [NYC Open Data Student Gallery](https://newbooksnetwork.com/christian-martinez-nyc-open-data-student-gallery-brooklyn-college-cuny-2026)
+
+  - **New Books Network - Science, Technology, and Society (**[Gregory McNiff](https://newbooksnetwork.com/hosts/profile/877bc251-2912-483a-be9c-dee9e8c89b3b))
+
 ------------------------------------------------------------------------
 
 ## Publications
