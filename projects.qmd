@@ -14,7 +14,7 @@ The NYC Open Data Student Gallery is a collection of graduate student research p
 
 All projects are published as part of a cohesive, public-facing body of work.
 
-👉 [View the Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/)
+- [NYC Open Data Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/)
 
 ------------------------------------------------------------------------
 
@@ -24,8 +24,7 @@ As part of the Lab’s reproducible workflow model, students develop personal po
 
 Each portfolio represents not just completed assignments, but a cohesive narrative of the student’s work.
 
-👉 **Explore the full Student Portfolio Volume:**\
-[Reproducible Research in Practice: Student Portfolio Volume I](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/)
+- [Reproducible Research in Practice: Student Portfolio Volume I](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/)
 
 ------------------------------------------------------------------------
 
