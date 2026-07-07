@@ -54,7 +54,7 @@ Each package follows a unified design, allowing users to:
 
 ### Open Data Tools
 
-- [nycOpenData](https://martinezc1.github.io/nycOpenData/) — Access datasets from the NYC Open Data Portal\
+- [nycOpenData](https://ropensci.github.io/nycOpenData/) — Access datasets from the NYC Open Data Portal\
 
 - [nysOpenData](https://martinezc1.github.io/nysOpenData/) — Access datasets from New York State Open Data
 
