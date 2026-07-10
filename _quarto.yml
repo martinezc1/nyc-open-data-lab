@@ -15,7 +15,7 @@ website:
       - href: projects.qmd
         text: Projects
       - href: contributors.qmd
-        text: Contributors
+        text: People & Programs
       - href: publications-media.qmd
         text: Publications & Media
     right:

@@ -14,7 +14,7 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
 **Teaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows**
 
-- 🎥 [Watch the talk](https://www.youtube.com/watch?v=FjDyCY4MAO4)\
+- 🎥 [Watch the talk](https://www.youtube.com/watch?v=Vw8PhY7NDGE)\
 - 📊 [View slides](https://martinezc1.github.io/nyc-open-data-week-2026/#/title-slide)
 
 ------------------------------------------------------------------------

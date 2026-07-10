@@ -375,21 +375,21 @@
     "href": "contributors.html#explore-contributors",
     "title": "Contributors",
     "section": "Explore Contributors",
-    "text": "Explore Contributors\nBrowse contributor profiles below to learn more about their work and projects."
+    "text": "Explore Contributors\nBrowse contributor profiles below to learn more about their work and projects.\n\n\n\n\n\n\n\nChristian Martinez\n\n\nFounder of the NYC Open Data Lab and creator of the OpenData R package ecosystem\n\n\n\n\n\n\n\n\n\nCrystal Adote\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nEmma Tupone\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nIsley Jean-Pierre\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nJonah Dratfield\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nJoyce Escatel-Flores\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nLaura Rose Werner\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nRobert Hutto\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nShannon Joyce\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nXinru Wang\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html#nyc-open-data-student-gallery",
     "href": "projects.html#nyc-open-data-student-gallery",
     "title": "Projects",
     "section": "NYC Open Data Student Gallery",
-    "text": "NYC Open Data Student Gallery\nThe NYC Open Data Student Gallery is a collection of graduate student research projects developed using NYC Open Data. Each project explores a unique question about New York City through data analysis, visualization, and reproducible workflows.\nAll projects are published as part of a cohesive, public-facing body of work.\n👉 View the Student Gallery"
+    "text": "NYC Open Data Student Gallery\nThe NYC Open Data Student Gallery is a collection of graduate student research projects developed using NYC Open Data. Each project explores a unique question about New York City through data analysis, visualization, and reproducible workflows.\nAll projects are published as part of a cohesive, public-facing body of work.\n\nNYC Open Data Student Gallery"
   },
   {
     "objectID": "projects.html#student-portfolio-books",
     "href": "projects.html#student-portfolio-books",
     "title": "Projects",
     "section": "Student Portfolio Books",
-    "text": "Student Portfolio Books\nAs part of the Lab’s reproducible workflow model, students develop personal portfolio books using Quarto. These books compile their work into a single, polished, and shareable artifact—designed to showcase their skills in data analysis, storytelling, and reproducible research.\nEach portfolio represents not just completed assignments, but a cohesive narrative of the student’s work.\n👉 Explore the full Student Portfolio Volume:\nReproducible Research in Practice: Student Portfolio Volume I"
+    "text": "Student Portfolio Books\nAs part of the Lab’s reproducible workflow model, students develop personal portfolio books using Quarto. These books compile their work into a single, polished, and shareable artifact—designed to showcase their skills in data analysis, storytelling, and reproducible research.\nEach portfolio represents not just completed assignments, but a cohesive narrative of the student’s work.\n\nReproducible Research in Practice: Student Portfolio Volume I"
   },
   {
     "objectID": "about.html#about-the-nyc-open-data-lab",
@@ -732,14 +732,14 @@
     "href": "publications-media.html#featured-talks",
     "title": "Publications & Media",
     "section": "Featured Talks",
-    "text": "Featured Talks\n\nNYC Open Data Week 2026\nTeaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows\n\n🎥 Watch the talk\n\n📊 View slides\n\n\n\n\nposit::conf(2026)\nDesigning Reproducible Learning Ecosystems with R and Quarto\n\n🔗 Conference sessions\n\n\n\n\nuseR! 2026\nTeaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development\n\n🔗 Conference site"
+    "text": "Featured Talks\n\nNYC Open Data Week 2026\nTeaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows\n\n🎥 Watch the talk\n\n📊 View slides\n\n\n\n\nposit::conf(2026)\nDesigning Reproducible Learning Ecosystems with R and Quarto\n\n🔗 Conference sessions\n\n\n\n\nuseR! 2026\nTeaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development\n\n🔗 Conference site\n\n\n\n\nNew York Open Statistical Programming Meetup\nLowering Barriers to Open Data: Classroom to CRAN\n\n🔗 Meetup video\n\n\n\n\nBrooklyn College 29th Annual Faculty Day Conference 2026\nReproducible Research Using R: The Impact of Open Data and Open Resources\n\n🔗 Conference site\n\n\n\n\nBrooklyn College Psychology Department In-House Conference 2026\nThe Accidental Author: Scaffolding Reproducible Research and Digital Scholarly Identity in an M.S. Psychology Classroom"
   },
   {
     "objectID": "publications-media.html#podcasts",
     "href": "publications-media.html#podcasts",
     "title": "Publications & Media",
     "section": "Podcasts",
-    "text": "Podcasts\n\nRelevance Drives Rigor: Exploring Open Data With R\n\nCivic Tech Chat"
+    "text": "Podcasts\n\nRelevance Drives Rigor: Exploring Open Data With R\n\nCivic Tech Chat\n\nFrom Homework to Portfolio: NYC Open Data in the Classroom\n\nPolicyViz\n\nNYC Open Data Student Gallery\n\nNew Books Network - Science, Technology, and Society (Gregory McNiff)"
   },
   {
     "objectID": "publications-media.html#publications",
@@ -747,5 +747,271 @@
     "title": "Publications & Media",
     "section": "Publications",
     "text": "Publications\n\nRelevance Drives Rigor: Lessons from Teaching with Open Data\n\nAEA365 (American Evaluation Association)\n\nFaculty Member Launches Open-Source Tool to Transform Access to New York City Civic Data\n\nBrooklyn College News\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nMedium (Antoine Soetewey)\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nStats and R"
+  },
+  {
+    "objectID": "Open Source Software Development Track.html",
+    "href": "Open Source Software Development Track.html",
+    "title": "Open Source Software Development Track",
+    "section": "",
+    "text": "yooo"
+  },
+  {
+    "objectID": "Open Source Software Development Track.html#overview",
+    "href": "Open Source Software Development Track.html#overview",
+    "title": "Open Source Software Development Track",
+    "section": "Overview",
+    "text": "Overview\nThe Open Source Software Development Track is designed for an intern interested in building public, reusable tools that make civic open data easier to access, analyze, and teach with.\nThe intern will contribute to the NYC Open Data Lab by developing R packages modeled after nycOpenData, with the goal of expanding access to open data from cities beyond New York City."
+  },
+  {
+    "objectID": "Open Source Software Development Track.html#mission",
+    "href": "Open Source Software Development Track.html#mission",
+    "title": "Open Source Software Development Track",
+    "section": "Mission",
+    "text": "Mission\nThe mission of this track is to help create a growing ecosystem of open-source R packages that make municipal open data more accessible to students, researchers, educators, journalists, analysts, and the broader public.\nRather than completing isolated assignments, the intern will produce public-facing software that can be used, cited, improved, and shared beyond the internship."
+  },
+  {
+    "objectID": "Open Source Software Development Track.html#primary-responsibilities",
+    "href": "Open Source Software Development Track.html#primary-responsibilities",
+    "title": "Open Source Software Development Track",
+    "section": "Primary Responsibilities",
+    "text": "Primary Responsibilities\nThe intern will work on developing R packages that provide convenient access to public open data APIs. Responsibilities may include:\n\nExploring municipal open data portals\nIdentifying useful API endpoints\nWriting R functions to access datasets\nCleaning and standardizing returned data\nWriting documentation and examples\nCreating package vignettes\nBuilding package websites using pkgdown\nWriting tests\nUsing GitHub for version control and issue tracking\nPreparing packages for public release"
+  },
+  {
+    "objectID": "Open Source Software Development Track.html#expected-deliverables",
+    "href": "Open Source Software Development Track.html#expected-deliverables",
+    "title": "Open Source Software Development Track",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\nBy the end of the summer, the intern should aim to produce:\n\nOne or more public R package repositories\nDocumented package functions\nExample use cases or vignettes\nA package website\nA short final reflection or technical blog post\nA final presentation/demo of the completed work\n\nThe exact number of packages will depend on the complexity of each city’s open data portal and API structure. Quality, documentation, and usability are prioritized over quantity."
+  },
+  {
+    "objectID": "Open Source Software Development Track.html#professional-development-goals",
+    "href": "Open Source Software Development Track.html#professional-development-goals",
+    "title": "Open Source Software Development Track",
+    "section": "Professional Development Goals",
+    "text": "Professional Development Goals\nThrough this track, the intern will gain experience with:\n\nR package development\nAPI access and data retrieval\nReproducible workflows\nGit and GitHub\nOpen-source collaboration\nTechnical writing\nPublic software documentation\nCivic technology and open data\n\nThe goal is for the intern to leave with meaningful public work that can be included in a portfolio, resume, graduate school application, or future job application."
+  },
+  {
+    "objectID": "Open Source Software Development Track.html#mentorship-and-expectations",
+    "href": "Open Source Software Development Track.html#mentorship-and-expectations",
+    "title": "Open Source Software Development Track",
+    "section": "Mentorship and Expectations",
+    "text": "Mentorship and Expectations\nThe intern will meet regularly with the NYC Open Data Lab director to review progress, troubleshoot issues, and plan next steps.\nThe intern is expected to:\n\nCommunicate progress consistently\nAsk questions when blocked\nDocument work clearly\nCommit code regularly\nPrioritize reproducibility and usability\nTreat the project as a public contribution"
+  },
+  {
+    "objectID": "Open Source Software Development Track.html#end-of-summer-outcome",
+    "href": "Open Source Software Development Track.html#end-of-summer-outcome",
+    "title": "Open Source Software Development Track",
+    "section": "End-of-Summer Outcome",
+    "text": "End-of-Summer Outcome\nBy the end of the internship, the intern should have contributed to the broader open data community by creating tools that help people more easily access and work with public data.\nThe ideal outcome is not only a completed package, but a reusable development workflow that future interns and contributors can build upon."
+  },
+  {
+    "objectID": "internships.html",
+    "href": "internships.html",
+    "title": "Internships",
+    "section": "",
+    "text": "Browse contributor profiles below to learn more about their work and projects.\n\n\n\n\n\n\n\n\n\n\n\nNYC Open Data Lab Summer Internship\n\n\n\n\n\n\n\n\n\nOpen Source Software Development Track\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "sports-internship.html#overview",
+    "href": "sports-internship.html#overview",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Overview",
+    "text": "Overview\nThe Sports Analytics Research Track is designed for an intern interested in applying data science, reproducible research, and data visualization to collegiate basketball.\nUsing the NYC Open Data Lab’s growing CUNY Basketball Database, the intern will develop analytical reports that transform raw data into actionable insights for coaches, players, and the broader basketball community."
+  },
+  {
+    "objectID": "sports-internship.html#mission",
+    "href": "sports-internship.html#mission",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Mission",
+    "text": "Mission\nThe mission of this track is to develop reproducible, data-driven scouting and performance reports that support evidence-based decision making while demonstrating how open, well-documented data can be used to communicate meaningful insights.\nRather than completing isolated assignments, the intern will create public-facing analytical products that can serve as reusable templates for future seasons and future contributors."
+  },
+  {
+    "objectID": "sports-internship.html#primary-responsibilities",
+    "href": "sports-internship.html#primary-responsibilities",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Primary Responsibilities",
+    "text": "Primary Responsibilities\nThe intern will work on designing and developing basketball analytics reports using R and Quarto. Responsibilities may include:\n\nExploring and validating the CUNY Basketball Database\nIdentifying meaningful performance metrics\nCreating visualizations that communicate key findings\nDesigning reproducible Quarto report templates\nDeveloping opponent scouting reports\nCreating team performance summaries\nDocumenting analytical methods and report workflows\nUsing GitHub for version control and collaboration\nImproving and expanding existing analytical tools"
+  },
+  {
+    "objectID": "sports-internship.html#expected-deliverables",
+    "href": "sports-internship.html#expected-deliverables",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\nBy the end of the summer, the intern should aim to produce:\n\nA collection of reproducible Quarto scouting report templates\nAutomated PDF reports generated from the basketball database\nClear visualizations highlighting player and team performance\nDocumentation describing report generation and interpretation\nA final presentation demonstrating the completed reporting system\n\nThe exact number and scope of reports will depend on project complexity and feedback from coaches. Quality, clarity, reproducibility, and practical usefulness are prioritized over quantity."
+  },
+  {
+    "objectID": "sports-internship.html#professional-development-goals",
+    "href": "sports-internship.html#professional-development-goals",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Professional Development Goals",
+    "text": "Professional Development Goals\nThrough this track, the intern will gain experience with:\n\nSports analytics\nReproducible research\nData visualization\nQuarto reporting\nRelational databases\nStatistical analysis\nGit and GitHub\nTechnical communication\nTranslating data into actionable insights\n\nThe goal is for the intern to leave with a portfolio of analytical work that demonstrates both technical ability and effective communication."
+  },
+  {
+    "objectID": "sports-internship.html#mentorship-and-expectations",
+    "href": "sports-internship.html#mentorship-and-expectations",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Mentorship and Expectations",
+    "text": "Mentorship and Expectations\nThe intern will meet regularly with the NYC Open Data Lab director to review progress, discuss analytical approaches, and refine reporting strategies.\nThe intern is expected to:\n\nCommunicate progress consistently\nAsk questions when blocked\nDocument analytical decisions\nMaintain reproducible workflows\nCommit code regularly\nFocus on producing reports that are accurate, interpretable, and useful"
+  },
+  {
+    "objectID": "sports-internship.html#end-of-summer-outcome",
+    "href": "sports-internship.html#end-of-summer-outcome",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "End-of-Summer Outcome",
+    "text": "End-of-Summer Outcome\nBy the end of the internship, the intern should have developed a reproducible reporting framework capable of generating professional-quality basketball scouting and performance reports from the CUNY Basketball Database.\nThe ideal outcome is not only a collection of completed reports, but a scalable analytics framework that can continue to grow alongside the database and support future research, coaching, and educational initiatives."
+  },
+  {
+    "objectID": "internships/software-internship.html#overview",
+    "href": "internships/software-internship.html#overview",
+    "title": "Open Source Software Development Track",
+    "section": "Overview",
+    "text": "Overview\nThe Open Source Software Development Track is designed for an intern interested in building public, reusable tools that make civic open data easier to access, analyze, and teach with.\nThe intern will contribute to the NYC Open Data Lab by developing R packages modeled after nycOpenData, with the goal of expanding access to open data from cities beyond New York City."
+  },
+  {
+    "objectID": "internships/software-internship.html#mission",
+    "href": "internships/software-internship.html#mission",
+    "title": "Open Source Software Development Track",
+    "section": "Mission",
+    "text": "Mission\nThe mission of this track is to help create a growing ecosystem of open-source R packages that make municipal open data more accessible to students, researchers, educators, journalists, analysts, and the broader public.\nRather than completing isolated assignments, the intern will produce public-facing software that can be used, cited, improved, and shared beyond the internship."
+  },
+  {
+    "objectID": "internships/software-internship.html#primary-responsibilities",
+    "href": "internships/software-internship.html#primary-responsibilities",
+    "title": "Open Source Software Development Track",
+    "section": "Primary Responsibilities",
+    "text": "Primary Responsibilities\nThe intern will work on developing R packages that provide convenient access to public open data APIs. Responsibilities may include:\n\nExploring municipal open data portals\nIdentifying useful API endpoints\nWriting R functions to access datasets\nCleaning and standardizing returned data\nWriting documentation and examples\nCreating package vignettes\nBuilding package websites using pkgdown\nWriting tests\nUsing GitHub for version control and issue tracking\nPreparing packages for public release"
+  },
+  {
+    "objectID": "internships/software-internship.html#expected-deliverables",
+    "href": "internships/software-internship.html#expected-deliverables",
+    "title": "Open Source Software Development Track",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\nBy the end of the summer, the intern should aim to produce:\n\nOne or more public R package repositories\nDocumented package functions\nExample use cases or vignettes\nA package website\nA short final reflection or technical blog post\nA final presentation/demo of the completed work\n\nThe exact number of packages will depend on the complexity of each city’s open data portal and API structure. Quality, documentation, and usability are prioritized over quantity."
+  },
+  {
+    "objectID": "internships/software-internship.html#professional-development-goals",
+    "href": "internships/software-internship.html#professional-development-goals",
+    "title": "Open Source Software Development Track",
+    "section": "Professional Development Goals",
+    "text": "Professional Development Goals\nThrough this track, the intern will gain experience with:\n\nR package development\nAPI access and data retrieval\nReproducible workflows\nGit and GitHub\nOpen-source collaboration\nTechnical writing\nPublic software documentation\nCivic technology and open data\n\nThe goal is for the intern to leave with meaningful public work that can be included in a portfolio, resume, graduate school application, or future job application."
+  },
+  {
+    "objectID": "internships/software-internship.html#mentorship-and-expectations",
+    "href": "internships/software-internship.html#mentorship-and-expectations",
+    "title": "Open Source Software Development Track",
+    "section": "Mentorship and Expectations",
+    "text": "Mentorship and Expectations\nThe intern will meet regularly with the NYC Open Data Lab director to review progress, troubleshoot issues, and plan next steps.\nThe intern is expected to:\n\nCommunicate progress consistently\nAsk questions when blocked\nDocument work clearly\nCommit code regularly\nPrioritize reproducibility and usability\nTreat the project as a public contribution"
+  },
+  {
+    "objectID": "internships/software-internship.html#end-of-summer-outcome",
+    "href": "internships/software-internship.html#end-of-summer-outcome",
+    "title": "Open Source Software Development Track",
+    "section": "End-of-Summer Outcome",
+    "text": "End-of-Summer Outcome\nBy the end of the internship, the intern should have contributed to the broader open data community by creating tools that help people more easily access and work with public data.\nThe ideal outcome is not only a completed package, but a reusable development workflow that future interns and contributors can build upon."
+  },
+  {
+    "objectID": "software-internship.html#overview",
+    "href": "software-internship.html#overview",
+    "title": "Open Source Software Development Track",
+    "section": "Overview",
+    "text": "Overview\nThe Open Source Software Development Track is designed for an intern interested in building public, reusable tools that make civic open data easier to access, analyze, and teach with.\nThe intern will contribute to the NYC Open Data Lab by developing R packages modeled after nycOpenData, with the goal of expanding access to open data from cities beyond New York City."
+  },
+  {
+    "objectID": "software-internship.html#mission",
+    "href": "software-internship.html#mission",
+    "title": "Open Source Software Development Track",
+    "section": "Mission",
+    "text": "Mission\nThe mission of this track is to help create a growing ecosystem of open-source R packages that make municipal open data more accessible to students, researchers, educators, journalists, analysts, and the broader public.\nRather than completing isolated assignments, the intern will produce public-facing software that can be used, cited, improved, and shared beyond the internship."
+  },
+  {
+    "objectID": "software-internship.html#primary-responsibilities",
+    "href": "software-internship.html#primary-responsibilities",
+    "title": "Open Source Software Development Track",
+    "section": "Primary Responsibilities",
+    "text": "Primary Responsibilities\nThe intern will work on developing R packages that provide convenient access to public open data APIs. Responsibilities may include:\n\nExploring municipal open data portals\nIdentifying useful API endpoints\nWriting R functions to access datasets\nCleaning and standardizing returned data\nWriting documentation and examples\nCreating package vignettes\nBuilding package websites using pkgdown\nWriting tests\nUsing GitHub for version control and issue tracking\nPreparing packages for public release"
+  },
+  {
+    "objectID": "software-internship.html#expected-deliverables",
+    "href": "software-internship.html#expected-deliverables",
+    "title": "Open Source Software Development Track",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\nBy the end of the summer, the intern should aim to produce:\n\nOne or more public R package repositories\nDocumented package functions\nExample use cases or vignettes\nA package website\nA short final reflection or technical blog post\nA final presentation/demo of the completed work\n\nThe exact number of packages will depend on the complexity of each city’s open data portal and API structure. Quality, documentation, and usability are prioritized over quantity."
+  },
+  {
+    "objectID": "software-internship.html#professional-development-goals",
+    "href": "software-internship.html#professional-development-goals",
+    "title": "Open Source Software Development Track",
+    "section": "Professional Development Goals",
+    "text": "Professional Development Goals\nThrough this track, the intern will gain experience with:\n\nR package development\nAPI access and data retrieval\nReproducible workflows\nGit and GitHub\nOpen-source collaboration\nTechnical writing\nPublic software documentation\nCivic technology and open data\n\nThe goal is for the intern to leave with meaningful public work that can be included in a portfolio, resume, graduate school application, or future job application."
+  },
+  {
+    "objectID": "software-internship.html#mentorship-and-expectations",
+    "href": "software-internship.html#mentorship-and-expectations",
+    "title": "Open Source Software Development Track",
+    "section": "Mentorship and Expectations",
+    "text": "Mentorship and Expectations\nThe intern will meet regularly with the NYC Open Data Lab director to review progress, troubleshoot issues, and plan next steps.\nThe intern is expected to:\n\nCommunicate progress consistently\nAsk questions when blocked\nDocument work clearly\nCommit code regularly\nPrioritize reproducibility and usability\nTreat the project as a public contribution"
+  },
+  {
+    "objectID": "software-internship.html#end-of-summer-outcome",
+    "href": "software-internship.html#end-of-summer-outcome",
+    "title": "Open Source Software Development Track",
+    "section": "End-of-Summer Outcome",
+    "text": "End-of-Summer Outcome\nBy the end of the internship, the intern should have contributed to the broader open data community by creating tools that help people more easily access and work with public data.\nThe ideal outcome is not only a completed package, but a reusable development workflow that future interns and contributors can build upon."
+  },
+  {
+    "objectID": "internships/sports-internship.html#overview",
+    "href": "internships/sports-internship.html#overview",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Overview",
+    "text": "Overview\nThe Sports Analytics Research Track is designed for an intern interested in applying data science, reproducible research, and data visualization to collegiate basketball.\nUsing the NYC Open Data Lab’s growing CUNY Basketball Database, the intern will develop analytical reports that transform raw data into actionable insights for coaches, players, and the broader basketball community."
+  },
+  {
+    "objectID": "internships/sports-internship.html#mission",
+    "href": "internships/sports-internship.html#mission",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Mission",
+    "text": "Mission\nThe mission of this track is to develop reproducible, data-driven scouting and performance reports that support evidence-based decision making while demonstrating how open, well-documented data can be used to communicate meaningful insights.\nRather than completing isolated assignments, the intern will create public-facing analytical products that can serve as reusable templates for future seasons and future contributors."
+  },
+  {
+    "objectID": "internships/sports-internship.html#primary-responsibilities",
+    "href": "internships/sports-internship.html#primary-responsibilities",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Primary Responsibilities",
+    "text": "Primary Responsibilities\nThe intern will work on designing and developing basketball analytics reports using R and Quarto. Responsibilities may include:\n\nExploring and validating the CUNY Basketball Database\nIdentifying meaningful performance metrics\nCreating visualizations that communicate key findings\nDesigning reproducible Quarto report templates\nDeveloping opponent scouting reports\nCreating team performance summaries\nDocumenting analytical methods and report workflows\nUsing GitHub for version control and collaboration\nImproving and expanding existing analytical tools"
+  },
+  {
+    "objectID": "internships/sports-internship.html#expected-deliverables",
+    "href": "internships/sports-internship.html#expected-deliverables",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Expected Deliverables",
+    "text": "Expected Deliverables\nBy the end of the summer, the intern should aim to produce:\n\nA collection of reproducible Quarto scouting report templates\nAutomated PDF reports generated from the basketball database\nClear visualizations highlighting player and team performance\nDocumentation describing report generation and interpretation\nA final presentation demonstrating the completed reporting system\n\nThe exact number and scope of reports will depend on project complexity and feedback from coaches. Quality, clarity, reproducibility, and practical usefulness are prioritized over quantity."
+  },
+  {
+    "objectID": "internships/sports-internship.html#professional-development-goals",
+    "href": "internships/sports-internship.html#professional-development-goals",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Professional Development Goals",
+    "text": "Professional Development Goals\nThrough this track, the intern will gain experience with:\n\nSports analytics\nReproducible research\nData visualization\nQuarto reporting\nRelational databases\nStatistical analysis\nGit and GitHub\nTechnical communication\nTranslating data into actionable insights\n\nThe goal is for the intern to leave with a portfolio of analytical work that demonstrates both technical ability and effective communication."
+  },
+  {
+    "objectID": "internships/sports-internship.html#mentorship-and-expectations",
+    "href": "internships/sports-internship.html#mentorship-and-expectations",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "Mentorship and Expectations",
+    "text": "Mentorship and Expectations\nThe intern will meet regularly with the NYC Open Data Lab director to review progress, discuss analytical approaches, and refine reporting strategies.\nThe intern is expected to:\n\nCommunicate progress consistently\nAsk questions when blocked\nDocument analytical decisions\nMaintain reproducible workflows\nCommit code regularly\nFocus on producing reports that are accurate, interpretable, and useful"
+  },
+  {
+    "objectID": "internships/sports-internship.html#end-of-summer-outcome",
+    "href": "internships/sports-internship.html#end-of-summer-outcome",
+    "title": "NYC Open Data Lab Summer Internship",
+    "section": "End-of-Summer Outcome",
+    "text": "End-of-Summer Outcome\nBy the end of the internship, the intern should have developed a reproducible reporting framework capable of generating professional-quality basketball scouting and performance reports from the CUNY Basketball Database.\nThe ideal outcome is not only a collection of completed reports, but a scalable analytics framework that can continue to grow alongside the database and support future research, coaching, and educational initiatives."
+  },
+  {
+    "objectID": "contributors.html#internship-program",
+    "href": "contributors.html#internship-program",
+    "title": "Contributors",
+    "section": "Internship Program",
+    "text": "Internship Program\n\n\n\n\n\n\n\nNYC Open Data Lab Summer Internship\n\n\n\n\n\n\n\n\n\nOpen Source Software Development Track\n\n\n\n\n\nNo matching items"
   }
 ]

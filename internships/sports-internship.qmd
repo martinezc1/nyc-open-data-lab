@@ -1,0 +1,104 @@
+---
+title: "NYC Open Data Lab Summer Internship"
+description: "NYC Open Data Lab Summer Internship"
+---
+
+------------------------------------------------------------------------
+
+## Overview
+
+The Sports Analytics Research Track is designed for an intern interested in applying data science, reproducible research, and data visualization to collegiate basketball.
+
+Using the NYC Open Data Lab's growing CUNY Basketball Database, the intern will develop analytical reports that transform raw data into actionable insights for coaches, players, and the broader basketball community.
+
+## Mission
+
+The mission of this track is to develop reproducible, data-driven scouting and performance reports that support evidence-based decision making while demonstrating how open, well-documented data can be used to communicate meaningful insights.
+
+Rather than completing isolated assignments, the intern will create public-facing analytical products that can serve as reusable templates for future seasons and future contributors.
+
+## Primary Responsibilities
+
+The intern will work on designing and developing basketball analytics reports using R and Quarto. Responsibilities may include:
+
+- Exploring and validating the CUNY Basketball Database
+
+- Identifying meaningful performance metrics
+
+- Creating visualizations that communicate key findings
+
+- Designing reproducible Quarto report templates
+
+- Developing opponent scouting reports
+
+- Creating team performance summaries
+
+- Documenting analytical methods and report workflows
+
+- Using GitHub for version control and collaboration
+
+- Improving and expanding existing analytical tools
+
+## Expected Deliverables
+
+By the end of the summer, the intern should aim to produce:
+
+- A collection of reproducible Quarto scouting report templates
+
+- Automated PDF reports generated from the basketball database
+
+- Clear visualizations highlighting player and team performance
+
+- Documentation describing report generation and interpretation
+
+- A final presentation demonstrating the completed reporting system
+
+The exact number and scope of reports will depend on project complexity and feedback from coaches. Quality, clarity, reproducibility, and practical usefulness are prioritized over quantity.
+
+## Professional Development Goals
+
+Through this track, the intern will gain experience with:
+
+- Sports analytics
+
+- Reproducible research
+
+- Data visualization
+
+- Quarto reporting
+
+- Relational databases
+
+- Statistical analysis
+
+- Git and GitHub
+
+- Technical communication
+
+- Translating data into actionable insights
+
+The goal is for the intern to leave with a portfolio of analytical work that demonstrates both technical ability and effective communication.
+
+## Mentorship and Expectations
+
+The intern will meet regularly with the NYC Open Data Lab director to review progress, discuss analytical approaches, and refine reporting strategies.
+
+The intern is expected to:
+
+- Communicate progress consistently
+
+- Ask questions when blocked
+
+- Document analytical decisions
+
+- Maintain reproducible workflows
+
+- Commit code regularly
+
+- Focus on producing reports that are accurate, interpretable, and useful
+
+## End-of-Summer Outcome
+
+By the end of the internship, the intern should have developed a reproducible reporting framework capable of generating professional-quality basketball scouting and performance reports from the CUNY Basketball Database.
+
+The ideal outcome is not only a collection of completed reports, but a scalable analytics framework that can continue to grow alongside the database and support future research, coaching, and educational initiatives.

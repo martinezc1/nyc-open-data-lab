@@ -18,7 +18,16 @@
       "/contributors/laura-rose-werner.html",
       "/contributors/robert-hutto.html",
       "/contributors/shannon-joyce.html",
-      "/contributors/xinru-wang.html"
+      "/contributors/xinru-wang.html",
+      "/internships/sports-internship.html",
+      "/internships/software-internship.html"
+    ]
+  },
+  {
+    "listing": "/internships.html",
+    "items": [
+      "/internships/sports-internship.html",
+      "/internships/software-internship.html"
     ]
   }
 ]
