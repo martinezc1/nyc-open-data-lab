@@ -13,11 +13,11 @@ website:
       - href: stories.qmd
         text: Stories
       - href: projects.qmd
-        text: Research, Publications & Software
+        text: Research
       - href: contributors.qmd
-        text: People & Programs
+        text: People
       - href: publications-media.qmd
-        text: Publications & Media
+        text: Media
     right:
       - icon: github
         href: https://github.com/martinezc1
