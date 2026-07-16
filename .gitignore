@@ -5,6 +5,7 @@
 .DS_Store
 .quarto
 Data/raw/
+paperwork
 
 /.quarto/
 **/*.quarto_ipynb

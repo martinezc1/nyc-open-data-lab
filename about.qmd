@@ -76,7 +76,12 @@ The goal is to build a model where:
 
 By connecting education with real-world data and public output, the Lab aims to create a sustainable and scalable approach to civic data science.
 
-## Collaborating
-Interested in collaborating, teaching, or speaking?
+------------------------------------------------------------------------
 
-[Email me](mailto:c.martinez0@outlook.com)
+## Collaborate
+
+The NYC Open Data Lab welcomes collaborations with educators, researchers, civic organizations, and open-source contributors.
+
+If you're interested in collaborating on research, developing open-source software, inviting me to speak, or exploring educational partnerships, I'd love to hear from you.
+
+📧 [Email me](mailto:c.martinez0@outlook.com)

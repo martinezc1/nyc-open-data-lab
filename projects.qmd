@@ -1,71 +1,136 @@
 ---
-title: "Projects"
+title: "Research, Publications & Software"
 ---
 
-The NYC Open Data Lab produces a range of public-facing projects that connect teaching, research, and civic data analysis.
+The NYC Open Data Lab develops open-source software, educational resources, and public-facing research that make civic data more accessible through reproducible workflows.
 
-These projects are designed to be reproducible, accessible, and meaningful beyond the classroom—transforming individual work into part of a broader, growing ecosystem.
+Together, these projects form a connected ecosystem where students, educators, researchers, and practitioners can learn, build, publish, and contribute using the same open tools.
 
-------------------------------------------------------------------------
-
-## NYC Open Data Student Gallery
-
-The NYC Open Data Student Gallery is a collection of graduate student research projects developed using NYC Open Data. Each project explores a unique question about New York City through data analysis, visualization, and reproducible workflows.
-
-All projects are published as part of a cohesive, public-facing body of work.
-
-- [NYC Open Data Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/)
+All projects are developed as open educational or open-source resources, with publicly available code, documentation, and archived releases whenever possible.
 
 ------------------------------------------------------------------------
 
-## Student Portfolio Books
+## Featured Projects
 
-As part of the Lab’s reproducible workflow model, students develop personal portfolio books using Quarto. These books compile their work into a single, polished, and shareable artifact—designed to showcase their skills in data analysis, storytelling, and reproducible research.
+### NYC Open Data Student Gallery
 
-Each portfolio represents not just completed assignments, but a cohesive narrative of the student’s work.
+The NYC Open Data Student Gallery showcases graduate student research developed using NYC Open Data. Each project investigates a unique question about New York City through reproducible analysis, visualization, and data storytelling.
 
-- [Reproducible Research in Practice: Student Portfolio Volume I](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/)
+The Gallery demonstrates how classroom work can become public scholarship with lasting value.
 
-------------------------------------------------------------------------
+**Resources**
 
-## Textbooks
-
-The Lab supports this approach through the development of open educational resources (OER), including textbooks designed around reproducible research workflows.
-
-These resources provide structure, guidance, and accessibility—allowing both students and external learners to engage with the same tools and methods.
-
-- [Reproducible Research Using R](https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/)
-  - This is accompanied by the R package [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1)
-- [Teaching Reproducible Research Using R](https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/)
+- 📖 [Explore the Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/)
+- 💻 [Source Code (GitHub)](https://github.com/martinezc1/NYC-Open-Data-Student-Gallery)
+- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21397679)
 
 ------------------------------------------------------------------------
 
-## Available R Packages
+### OpenData Package Developer's Guide
 
-The Lab maintains a growing ecosystem of R packages that provide a consistent, streamlined interface for accessing open data across cities and systems.
+The OpenData Package Developer's Guide provides a complete framework for building city-specific R packages that interface with Socrata-based open data portals.
 
-Each package follows a unified design, allowing users to:
+The guide includes reusable package templates, implementation tutorials, development best practices, and documentation for creating open-source tools that follow a consistent design across cities.
 
-- browse available datasets\
-- pull data directly into R\
-- apply filters and queries with minimal setup
+**Resources**
+
+- 📖 [Read the Guide](https://martinezc1-the-opendata-package-developers-guide.share.connect.posit.cloud/)
+- 💻 [Source Code (GitHub)](https://github.com/martinezc1/OpenDataPackageGuide)
+- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21383609)
 
 ------------------------------------------------------------------------
 
-### Open Data Tools
+## Educational Resources
 
-- [nycOpenData](https://ropensci.github.io/nycOpenData/) — Access datasets from the NYC Open Data Portal\
+### Reproducible Research Using R
 
-- [nysOpenData](https://martinezc1.github.io/nysOpenData/) — Access datasets from New York State Open Data
+An open educational textbook introducing reproducible research using R and Quarto through authentic examples and real-world datasets.
 
-- [mtaOpenData](https://martinezc1.github.io/mtaOpenData/) — Access datasets from Mass Transit Authority (MTA)-related open data sources
+**Resources**
 
-- [chiOpenData](https://martinezc1.github.io/chiOpenData/) — Access datasets from the Chicago Open Data Portal
+- 📖 [Read the textbook](https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/)
+- 💻 [Source Code (GitHub)](https://github.com/martinezc1/Reproducible-Research-Using-R)
+- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.19136755)
+- 📦 Companion Package: [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1)
 
-- [laOpenData](https://martinezc1.github.io/laOpenData/) — Access datasets from Los Angeles open data portals
+------------------------------------------------------------------------
+
+### Teaching Reproducible Research Using R
+
+A companion resource for instructors interested in adopting reproducible research workflows in their own classrooms.
+
+**Resources**
+
+- 📖 [Read the instructor guide](https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/)
+- 💻 [Source Code (GitHub)](https://github.com/martinezc1/teaching-reproducible-research-using-R)
+- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.19139302)
+
+------------------------------------------------------------------------
+
+### Reproducible Research in Practice: Student Portfolio Volume I
+
+Students compile their work into professional Quarto portfolio books that document analyses, visualizations, and written reports in a single, reproducible publication.
+
+These portfolios serve as public-facing evidence of students' technical and analytical skills.
+
+**Resources**
+
+- 📖 [Reproducible Research in Practice: Student Portfolio Volume I](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/)
+- 💻 [Source Code (GitHub)](https://github.com/martinezc1/student-portfolio-book)
+- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21397759)
+
+------------------------------------------------------------------------
+
+## Software
+
+The Lab develops open-source R packages that provide a unified interface for accessing and analyzing public data. Together, these packages form a growing ecosystem designed to make civic data more accessible, reproducible, and consistent across multiple open data portals.
+
+Each package follows the same design philosophy, allowing users to browse datasets, retrieve data, and work with multiple open data portals using a familiar workflow.
+
+The ecosystem is anchored by **nycOpenData**, which established the architecture and development standards that now guide every package in the collection.
+
+### The Foundation of the Package Ecosystem
+
+The Open Data package ecosystem was built on the architecture established by **nycOpenData**, the Lab's flagship R package for accessing NYC Open Data.
+
+In 2026, **nycOpenData** successfully completed the independent software peer-review process conducted by **rOpenSci**, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.
+
+Rather than developing each new package independently, the Lab uses the peer-reviewed design of **nycOpenData** as the foundation for every subsequent package. This shared architecture promotes a consistent user experience, simplifies maintenance, and allows improvements to be propagated across the broader ecosystem.
+
+As additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.
+
+### Package Ecosystem
+
+| Package | Data Source | Geographic Scope | CRAN | Documentation |
+|--------------|--------------|-----------------|:------------:|:------------:|
+| [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
+| [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | NYS Open Data | New York State | ✅ | [📖](https://martinezc1.github.io/nysOpenData/) |
+| [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | MTA Open Data | Transportation | ✅ | [📖](https://martinezc1.github.io/mtaOpenData/) |
+| [**chiOpenData**](https://cran.r-project.org/package=chiOpenData) | Chicago Data Portal | Chicago | ✅ | [📖](https://martinezc1.github.io/chiOpenData/) |
+| [**laOpenData**](https://cran.r-project.org/package=laOpenData) | Los Angeles Open Data | Los Angeles | ✅ | [📖](https://martinezc1.github.io/laOpenData/) |
 
 ------------------------------------------------------------------------
 
 ### Reproducible Research Tools
 
-- [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1) — Tools and utilities supporting reproducible research workflows in R and Quarto
+- [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1) — Companion package supporting the *Reproducible Research Using R* textbook and reproducible workflows in R and Quarto.
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+## Get Involved
+
+The NYC Open Data Lab is an open and growing ecosystem built around reproducible research, open-source software, and civic data.
+
+Whether you're a student, educator, researcher, or developer, there are many ways to participate.
+
+- 📚 Explore our educational resources
+- 💻 Contribute to open-source software
+- 📊 Use our packages in your own research
+- 🎓 Learn about internship opportunities
+- 🤝 Collaborate on new projects
+
+Interested in collaborating or contributing?
+
+📧 [Get in touch](mailto:c.martinez0@outlook.com)
