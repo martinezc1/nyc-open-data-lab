@@ -1,0 +1,80 @@
+---
+title: "Civic Data Application Development Track"
+subtitle: "NYC Open Data Lab Summer Internship"
+---
+
+------------------------------------------------------------------------
+
+## Overview
+
+The Civic Data Application Development Track is designed for an intern interested in building interactive, data-driven applications that make public information more accessible and useful to communities.
+
+Using the NYC Open Data platform and the `nycOpenData` R package, the intern will develop web-based analytical tools that allow users to explore civic datasets through intuitive dashboards and interactive visualizations.
+
+## Mission
+
+The mission of this track is to transform publicly available government data into accessible, user-friendly applications that help residents, researchers, educators, journalists, and policymakers better understand their communities.
+
+Rather than building one-time analyses, the intern will create public-facing tools that encourage exploration, transparency, and civic engagement.
+
+## Primary Responsibilities
+
+The intern will design and develop interactive applications using R and Shiny. Responsibilities may include:
+
+* Exploring NYC Open Data datasets
+* Identifying opportunities for interactive data exploration
+* Developing responsive Shiny applications
+* Creating interactive maps and visualizations
+* Integrating data retrieval through the `nycOpenData` package
+* Designing intuitive user interfaces
+* Documenting application features and workflows
+* Using GitHub for version control and collaboration
+* Deploying applications for public access
+
+## Expected Deliverables
+
+By the end of the summer, the intern should aim to produce:
+
+* One or more publicly accessible Shiny applications
+* Clean, documented source code
+* Technical documentation describing the application's design and functionality
+* A final presentation demonstrating the completed application
+* Recommendations for future enhancements and additional datasets
+
+The initial project may focus on developing a 311 Neighborhood Explorer, allowing users to visualize and analyze service requests by location, time period, complaint type, and other relevant characteristics.
+
+Quality, usability, accessibility, and reproducibility are prioritized over the number of applications produced.
+
+## Professional Development Goals
+
+Through this track, the intern will gain experience with:
+
+* Shiny application development
+* User interface and user experience design
+* Interactive data visualization
+* API integration
+* Reproducible analytical workflows
+* Git and GitHub
+* Technical documentation
+* Civic technology and public-interest data science
+
+The goal is for the intern to leave with a portfolio-quality application that demonstrates both technical development skills and the ability to communicate data effectively to a broad audience.
+
+## Mentorship and Expectations
+
+The intern will meet regularly with the NYC Open Data Lab director to discuss project development, application design, and technical challenges.
+
+The intern is expected to:
+
+* Communicate progress consistently
+* Ask questions when encountering technical challenges
+* Document development decisions
+* Maintain reproducible workflows
+* Commit code regularly
+* Design applications with the end user in mind
+
+## End-of-Summer Outcome
+
+By the end of the internship, the intern should have developed an interactive civic data application that makes NYC Open Data more approachable and actionable for the public.
+
+The ideal outcome is not simply a completed dashboard, but a reusable application framework that can be expanded to additional datasets and continue serving the broader civic data community long after the internship concludes.

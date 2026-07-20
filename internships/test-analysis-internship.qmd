@@ -1,0 +1,79 @@
+---
+title: "Text Analytics & Computational Social Science Track"
+subtitle: "NYC Open Data Lab Summer Internship"   
+---
+
+## Overview
+
+The Text Analytics & Computational Social Science Track is designed for an intern interested in exploring language through data. Using reproducible research methods, the intern will analyze text from a variety of public sources to uncover patterns in communication, sentiment, and public discourse.
+
+Projects may draw from news articles, song lyrics, government documents, speeches, social media, public comments, or other publicly available text to answer meaningful research questions using modern text analysis techniques.
+
+## Mission
+
+The mission of this track is to demonstrate how computational methods can transform written language into meaningful insight while producing transparent, reproducible analyses that are accessible to both technical and non-technical audiences.
+
+Rather than conducting isolated analyses, the intern will create public-facing research that combines statistical methods, thoughtful interpretation, and effective data communication.
+
+## Primary Responsibilities
+
+The intern will design and conduct reproducible text analysis projects using R. Responsibilities may include:
+
+- Collecting and preparing text data
+- Cleaning and preprocessing text
+- Performing sentiment and lexicon analyses
+- Exploring word frequencies and language patterns
+- Creating data visualizations
+- Comparing language across authors, artists, organizations, or time periods
+- Writing reproducible analyses using Quarto
+- Using GitHub for version control and collaboration
+- Documenting methods and analytical decisions
+
+## Expected Deliverables
+
+By the end of the summer, the intern should aim to produce:
+
+- One or more reproducible text analysis projects
+- Public-facing Quarto reports
+- Clear visualizations communicating key findings
+- Well-documented analytical code
+- A final presentation demonstrating completed work
+
+Potential projects may include analyses of New York City news coverage, public policy speeches, community discussions, artist discographies, or other publicly available collections of text.
+
+Quality, reproducibility, and thoughtful interpretation are prioritized over the number of completed projects.
+
+## Professional Development Goals
+
+Through this track, the intern will gain experience with:
+
+- Text mining
+- Natural language processing (NLP)
+- Sentiment analysis
+- Computational social science
+- Data visualization
+- Reproducible research
+- Git and GitHub
+- Technical writing
+- Public communication of data-driven findings
+
+The goal is for the intern to leave with a portfolio of reproducible analytical work that demonstrates both technical proficiency and the ability to communicate complex ideas through data.
+
+## Mentorship and Expectations
+
+The intern will meet regularly with the NYC Open Data Lab director to discuss project ideas, analytical approaches, and interpretation of findings.
+
+The intern is expected to:
+
+- Communicate progress consistently
+- Ask questions when encountering analytical challenges
+- Document research decisions clearly
+- Maintain reproducible workflows
+- Commit code regularly
+- Interpret results thoughtfully and responsibly
+
+## End-of-Summer Outcome
+
+By the end of the internship, the intern should have produced a collection of reproducible, public-facing analyses demonstrating how computational methods can be used to better understand language, communication, and social phenomena.
+
+The ideal outcome is not simply a completed analysis, but a reproducible workflow and collection of research products that contribute to public scholarship while serving as a foundation for future projects within the NYC Open Data Lab.
