@@ -102,12 +102,16 @@ As additional city packages are developed, they inherit the same underlying desi
 ### Package Ecosystem
 
 | Package | Data Source | Geographic Scope | CRAN | Documentation |
-|--------------|--------------|-----------------|:------------:|:------------:|
+|----|----|----|:--:|:--:|
 | [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
 | [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | NYS Open Data | New York State | ✅ | [📖](https://martinezc1.github.io/nysOpenData/) |
 | [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | MTA Open Data | Transportation | ✅ | [📖](https://martinezc1.github.io/mtaOpenData/) |
 | [**chiOpenData**](https://cran.r-project.org/package=chiOpenData) | Chicago Data Portal | Chicago | ✅ | [📖](https://martinezc1.github.io/chiOpenData/) |
 | [**laOpenData**](https://cran.r-project.org/package=laOpenData) | Los Angeles Open Data | Los Angeles | ✅ | [📖](https://martinezc1.github.io/laOpenData/) |
+| [**ausOpenData**](https://cran.r-project.org/package=ausOpenData) | Austin Open Data | Austin | ✅ | [📖](https://martinezc1.github.io/ausOpenData/) |
+| [**SeattleOpenData**](https://cran.r-project.org/package=SeattleOpenData) | Seattle Open Data | Seattle | ✅ | [📖](https://nyc-open-data-lab.github.io/SeattleOpenData/) |
+| [**sfOpenData**](https://cran.r-project.org/package=sfOpenData) | San Francisco Open Data | San Francisco | 👷 | [📖](https://nyc-open-data-lab.github.io/sfOpenData/) |
+| [**cincinnatiOpenData**](https://cran.r-project.org/package=CincinnatiOpenData) | Cincinnati Open Data | Cincinnati | ✅ | 👷 |
 
 ------------------------------------------------------------------------
 
