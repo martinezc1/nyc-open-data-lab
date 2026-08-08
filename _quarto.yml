@@ -6,17 +6,17 @@ website:
   google-analytics: "G-F3NM2QR1Y0"
   navbar:
     left:
-      - href: index.qmd
+      - href: pages/index.qmd
         text: Home
-      - href: about.qmd
+      - href: pages/about.qmd
         text: About
-      - href: stories.qmd
+      - href: pages/stories.qmd
         text: Stories
-      - href: projects.qmd
+      - href: pages/projects.qmd
         text: Projects & Research
-      - href: contributors.qmd
+      - href: pages/contributors.qmd
         text: People
-      - href: publications-media.qmd
+      - href: pages/publications-media.qmd
         text: Media
     right:
       - icon: github
