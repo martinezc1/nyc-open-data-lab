@@ -102,7 +102,7 @@ As additional city packages are developed, they inherit the same underlying desi
 ### Package Ecosystem
 
 | Package | Data Source | Geographic Scope | CRAN | Documentation |
-|----|----|----|:--:|:--:|
+|---------------|---------------|---------------|:-------------:|:-------------:|
 | [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
 | [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | NYS Open Data | New York State | ✅ | [📖](https://martinezc1.github.io/nysOpenData/) |
 | [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | MTA Open Data | Transportation | ✅ | [📖](https://martinezc1.github.io/mtaOpenData/) |

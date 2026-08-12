@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-## About the The Open Data Lab
+## About The Open Data Lab
 
 The Open Data Lab is a public-facing initiative dedicated to transforming open data into reproducible research, civic insights, and accessible public scholarship.
 
@@ -18,9 +18,9 @@ All work within the Lab is built using reproducible research workflows in R and 
 
 This approach allows others to:
 
--   understand how results were produced
--   replicate findings
--   extend existing work
+- understand how results were produced
+- replicate findings
+- extend existing work
 
 Reproducibility is not treated as an add-on—it is the foundation of the Lab’s design.
 
@@ -32,9 +32,9 @@ A central component of the Lab is the transformation of student work into public
 
 Graduate students develop original projects using Open Data, which are then refined, published, and shared through the Lab. These projects are designed to be:
 
--   Public-facing
--   Reproducible
--   Portfolio-ready
+- Public-facing
+- Reproducible
+- Portfolio-ready
 
 Rather than disappearing at the end of a semester, student work becomes part of a growing body of civic data research—contributing to ongoing conversations about New York City.
 
@@ -52,12 +52,12 @@ This work extends beyond a single package, contributing to a broader ecosystem o
 
 ## An Integrated Ecosystem
 
--   **The Open Data Lab** connects multiple components into a unified system:
--   **Open Data Stories** — a public-facing collection of civic data analyses
--   **Student research and publications** — developed through coursework and published openly
--   **Open-source tools** — supporting reproducible access to public data
--   **Teaching and OER** — designed around end-to-end reproducible workflows
--   **Public engagement** — through conferences, writing, and civic data events
+- **The Open Data Lab** connects multiple components into a unified system:
+- **Open Data Stories** — a public-facing collection of civic data analyses
+- **Student research and publications** — developed through coursework and published openly
+- **Open-source tools** — supporting reproducible access to public data
+- **Teaching and OER** — designed around end-to-end reproducible workflows
+- **Public engagement** — through conferences, writing, and civic data events
 
 Each piece reinforces the others, creating a model where teaching, research, and public scholarship are fully integrated.
 
@@ -69,10 +69,10 @@ The Open Data Lab is part of a broader effort to rethink how data work is taught
 
 The goal is to build a model where:
 
--   data projects are not temporary
--   student work contributes to public knowledge
--   tools lower barriers to entry
--   research is open, reproducible, and accessible
+- data projects are not temporary
+- student work contributes to public knowledge
+- tools lower barriers to entry
+- research is open, reproducible, and accessible
 
 By connecting education with real-world data and public output, the Lab aims to create a sustainable and scalable approach to civic data science.
 
