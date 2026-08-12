@@ -2,7 +2,7 @@
 title: "Research, Publications & Software"
 ---
 
-The NYC Open Data Lab develops open-source software, educational resources, and public-facing research that make civic data more accessible through reproducible workflows.
+The Open Data Lab develops open-source software, educational resources, and public-facing research that make civic data more accessible through reproducible workflows.
 
 Together, these projects form a connected ecosystem where students, educators, researchers, and practitioners can learn, build, publish, and contribute using the same open tools.
 
@@ -125,7 +125,7 @@ As additional city packages are developed, they inherit the same underlying desi
 
 ## Get Involved
 
-The NYC Open Data Lab is an open and growing ecosystem built around reproducible research, open-source software, and civic data.
+The Open Data Lab is an open and growing ecosystem built around reproducible research, open-source software, and civic data.
 
 Whether you're a student, educator, researcher, or developer, there are many ways to participate.
 
