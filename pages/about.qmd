@@ -2,11 +2,11 @@
 title: "About"
 ---
 
-## About the NYC Open Data Lab
+## About the The Open Data Lab
 
-The NYC Open Data Lab is a public-facing initiative dedicated to transforming New York City’s open data into reproducible research, civic insights, and accessible public scholarship.
+The Open Data Lab is a public-facing initiative dedicated to transforming open data into reproducible research, civic insights, and accessible public scholarship.
 
-The Lab brings together teaching, tool development, and real-world analysis into a single, connected ecosystem. Using data from the NYC Open Data Portal, we focus not just on making data available—but on making it usable, understandable, and meaningful.
+The Lab brings together teaching, tool development, and real-world analysis into a single, connected ecosystem. Using data from the open data portals, we focus not just on making data available—but on making it usable, understandable, and meaningful.
 
 At its core, the Lab is built on a simple idea: data work should be transparent, reproducible, and publicly visible.
 
@@ -30,7 +30,7 @@ Reproducibility is not treated as an add-on—it is the foundation of the Lab’
 
 A central component of the Lab is the transformation of student work into public-facing research.
 
-Graduate students develop original projects using NYC Open Data, which are then refined, published, and shared through the Lab. These projects are designed to be:
+Graduate students develop original projects using Open Data, which are then refined, published, and shared through the Lab. These projects are designed to be:
 
 -   Public-facing
 -   Reproducible
@@ -44,7 +44,7 @@ Rather than disappearing at the end of a semester, student work becomes part of 
 
 The Lab also develops open-source tools to support reproducible data workflows.
 
-One example is the [nycOpenData](https://martinezc1.github.io/nycOpenData/) R package, which provides a streamlined interface for accessing datasets from the [NYC Open Data Portal](https://opendata.cityofnewyork.us/). By simplifying interactions with open data APIs, the package allows users to focus on analysis and insight rather than data retrieval.
+One example is the [nycOpenData](https://docs.ropensci.org/nycOpenData/index.html) R package, which provides a streamlined interface for accessing datasets from the [NYC Open Data Portal](https://opendata.cityofnewyork.us/). By simplifying interactions with open data APIs, the package allows users to focus on analysis and insight rather than data retrieval.
 
 This work extends beyond a single package, contributing to a broader ecosystem of tools designed to make open data more accessible across cities and contexts.
 
@@ -52,8 +52,8 @@ This work extends beyond a single package, contributing to a broader ecosystem o
 
 ## An Integrated Ecosystem
 
--   **The NYC Open Data Lab** connects multiple components into a unified system:
--   **NYC Open Data Stories** — a public-facing collection of civic data analyses
+-   **The Open Data Lab** connects multiple components into a unified system:
+-   **Open Data Stories** — a public-facing collection of civic data analyses
 -   **Student research and publications** — developed through coursework and published openly
 -   **Open-source tools** — supporting reproducible access to public data
 -   **Teaching and OER** — designed around end-to-end reproducible workflows
@@ -65,7 +65,7 @@ Each piece reinforces the others, creating a model where teaching, research, and
 
 ## Vision
 
-The NYC Open Data Lab is part of a broader effort to rethink how data work is taught, shared, and sustained.
+The Open Data Lab is part of a broader effort to rethink how data work is taught, shared, and sustained.
 
 The goal is to build a model where:
 
@@ -80,7 +80,7 @@ By connecting education with real-world data and public output, the Lab aims to 
 
 ## Collaborate
 
-The NYC Open Data Lab welcomes collaborations with educators, researchers, civic organizations, and open-source contributors.
+The Open Data Lab welcomes collaborations with educators, researchers, civic organizations, and open-source contributors.
 
 If you're interested in collaborating on research, developing open-source software, inviting me to speak, or exploring educational partnerships, I'd love to hear from you.
 
