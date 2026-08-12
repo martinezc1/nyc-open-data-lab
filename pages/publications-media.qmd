@@ -2,7 +2,7 @@
 title: "Publications & Media"
 ---
 
-The NYC Open Data Lab and its tools have been featured in external publications and community platforms focused on open data, data science, and education.
+The Open Data Lab and its tools have been featured in external publications and community platforms focused on open data, data science, and education.
 
 These features highlight the Lab’s approach to reproducible research, open data accessibility, and public-facing scholarship.
 
@@ -74,6 +74,10 @@ These features highlight the Lab’s approach to reproducible research, open dat
 ------------------------------------------------------------------------
 
 ## Publications
+
+- [The Journey of {nycOpenData}: From Classroom to Community](https://ropensci.org/blog/2026/08/06/the-journey-of-nycopendata-from-classroom-to-community/)
+
+  - **rOpenSci**
 
 - [Relevance Drives Rigor: Lessons from Teaching with Open Data](https://aea365.org/blog/relevance-drives-rigor-lessons-from-teaching-with-open-data-by-christian-martinez/)
 

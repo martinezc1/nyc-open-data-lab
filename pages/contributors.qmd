@@ -14,7 +14,7 @@ listing:
     fields: [title]
 ---
 
-The NYC Open Data Lab is built through the work of student researchers and contributors who develop original analyses using public data and reproducible workflows.
+The Open Data Lab is built through the work of student researchers and contributors who develop original analyses using public data and reproducible workflows.
 
 Each contributor represents part of a growing, public-facing body of civic data research—transforming coursework into published, portfolio-ready work.
 
@@ -44,7 +44,7 @@ Browse contributor profiles below to learn more about their work and projects.
 
 ## Summer Internship Program
 
-The NYC Open Data Lab Summer Internship Program provides students with the opportunity to contribute to long-term, public-facing projects that extend beyond the classroom. Interns work closely with the Lab to develop open-source software, reproducible research, and analytical tools while gaining experience with collaborative software development, technical communication, and public scholarship.
+The Open Data Lab Summer Internship Program provides students with the opportunity to contribute to long-term, public-facing projects that extend beyond the classroom. Interns work closely with the Lab to develop open-source software, reproducible research, and analytical tools while gaining experience with collaborative software development, technical communication, and public scholarship.
 
 Each internship track is designed around ownership of a meaningful project, giving interns the opportunity to create work that can be shared through GitHub, professional portfolios, conference presentations, and future research collaborations.
 
