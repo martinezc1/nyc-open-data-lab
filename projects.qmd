@@ -144,7 +144,7 @@ Students can contribute through sports analytics or data development, working on
 
 [Apply to the CUNY Sports Analytics Team](https://docs.google.com/forms/d/e/1FAIpQLSdRmNDdMDB9ZJb2ZIJGHAzfwBdY25dl-Co0h42UarCo8MJx8g/viewform?usp=header){.btn .btn-primary}
 
-\[![](../images/sports-one-pager.png){fig-alt="Become a CUNY Sports Analyst flyer" width="75%"}
+[![](images/sports-one-pager.png){fig-alt="Become a CUNY Sports Analyst flyer" width="75%"}](images/sports-one-pager.pdf)
 
 ------------------------------------------------------------------------
 
