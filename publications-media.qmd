@@ -10,50 +10,22 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
 ## Featured Talks
 
-### NYC Open Data Week 2026
+- **NYC Open Data Week 2026** — *Teaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows*\
+  [🎥 Watch the talk](https://www.youtube.com/watch?v=Vw8PhY7NDGE) · [📊 View slides](https://martinezc1.github.io/nyc-open-data-week-2026/#/title-slide)
 
-**Teaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows**
+- **posit::conf(2026)** — *Designing Reproducible Learning Ecosystems with R and Quarto*\
+  [🔗 Conference sessions](https://conf.posit.co/2026/sessions/)
 
-- 🎥 [Watch the talk](https://www.youtube.com/watch?v=Vw8PhY7NDGE)\
-- 📊 [View slides](https://martinezc1.github.io/nyc-open-data-week-2026/#/title-slide)
+- **useR! 2026** — *Teaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development*\
+  [🔗 Conference site](https://user2026.r-project.org/)
 
-------------------------------------------------------------------------
+- **New York Open Statistical Programming Meetup** — *Lowering Barriers to Open Data: Classroom to CRAN*\
+  [🎥 Watch the talk](https://www.youtube.com/live/RbB4wu4zm2Q)
 
-### posit::conf(2026)
+- **Brooklyn College 29th Annual Faculty Day Conference 2026** — *Reproducible Research Using R: The Impact of Open Data and Open Resources*\
+  [🔗 Conference program](https://www.brooklyn.edu/wp-content/uploads/2026/05/Faculty-Day-2026-Full-Program.pdf)
 
-**Designing Reproducible Learning Ecosystems with R and Quarto**
-
-- 🔗 [Conference sessions](https://conf.posit.co/2026/sessions/)
-
-------------------------------------------------------------------------
-
-### useR! 2026
-
-**Teaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development**
-
-- 🔗 [Conference site](https://user2026.r-project.org/)
-
-------------------------------------------------------------------------
-
-### New York Open Statistical Programming Meetup
-
-**Lowering Barriers to Open Data: Classroom to CRAN**
-
-- 🔗 [Meetup video](https://www.youtube.com/live/RbB4wu4zm2Q)
-
-------------------------------------------------------------------------
-
-### Brooklyn College 29th Annual Faculty Day Conference 2026
-
-**Reproducible Research Using R: The Impact of Open Data and Open Resources**
-
-- 🔗 [Conference site](https://www.brooklyn.edu/wp-content/uploads/2026/05/Faculty-Day-2026-Full-Program.pdf)
-
-------------------------------------------------------------------------
-
-### Brooklyn College Psychology Department In-House Conference 2026
-
-**The Accidental Author: Scaffolding Reproducible Research and Digital Scholarly Identity in an M.S. Psychology Classroom**
+- **Brooklyn College Psychology Department In-House Conference 2026** — *The Accidental Author: Scaffolding Reproducible Research and Digital Scholarly Identity in an M.S. Psychology Classroom*
 
 ------------------------------------------------------------------------
 

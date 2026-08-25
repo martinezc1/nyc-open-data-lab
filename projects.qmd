@@ -87,15 +87,15 @@ The Lab develops open-source R packages that provide a unified interface for acc
 
 Each package follows the same design philosophy, allowing users to browse datasets, retrieve data, and work with multiple open data portals using a familiar workflow.
 
-The ecosystem is anchored by **nycOpenData**, which established the architecture and development standards that now guide every package in the collection.
+The ecosystem is anchored by `nycOpenData`, which established the architecture and development standards that now guide every package in the collection.
 
 ### The Foundation of the Package Ecosystem
 
-The Open Data package ecosystem was built on the architecture established by **nycOpenData**, the Lab's flagship R package for accessing NYC Open Data.
+The Open Data package ecosystem was built on the architecture established by `nycOpenData`, the Lab's flagship R package for accessing NYC Open Data.
 
-In 2026, **nycOpenData** successfully completed the independent software peer-review process conducted by **rOpenSci**, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.
+In 2026, `nycOpenData` successfully completed the independent software peer-review process conducted by **rOpenSci**, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.
 
-Rather than developing each new package independently, the Lab uses the peer-reviewed design of **nycOpenData** as the foundation for every subsequent package. This shared architecture promotes a consistent user experience, simplifies maintenance, and allows improvements to be propagated across the broader ecosystem.
+Rather than developing each new package independently, the Lab uses the peer-reviewed design of `nycOpenData` as the foundation for every subsequent package. This shared architecture promotes a consistent user experience, simplifies maintenance, and allows improvements to be propagated across the broader ecosystem.
 
 As additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.
 
