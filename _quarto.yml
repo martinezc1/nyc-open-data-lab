@@ -20,7 +20,7 @@ website:
         text: Media
     right:
       - icon: github
-        href: https://github.com/martinezc1
+        href: https://github.com/nyc-open-data-lab
   page-footer:
     left: |
       © 2026 The Open Data Lab  
@@ -29,7 +29,7 @@ website:
 
     right: |
       [GitHub](https://github.com/nyc-open-data-lab)  
-      [LinkedIn](https://www.linkedin.com/company/nyc-open-data-lab/)  
+      [LinkedIn](https://www.linkedin.com/company/open-data-lab/)  
       [Email](mailto:c.martinez0@outlook.com)
 
 format:

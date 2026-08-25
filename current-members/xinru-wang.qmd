@@ -1,7 +1,13 @@
 ---
 title: "Xinru Wang"
-description: "Contributor to the NYC Open Data Lab"
+description: "Text Analytics & Computational Social Science Intern"
 ---
+
+## Summary
+
+As a Text Analytics & Computational Social Science Intern, they use reproducible research methods to explore language through data, analyzing publicly available text to uncover patterns in communication, sentiment, and public discourse.
+
+Learn more about the internship [here](../internships/test-analysis-internship.qmd).
 
 ## Projects & Publications
 
@@ -20,7 +26,7 @@ A curated collection of work developed using reproducible workflows in R and Qua
 ## Contributions to the Lab
 
 - Contributor to the NYC Open Data Student Gallery\
-- Contributor to the development of the nycOpenData R package
+- Contributor to the development of the `nycOpenData` R package
 
 ------------------------------------------------------------------------
 

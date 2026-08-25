@@ -1,7 +1,13 @@
 ---
 title: "Emma Tupone"
-description: "Contributor to the NYC Open Data Lab"
+description: "Civic Data Application Development Intern"
 ---
+
+## Summary
+
+As the Civic Data Application Development intern, they are currently using the NYC Open Data platform and the `nycOpenData` R package to develop web-based analytical tools that allow users to explore civic datasets through intuitive dashboards and interactive visualizations.
+
+Learn more about the internship [here](../internships/civic-data.qmd).
 
 ## Projects & Publications
 
@@ -20,7 +26,7 @@ A curated collection of work developed using reproducible workflows in R and Qua
 ## Contributions to the Lab
 
 - Contributor to the NYC Open Data Student Gallery\
-- Contributor to the development of the nycOpenData R package
+- Contributor to the development of the `nycOpenData` R package
 
 ------------------------------------------------------------------------
 

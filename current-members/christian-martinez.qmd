@@ -1,0 +1,42 @@
+---
+title: "Christian Martinez"
+description: "Founder & Director of The Open Data Lab"
+---
+
+## Summary
+
+As Founder and Director of The Open Data Lab, Christian leads the development of the Lab's open-source software, reproducible research, teaching, and student research initiatives. His work focuses on making public data easier to access and use while creating opportunities for students to apply data science to meaningful, real-world projects.
+
+------------------------------------------------------------------------
+
+## Contributions
+
+Christian founded The Open Data Lab and leads its research, development, and educational initiatives. His contributions include:
+
+- Developing the OpenData R package ecosystem, a growing collection of open-source tools designed to make government open data easier to access and analyze
+- Creating and maintaining `nycOpenData`, the foundational package for the OpenData ecosystem
+- Developing reproducible research and open-source workflows used across Lab projects
+- Creating opportunities for students to contribute to open-source software, civic data research, sports analytics, and computational social science
+- Developing the NYC Open Data Student Gallery to transform student research into publicly accessible scholarship
+- Mentoring student researchers and interns across Lab projects
+- Building collaborations and partnerships that expand the reach and impact of the Lab's work
+
+------------------------------------------------------------------------
+
+## Selected Projects & Publications
+
+- [**Welcome to NYC Open Data**](../stories/intro-to-nycOpenData.qmd)
+- [**OpenData R Package Ecosystem**](../projects.qmd#sec-package-ecosystem)
+- [**NYC Open Data Student Gallery**](../projects.qmd#sec-nyc-opendata-student-gallery)
+- [**OpenData Package Developer's Guide**](../projects.qmd#sec-opendata-developers-guide)
+- [**Reproducible Research Using R**](../projects.qmd#sec-reproducible-research-using-r)
+- [**Teaching Reproducible Research Using R**](../projects.qmd#sec-teaching-reproducible-research-using-r)
+- [**Reproducible Research in Practice: Student Portfolio Volume I**](../projects.qmd#sec-reproducible-research-in-practice)
+
+------------------------------------------------------------------------
+
+## Links
+
+- [GitHub](https://github.com/martinezc1)
+- [LinkedIn](https://www.linkedin.com/in/christian-a-martinez/)
+- [ORCID](https://orcid.org/0009-0005-6026-6454)

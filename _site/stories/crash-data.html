@@ -2,14 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jonah Dratfield &amp; Shannon Joyce">
 
-<title>Speed Cameras – NYC Open Data Lab</title>
+<title>The Impact Speed Cameras Have on Safety – The Open Data Lab</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -33,15 +36,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1e2d4cd4c0c187b7887ec59d340d0036.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a58290d47af4766aca099a6c76ba7184.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -90,10 +92,8 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">NYC Open Data Lab</span>
+    <span class="navbar-title">The Open Data Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -116,32 +116,20 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../projects.html"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../tools.html"> 
-<span class="menu-text">Tools</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../teaching-oer.html"> 
-<span class="menu-text">Teaching &amp; OER</span></a>
+<span class="menu-text">Projects &amp; Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contributors.html"> 
-<span class="menu-text">Contributors</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../talks.html"> 
-<span class="menu-text">Talks</span></a>
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../publications-media.html"> 
-<span class="menu-text">Publications &amp; Media</span></a>
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/martinezc1"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/nyc-open-data-lab"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -164,8 +152,8 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Speed Cameras</h1>
-<p class="subtitle lead">The Impact Speed Cameras Have on Safety</p>
+<h1 class="title">The Impact Speed Cameras Have on Safety</h1>
+<p class="subtitle lead">A NYC Speed Camera Analysis</p>
   <div class="quarto-categories">
     <div class="quarto-category">NYC Open Data</div>
     <div class="quarto-category">Government</div>
@@ -194,7 +182,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </header>
 
 
-<p><strong>Authors:</strong> <a href="../contributors/jonah-dratfield.html">Jonah Dratfield</a> &amp; <a href="../contributors/shannon-joyce.html">Shannon Joyce</a></p>
+<p><strong>Authors:</strong> <a href="../contributors/jonah-dratfield.qmd">Jonah Dratfield</a> &amp; <a href="../contributors/shannon-joyce.html">Shannon Joyce</a></p>
 <p><a href="https://www.cdc.gov/transportation-safety/about/index.html">Road collisions</a> are one of the leading causes of preventable death in the US. Yet, short of completely overhauling our car-centered infrastructure, is there anything we can do about them?</p>
 <p>Speed cameras are an obvious solution. Since excessive speed is at the root of many car collisions, it’s reasonable to think that speed cameras can reduce drivers’ speeds and bring down both the total number of road collisions and the number of fatal road collisions. But, what does the empirical evidence say about this intervention? Do speed cameras actually have this effect?</p>
 <p>Based on the past evidence, they do. <a href="https://www.cochrane.org/evidence/CD004607_do-speed-cameras-reduce-road-traffic-crashes-injuries-and-deaths">A 2010 overview of thirty-five separate studies</a> found that speed cameras tended to reduce both the speed of drivers and the rate of collisions in nearby areas. More recently, a <a href="https://www.pnas.org/doi/10.1073/pnas.2520328122">2025 New York City-specific study</a> found that speed cameras reduced collisions around 5% per month. This study used the “staggered rollout” of speed cameras in over 1,800 New York City school zones to compare collision rates between monitored and yet-to-be-monitored areas.</p>
@@ -630,7 +618,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 NYC Open Data Lab<br>
+<p>© 2026 The Open Data Lab<br>
 Built with Quarto<br>
 <em>Founded by Christian A. Martinez (CUNY)</em></p>
 </div>   
@@ -638,8 +626,8 @@ Built with Quarto<br>
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://github.com/martinezc1">GitHub</a><br>
-<a href="https://www.linkedin.com/in/christian-a-martinez/">LinkedIn</a><br>
+<p><a href="https://github.com/nyc-open-data-lab">GitHub</a><br>
+<a href="https://www.linkedin.com/company/open-data-lab/">LinkedIn</a><br>
 <a href="mailto:c.martinez0@outlook.com">Email</a></p>
 </div>
   </div>

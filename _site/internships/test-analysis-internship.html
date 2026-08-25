@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tools – NYC Open Data Lab</title>
+<title>Text Analytics &amp; Computational Social Science Track – The Open Data Lab</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -23,24 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1e2d4cd4c0c187b7887ec59d340d0036.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a58290d47af4766aca099a6c76ba7184.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,9 +70,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F3NM2QR1Y0"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
+</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,10 +91,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">NYC Open Data Lab</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">The Open Data Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,45 +102,33 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./stories.html"> 
+    <a class="nav-link" href="../stories.html"> 
 <span class="menu-text">Stories</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../projects.html"> 
+<span class="menu-text">Projects &amp; Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./tools.html" aria-current="page"> 
-<span class="menu-text">Tools</span></a>
+    <a class="nav-link" href="../contributors.html"> 
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching-oer.html"> 
-<span class="menu-text">Teaching &amp; OER</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./contributors.html"> 
-<span class="menu-text">Contributors</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications-media.html"> 
-<span class="menu-text">Publications &amp; Media</span></a>
+    <a class="nav-link" href="../publications-media.html"> 
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/martinezc1"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/nyc-open-data-lab"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -151,16 +148,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#open-data-r-packages" id="toc-open-data-r-packages" class="nav-link active" data-scroll-target="#open-data-r-packages">Open Data R Packages</a>
-  <ul class="collapse">
-  <li><a href="#available-packages" id="toc-available-packages" class="nav-link" data-scroll-target="#available-packages">Available Packages</a>
-  <ul class="collapse">
-  <li><a href="#open-data-tools" id="toc-open-data-tools" class="nav-link" data-scroll-target="#open-data-tools">Open Data Tools</a></li>
-  <li><a href="#reproducible-research-tools" id="toc-reproducible-research-tools" class="nav-link" data-scroll-target="#reproducible-research-tools">Reproducible Research Tools</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#a-unified-approach-to-open-data" id="toc-a-unified-approach-to-open-data" class="nav-link" data-scroll-target="#a-unified-approach-to-open-data">A Unified Approach to Open Data</a></li>
-  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#mission" id="toc-mission" class="nav-link" data-scroll-target="#mission">Mission</a></li>
+  <li><a href="#primary-responsibilities" id="toc-primary-responsibilities" class="nav-link" data-scroll-target="#primary-responsibilities">Primary Responsibilities</a></li>
+  <li><a href="#expected-deliverables" id="toc-expected-deliverables" class="nav-link" data-scroll-target="#expected-deliverables">Expected Deliverables</a></li>
+  <li><a href="#professional-development-goals" id="toc-professional-development-goals" class="nav-link" data-scroll-target="#professional-development-goals">Professional Development Goals</a></li>
+  <li><a href="#mentorship-and-expectations" id="toc-mentorship-and-expectations" class="nav-link" data-scroll-target="#mentorship-and-expectations">Mentorship and Expectations</a></li>
+  <li><a href="#end-of-summer-outcome" id="toc-end-of-summer-outcome" class="nav-link" data-scroll-target="#end-of-summer-outcome">End-of-Summer Outcome</a></li>
   </ul>
 </nav>
     </div>
@@ -169,7 +163,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tools</h1>
+<h1 class="title">Text Analytics &amp; Computational Social Science Track</h1>
+<p class="subtitle lead">NYC Open Data Lab Summer Internship</p>
 </div>
 
 
@@ -186,63 +181,77 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The NYC Open Data Lab develops open-source tools that make public data more accessible, reproducible, and easier to work with.</p>
-<p>These tools are designed to remove the technical barriers associated with open data APIs, allowing users to focus on analysis, insight, and storytelling rather than data retrieval.</p>
-<hr>
-<section id="open-data-r-packages" class="level1">
-<h1>Open Data R Packages</h1>
-<p>The Lab maintains a growing ecosystem of R packages that provide a consistent, streamlined interface for accessing open data across cities and systems.</p>
-<p>Each package follows a unified design, allowing users to:</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The Text Analytics &amp; Computational Social Science Track is designed for an intern interested in exploring language through data. Using reproducible research methods, the intern will analyze text from a variety of public sources to uncover patterns in communication, sentiment, and public discourse.</p>
+<p>Projects may draw from news articles, song lyrics, government documents, speeches, social media, public comments, or other publicly available text to answer meaningful research questions using modern text analysis techniques.</p>
+</section>
+<section id="mission" class="level2">
+<h2 class="anchored" data-anchor-id="mission">Mission</h2>
+<p>The mission of this track is to demonstrate how computational methods can transform written language into meaningful insight while producing transparent, reproducible analyses that are accessible to both technical and non-technical audiences.</p>
+<p>Rather than conducting isolated analyses, the intern will create public-facing research that combines statistical methods, thoughtful interpretation, and effective data communication.</p>
+</section>
+<section id="primary-responsibilities" class="level2">
+<h2 class="anchored" data-anchor-id="primary-responsibilities">Primary Responsibilities</h2>
+<p>The intern will design and conduct reproducible text analysis projects using R. Responsibilities may include:</p>
 <ul>
-<li>browse available datasets<br>
-</li>
-<li>pull data directly into R<br>
-</li>
-<li>apply filters and queries with minimal setup</li>
+<li>Collecting and preparing text data</li>
+<li>Cleaning and preprocessing text</li>
+<li>Performing sentiment and lexicon analyses</li>
+<li>Exploring word frequencies and language patterns</li>
+<li>Creating data visualizations</li>
+<li>Comparing language across authors, artists, organizations, or time periods</li>
+<li>Writing reproducible analyses using Quarto</li>
+<li>Using GitHub for version control and collaboration</li>
+<li>Documenting methods and analytical decisions</li>
 </ul>
-<hr>
-<section id="available-packages" class="level2">
-<h2 class="anchored" data-anchor-id="available-packages">Available Packages</h2>
-<hr>
-<section id="open-data-tools" class="level3">
-<h3 class="anchored" data-anchor-id="open-data-tools">Open Data Tools</h3>
+</section>
+<section id="expected-deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="expected-deliverables">Expected Deliverables</h2>
+<p>By the end of the summer, the intern should aim to produce:</p>
 <ul>
-<li><p><a href="https://martinezc1.github.io/nycOpenData/">nycOpenData</a> — Access datasets from the NYC Open Data Portal<br>
-</p></li>
-<li><p><a href="https://martinezc1.github.io/nysOpenData/">nysOpenData</a> — Access datasets from New York State Open Data</p></li>
-<li><p><a href="https://martinezc1.github.io/mtaOpenData/">mtaOpenData</a> — Access datasets from Mass Transit Authority (MTA)-related open data sources</p></li>
-<li><p><a href="https://martinezc1.github.io/chiOpenData/">chiOpenData</a> — Access datasets from the Chicago Open Data Portal</p></li>
-<li><p><a href="https://martinezc1.github.io/laOpenData/">laOpenData</a> — Access datasets from Los Angeles open data portals</p></li>
+<li>One or more reproducible text analysis projects</li>
+<li>Public-facing Quarto reports</li>
+<li>Clear visualizations communicating key findings</li>
+<li>Well-documented analytical code</li>
+<li>A final presentation demonstrating completed work</li>
 </ul>
-<hr>
+<p>Potential projects may include analyses of New York City news coverage, public policy speeches, community discussions, artist discographies, or other publicly available collections of text.</p>
+<p>Quality, reproducibility, and thoughtful interpretation are prioritized over the number of completed projects.</p>
 </section>
-<section id="reproducible-research-tools" class="level3">
-<h3 class="anchored" data-anchor-id="reproducible-research-tools">Reproducible Research Tools</h3>
+<section id="professional-development-goals" class="level2">
+<h2 class="anchored" data-anchor-id="professional-development-goals">Professional Development Goals</h2>
+<p>Through this track, the intern will gain experience with:</p>
 <ul>
-<li><a href="https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1">reproresearchR</a> — Tools and utilities supporting reproducible research workflows in R and Quarto</li>
+<li>Text mining</li>
+<li>Natural language processing (NLP)</li>
+<li>Sentiment analysis</li>
+<li>Computational social science</li>
+<li>Data visualization</li>
+<li>Reproducible research</li>
+<li>Git and GitHub</li>
+<li>Technical writing</li>
+<li>Public communication of data-driven findings</li>
 </ul>
-<hr>
+<p>The goal is for the intern to leave with a portfolio of reproducible analytical work that demonstrates both technical proficiency and the ability to communicate complex ideas through data.</p>
 </section>
-</section>
-</section>
-<section id="a-unified-approach-to-open-data" class="level1">
-<h1>A Unified Approach to Open Data</h1>
-<p>Rather than treating each data source as a separate system, these tools are designed around a consistent workflow and interface.</p>
-<p>This allows for:</p>
+<section id="mentorship-and-expectations" class="level2">
+<h2 class="anchored" data-anchor-id="mentorship-and-expectations">Mentorship and Expectations</h2>
+<p>The intern will meet regularly with the NYC Open Data Lab director to discuss project ideas, analytical approaches, and interpretation of findings.</p>
+<p>The intern is expected to:</p>
 <ul>
-<li>faster onboarding for new users<br>
-</li>
-<li>easier cross-city analysis<br>
-</li>
-<li>more reproducible data workflows</li>
+<li>Communicate progress consistently</li>
+<li>Ask questions when encountering analytical challenges</li>
+<li>Document research decisions clearly</li>
+<li>Maintain reproducible workflows</li>
+<li>Commit code regularly</li>
+<li>Interpret results thoughtfully and responsibly</li>
 </ul>
-<p>The goal is to create a scalable framework where open data from different cities can be accessed and analyzed in a consistent, predictable way.</p>
-<hr>
 </section>
-<section id="looking-ahead" class="level1">
-<h1>Looking Ahead</h1>
-<p>This work is part of a broader effort to build a unified open data ecosystem, including the potential development of a meta-package that brings multiple data sources together under a single interface.</p>
-<p>As the ecosystem grows, the focus remains the same: making open data easier to access, easier to use, and more impactful.</p>
+<section id="end-of-summer-outcome" class="level2">
+<h2 class="anchored" data-anchor-id="end-of-summer-outcome">End-of-Summer Outcome</h2>
+<p>By the end of the internship, the intern should have produced a collection of reproducible, public-facing analyses demonstrating how computational methods can be used to better understand language, communication, and social phenomena.</p>
+<p>The ideal outcome is not simply a completed analysis, but a reproducible workflow and collection of research products that contribute to public scholarship while serving as a foundation for future projects within the NYC Open Data Lab.</p>
 
 
 </section>
@@ -649,6 +658,23 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 The Open Data Lab<br>
+Built with Quarto<br>
+<em>Founded by Christian A. Martinez (CUNY)</em></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://github.com/nyc-open-data-lab">GitHub</a><br>
+<a href="https://www.linkedin.com/company/open-data-lab/">LinkedIn</a><br>
+<a href="mailto:c.martinez0@outlook.com">Email</a></p>
+</div>
+  </div>
+</footer>
 
 
 

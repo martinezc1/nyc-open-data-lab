@@ -1,0 +1,24 @@
+---
+title: "Shelby Lyn Gomes"
+description: "Open Source Software Development Intern"
+---
+
+## Summary
+
+As an Open Source Software Development Intern, they develop public, reusable R packages that make civic open data easier to access, analyze, and use, contributing to the Lab’s broader effort to expand access to open government data across cities.
+
+Learn more about the internship [here](../internships/software-internship.qmd).
+
+------------------------------------------------------------------------
+
+## Contributions to the Lab
+
+- `SeattleOpenData`
+- `cincinnatiOpenData`
+
+------------------------------------------------------------------------
+
+## Links
+
+- [GitHub](https://github.com/gomes-sh)
+- [LinkedIn](https://www.linkedin.com/in/shelbylyngomes/)

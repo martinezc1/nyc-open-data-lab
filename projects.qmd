@@ -12,7 +12,7 @@ All projects are developed as open educational or open-source resources, with pu
 
 ## Featured Projects
 
-### NYC Open Data Student Gallery
+### NYC Open Data Student Gallery {#sec-nyc-opendata-student-gallery}
 
 The NYC Open Data Student Gallery showcases graduate student research developed using NYC Open Data. Each project investigates a unique question about New York City through reproducible analysis, visualization, and data storytelling.
 
@@ -26,7 +26,7 @@ The Gallery demonstrates how classroom work can become public scholarship with l
 
 ------------------------------------------------------------------------
 
-### OpenData Package Developer's Guide
+### OpenData Package Developer's Guide {#sec-opendata-developers-guide}
 
 The OpenData Package Developer's Guide provides a complete framework for building city-specific R packages that interface with Socrata-based open data portals.
 
@@ -42,7 +42,7 @@ The guide includes reusable package templates, implementation tutorials, develop
 
 ## Educational Resources
 
-### Reproducible Research Using R
+### Reproducible Research Using R {#sec-reproducible-research-using-r}
 
 An open educational textbook introducing reproducible research using R and Quarto through authentic examples and real-world datasets.
 
@@ -55,7 +55,7 @@ An open educational textbook introducing reproducible research using R and Quart
 
 ------------------------------------------------------------------------
 
-### Teaching Reproducible Research Using R
+### Teaching Reproducible Research Using R {#sec-teaching-reproducible-research-using-r}
 
 A companion resource for instructors interested in adopting reproducible research workflows in their own classrooms.
 
@@ -67,7 +67,7 @@ A companion resource for instructors interested in adopting reproducible researc
 
 ------------------------------------------------------------------------
 
-### Reproducible Research in Practice: Student Portfolio Volume I
+### Reproducible Research in Practice: Student Portfolio Volume I {#sec-reproducible-research-in-practice}
 
 Students compile their work into professional Quarto portfolio books that document analyses, visualizations, and written reports in a single, reproducible publication.
 
@@ -99,7 +99,7 @@ Rather than developing each new package independently, the Lab uses the peer-rev
 
 As additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.
 
-### Package Ecosystem
+### Package Ecosystem {#sec-package-ecysystem}
 
 | Package | Data Source | Geographic Scope | CRAN | Documentation |
 |---------------|---------------|---------------|:-------------:|:-------------:|
@@ -110,7 +110,6 @@ As additional city packages are developed, they inherit the same underlying desi
 | [**laOpenData**](https://cran.r-project.org/package=laOpenData) | Los Angeles Open Data | Los Angeles | ✅ | [📖](https://martinezc1.github.io/laOpenData/) |
 | [**ausOpenData**](https://cran.r-project.org/package=ausOpenData) | Austin Open Data | Austin | ✅ | [📖](https://martinezc1.github.io/ausOpenData/) |
 | [**SeattleOpenData**](https://cran.r-project.org/package=SeattleOpenData) | Seattle Open Data | Seattle | ✅ | [📖](https://nyc-open-data-lab.github.io/SeattleOpenData/) |
-| [**sfOpenData**](https://cran.r-project.org/package=sfOpenData) | San Francisco Open Data | San Francisco | 👷 | [📖](https://nyc-open-data-lab.github.io/sfOpenData/) |
 | [**cincinnatiOpenData**](https://cran.r-project.org/package=CincinnatiOpenData) | Cincinnati Open Data | Cincinnati | ✅ | 👷 |
 
 ------------------------------------------------------------------------

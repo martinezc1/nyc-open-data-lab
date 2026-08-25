@@ -1,6 +1,6 @@
 ---
-title: "Speed Cameras"
-subtitle: "The Impact Speed Cameras Have on Safety"
+title: "The Impact Speed Cameras Have on Safety"
+subtitle: "A NYC Speed Camera Analysis"
 author: Jonah Dratfield & Shannon Joyce
 categories: ["NYC Open Data","Government", "Urban Data", "Public Policy"]
 execute:

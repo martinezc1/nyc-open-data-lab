@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Contributors – NYC Open Data Lab</title>
+<title>Contributors – The Open Data Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -73,6 +73,34 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-current-members .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-current-members'] = new List('listing-current-members', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-contributors .list');
@@ -180,7 +208,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">NYC Open Data Lab</span>
+    <span class="navbar-title">The Open Data Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -203,20 +231,20 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+<span class="menu-text">Projects &amp; Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./contributors.html" aria-current="page"> 
-<span class="menu-text">People &amp; Programs</span></a>
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications-media.html"> 
-<span class="menu-text">Publications &amp; Media</span></a>
+<span class="menu-text">Media</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/martinezc1"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/nyc-open-data-lab"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -237,8 +265,9 @@ window.Quarto = {
    
   <ul>
   <li><a href="#a-community-of-contributors" id="toc-a-community-of-contributors" class="nav-link active" data-scroll-target="#a-community-of-contributors">A Community of Contributors</a></li>
-  <li><a href="#explore-contributors" id="toc-explore-contributors" class="nav-link" data-scroll-target="#explore-contributors">Explore Contributors</a></li>
-  <li><a href="#internship-program" id="toc-internship-program" class="nav-link" data-scroll-target="#internship-program">Internship Program</a></li>
+  <li><a href="#current-lab-members" id="toc-current-lab-members" class="nav-link" data-scroll-target="#current-lab-members">Current Lab Members</a></li>
+  <li><a href="#past-contributors" id="toc-past-contributors" class="nav-link" data-scroll-target="#past-contributors">Past Contributors</a></li>
+  <li><a href="#summer-internship-program" id="toc-summer-internship-program" class="nav-link" data-scroll-target="#summer-internship-program">Summer Internship Program</a></li>
   </ul>
 </nav>
     </div>
@@ -264,7 +293,7 @@ window.Quarto = {
 </header>
 
 
-<p>The NYC Open Data Lab is built through the work of student researchers and contributors who develop original analyses using public data and reproducible workflows.</p>
+<p>The Open Data Lab is built through the work of student researchers and contributors who develop original analyses using public data and reproducible workflows.</p>
 <p>Each contributor represents part of a growing, public-facing body of civic data research—transforming coursework into published, portfolio-ready work.</p>
 <hr>
 <section id="a-community-of-contributors" class="level2">
@@ -282,25 +311,100 @@ window.Quarto = {
 <p>This model creates a collaborative environment where individual work contributes to a larger, evolving platform.</p>
 <hr>
 </section>
-<section id="explore-contributors" class="level2">
-<h2 class="anchored" data-anchor-id="explore-contributors">Explore Contributors</h2>
-<p>Browse contributor profiles below to learn more about their work and projects.</p>
-<div id="listing-contributors" class="quarto-listing quarto-listing-container-grid">
+<section id="current-lab-members" class="level2">
+<h2 class="anchored" data-anchor-id="current-lab-members">Current Lab Members</h2>
+<p>Browse lab members’ profiles below to learn more about their work and projects.</p>
+<div id="listing-current-members" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1783519677336" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
-<a href="./contributors/christian-martinez.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1787677593766" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
+<a href="./current-members/christian-martinez.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Christian Martinez
 </h5>
 <div class="card-text listing-description delink">
-<p>Founder of the NYC Open Data Lab and creator of the OpenData R package ecosystem</p>
+<p>Founder &amp; Director of The Open Data Lab</p>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1777604536806" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1787674812050" data-listing-reading-time-sort="1" data-listing-word-count-sort="98">
+<a href="./current-members/emma-tupone.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Emma Tupone
+</h5>
+<div class="card-text listing-description delink">
+<p>Civic Data Application Development Intern</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1787678404691" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
+<a href="./current-members/jonah-dratfield.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jonah Dratfield
+</h5>
+<div class="card-text listing-description delink">
+<p>Public Engagement &amp; Partnerships Associate</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1787675887052" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<a href="./current-members/shelby-gomes.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Shelby Lyn Gomes
+</h5>
+<div class="card-text listing-description delink">
+<p>Open Source Software Development Intern</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1787676051770" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
+<a href="./current-members/vignesh-thallam.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Vignesh Thallam
+</h5>
+<div class="card-text listing-description delink">
+<p>Sports Analytics Research Intern</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1787674808153" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
+<a href="./current-members/xinru-wang.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Xinru Wang
+</h5>
+<div class="card-text listing-description delink">
+<p>Text Analytics &amp; Computational Social Science Intern</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<hr>
+</section>
+<section id="past-contributors" class="level2">
+<h2 class="anchored" data-anchor-id="past-contributors">Past Contributors</h2>
+<p>Browse contributor profiles below to learn more about their work and projects.</p>
+<div id="listing-contributors" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1786203107603" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
 <a href="./contributors/crystal-adote.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -313,20 +417,7 @@ Crystal Adote
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1777604633072" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
-<a href="./contributors/emma-tupone.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Emma Tupone
-</h5>
-<div class="card-text listing-description delink">
-<p>Contributor to the NYC Open Data Lab</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1777604603245" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1786203107604" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
 <a href="./contributors/isley-jean-pierre.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -339,20 +430,7 @@ Isley Jean-Pierre
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1777604556626" data-listing-reading-time-sort="1" data-listing-word-count-sort="47">
-<a href="./contributors/jonah-dratfield.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Jonah Dratfield
-</h5>
-<div class="card-text listing-description delink">
-<p>Contributor to the NYC Open Data Lab</p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1777604575414" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1786203107605" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <a href="./contributors/joyce-escatel-flores.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -365,7 +443,7 @@ Joyce Escatel-Flores
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1777604664551" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1786203107605" data-listing-reading-time-sort="1" data-listing-word-count-sort="50">
 <a href="./contributors/laura-rose-werner.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -378,7 +456,7 @@ Laura Rose Werner
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1777604589633" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1786203107605" data-listing-reading-time-sort="1" data-listing-word-count-sort="51">
 <a href="./contributors/robert-hutto.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -391,7 +469,7 @@ Robert Hutto
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-listing-file-modified-sort="1777604618641" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1786203107607" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
 <a href="./contributors/shannon-joyce.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
@@ -404,44 +482,53 @@ Shannon Joyce
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-listing-file-modified-sort="1777604648575" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
-<a href="./contributors/xinru-wang.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Xinru Wang
-</h5>
-<div class="card-text listing-description delink">
-<p>Contributor to the NYC Open Data Lab</p>
-</div>
-</div>
-</div></a>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>
 </section>
-<section id="internship-program" class="level2">
-<h2 class="anchored" data-anchor-id="internship-program">Internship Program</h2>
+<section id="summer-internship-program" class="level2">
+<h2 class="anchored" data-anchor-id="summer-internship-program">Summer Internship Program</h2>
+<p>The Open Data Lab Summer Internship Program provides students with the opportunity to contribute to long-term, public-facing projects that extend beyond the classroom. Interns work closely with the Lab to develop open-source software, reproducible research, and analytical tools while gaining experience with collaborative software development, technical communication, and public scholarship.</p>
+<p>Each internship track is designed around ownership of a meaningful project, giving interns the opportunity to create work that can be shared through GitHub, professional portfolios, conference presentations, and future research collaborations.</p>
 <div id="listing-internships" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1783518468068" data-listing-reading-time-sort="3" data-listing-word-count-sort="420">
-<a href="./internships/sports-internship.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1786203107713" data-listing-reading-time-sort="3" data-listing-word-count-sort="434">
+<a href="./internships/civic-data.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-NYC Open Data Lab Summer Internship
+Civic Data Application Development Track
 </h5>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1783518616969" data-listing-reading-time-sort="3" data-listing-word-count-sort="418">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1786203107713" data-listing-reading-time-sort="3" data-listing-word-count-sort="418">
 <a href="./internships/software-internship.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Open Source Software Development Track
+</h5>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1786203107714" data-listing-reading-time-sort="3" data-listing-word-count-sort="420">
+<a href="./internships/sports-internship.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sports Analytics Research Track
+</h5>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1786203107714" data-listing-reading-time-sort="3" data-listing-word-count-sort="447">
+<a href="./internships/test-analysis-internship.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Text Analytics &amp; Computational Social Science Track
 </h5>
 </div>
 </div></a>
@@ -859,7 +946,7 @@ Open Source Software Development Track
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 NYC Open Data Lab<br>
+<p>© 2026 The Open Data Lab<br>
 Built with Quarto<br>
 <em>Founded by Christian A. Martinez (CUNY)</em></p>
 </div>   
@@ -867,8 +954,8 @@ Built with Quarto<br>
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p><a href="https://github.com/martinezc1">GitHub</a><br>
-<a href="https://www.linkedin.com/in/christian-a-martinez/">LinkedIn</a><br>
+<p><a href="https://github.com/nyc-open-data-lab">GitHub</a><br>
+<a href="https://www.linkedin.com/company/open-data-lab/">LinkedIn</a><br>
 <a href="mailto:c.martinez0@outlook.com">Email</a></p>
 </div>
   </div>

@@ -2,32 +2,29 @@
   {
     "listing": "/stories.html",
     "items": [
-      "/stories/crash-data.html",
-      "/stories/intro-to-nycOpenData.html"
+      "/stories/intro-to-nycOpenData.html",
+      "/stories/crash-data.html"
     ]
   },
   {
     "listing": "/contributors.html",
     "items": [
-      "/contributors/christian-martinez.html",
+      "/current-members/christian-martinez.html",
+      "/current-members/emma-tupone.html",
+      "/current-members/jonah-dratfield.html",
+      "/current-members/shelby-gomes.html",
+      "/current-members/vignesh-thallam.html",
+      "/current-members/xinru-wang.html",
       "/contributors/crystal-adote.html",
-      "/contributors/emma-tupone.html",
       "/contributors/isley-jean-pierre.html",
-      "/contributors/jonah-dratfield.html",
       "/contributors/joyce-escatel-flores.html",
       "/contributors/laura-rose-werner.html",
       "/contributors/robert-hutto.html",
       "/contributors/shannon-joyce.html",
-      "/contributors/xinru-wang.html",
+      "/internships/civic-data.html",
+      "/internships/software-internship.html",
       "/internships/sports-internship.html",
-      "/internships/software-internship.html"
-    ]
-  },
-  {
-    "listing": "/internships.html",
-    "items": [
-      "/internships/sports-internship.html",
-      "/internships/software-internship.html"
+      "/internships/test-analysis-internship.html"
     ]
   }
 ]

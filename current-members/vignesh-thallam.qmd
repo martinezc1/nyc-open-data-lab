@@ -1,0 +1,23 @@
+---
+title: "Vignesh Thallam"
+description: "Sports Analytics Research Intern"
+---
+
+## Summary
+
+As a Sports Analytics Research Intern, they apply data science, reproducible research, and data visualization to collegiate basketball, transforming data from the Lab’s CUNY Basketball Database into actionable insights for coaches, players, and the broader basketball community.
+
+Learn more about the internship [here](../internships/sports-internship.qmd).
+
+------------------------------------------------------------------------
+
+## Contributions to the Lab
+
+Developed the first Brooklyn College Men’s Basketball scouting report using the Lab’s CUNY Basketball Database, transforming historical team and player data into actionable insights to support game preparation and decision-making. The report is maintained internally to protect competitive information and is not publicly available.
+
+------------------------------------------------------------------------
+
+## Links
+
+- [GitHub](https://github.com/vthallam70)
+- [LinkedIn](https://www.linkedin.com/in/vignesh-thallam-a2313b32a/)
