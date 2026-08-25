@@ -12,72 +12,24 @@ Whenever possible, Lab projects are developed as open educational or open-source
 
 ## Featured Projects
 
-### NYC Open Data Student Gallery {#sec-nyc-opendata-student-gallery}
+- **NYC Open Data Student Gallery** {#sec-nyc-opendata-student-gallery} — Showcases graduate student research developed using NYC Open Data, demonstrating how reproducible analysis, visualization, and data storytelling can transform classroom work into public scholarship with lasting value.  
+  [📖 Explore the Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/) · [💻 GitHub](https://github.com/martinezc1/NYC-Open-Data-Student-Gallery) · [📦 Zenodo](https://doi.org/10.5281/zenodo.21397679)
 
-The NYC Open Data Student Gallery showcases graduate student research developed using NYC Open Data. Each project investigates a unique question about New York City through reproducible analysis, visualization, and data storytelling.
-
-The Gallery demonstrates how classroom work can become public scholarship with lasting value.
-
-**Resources**
-
-- 📖 [Explore the Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/NYC-Open-Data-Student-Gallery)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21397679)
-
-------------------------------------------------------------------------
-
-### OpenData Package Developer's Guide {#sec-opendata-developers-guide}
-
-The OpenData Package Developer's Guide provides a complete framework for building city-specific R packages that interface with Socrata-based open data portals.
-
-The guide includes reusable package templates, implementation tutorials, development best practices, and documentation for creating open-source tools that follow a consistent design across cities.
-
-**Resources**
-
-- 📖 [Read the Guide](https://martinezc1-the-opendata-package-developers-guide.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/OpenDataPackageGuide)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21383609)
+- **OpenData Package Developer's Guide** {#sec-opendata-developers-guide} — Provides a complete framework for building city-specific R packages that interface with Socrata-based open data portals, including reusable templates, tutorials, development best practices, and documentation.  
+  [📖 Read the Guide](https://martinezc1-the-opendata-package-developers-guide.share.connect.posit.cloud/) · [💻 GitHub](https://github.com/martinezc1/OpenDataPackageGuide) · [📦 Zenodo](https://doi.org/10.5281/zenodo.21383609)
 
 ------------------------------------------------------------------------
 
 ## Educational Resources
 
-### Reproducible Research Using R {#sec-reproducible-research-using-r}
+- **Reproducible Research Using R** {#sec-reproducible-research-using-r} — An open educational textbook introducing reproducible research using R and Quarto through authentic examples and real-world datasets.  
+  [📖 Read the Textbook](https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/) · [💻 GitHub](https://github.com/martinezc1/Reproducible-Research-Using-R) · [📦 Zenodo](https://doi.org/10.5281/zenodo.19136755) · [📦 `reproresearchR`](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1)
 
-An open educational textbook introducing reproducible research using R and Quarto through authentic examples and real-world datasets.
+- **Teaching Reproducible Research Using R** {#sec-teaching-reproducible-research-using-r} — A companion resource for instructors interested in adopting reproducible research workflows in their own classrooms.  
+  [📖 Read the Instructor Guide](https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/) · [💻 GitHub](https://github.com/martinezc1/teaching-reproducible-research-using-R) · [📦 Zenodo](https://doi.org/10.5281/zenodo.19139302)
 
-**Resources**
-
-- 📖 [Read the textbook](https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/Reproducible-Research-Using-R)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.19136755)
-- 📦 Companion Package: [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1)
-
-------------------------------------------------------------------------
-
-### Teaching Reproducible Research Using R {#sec-teaching-reproducible-research-using-r}
-
-A companion resource for instructors interested in adopting reproducible research workflows in their own classrooms.
-
-**Resources**
-
-- 📖 [Read the instructor guide](https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/teaching-reproducible-research-using-R)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.19139302)
-
-------------------------------------------------------------------------
-
-### Reproducible Research in Practice: Student Portfolio Volume I {#sec-reproducible-research-in-practice}
-
-Students compile their work into professional Quarto portfolio books that document analyses, visualizations, and written reports in a single, reproducible publication.
-
-These portfolios serve as public-facing evidence of students' technical and analytical skills.
-
-**Resources**
-
-- 📖 [Reproducible Research in Practice: Student Portfolio Volume I](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/student-portfolio-book)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21397759)
+- **Reproducible Research in Practice: Student Portfolio Volume I** {#sec-reproducible-research-in-practice} — A collection of professional Quarto portfolio books documenting student analyses, visualizations, and written reports as public-facing evidence of technical and analytical skills.  
+  [📖 Explore the Portfolio](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/) · [💻 GitHub](https://github.com/martinezc1/student-portfolio-book) · [📦 Zenodo](https://doi.org/10.5281/zenodo.21397759)
 
 ------------------------------------------------------------------------
 
