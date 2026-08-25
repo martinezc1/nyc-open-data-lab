@@ -6,7 +6,7 @@ description: "Contributor to the NYC Open Data Lab"
 ## Projects & Publications
 
 - [Leading Causes of Death and Indoor Environmental Complaints](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/01-Final-Project-Crystal.html)
-- Presented research at [**NYC Open Data Week 2026**](../talks.qmd#sec-nyc-open-data-week-2026) as part of the Lab's NYC Open Data Student Gallery presentation
+- Presented research at [**NYC Open Data Week 2026**](../publications-media.qmd#sec-nyc-open-data-week-2026) as part of the Lab's NYC Open Data Student Gallery presentation
 
 ------------------------------------------------------------------------
 

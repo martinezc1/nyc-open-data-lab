@@ -5,7 +5,7 @@ author: Christian Martinez
 categories: ["NYC Open Data", "Data Literacy", "Civic Technology", "Government Transparency", "Urban Data", "Public Policy", "Data Science", "Education"]
 ---
 
-**Author:** [Christian Martinez](../contributors/christian-martinez.qmd)
+**Author:** [Christian Martinez](../current-members/christian-martinez.qmd)
 
 New York City (NYC) is one of the largest metropolitan cities in the entire world, home to over eight million people. If you look at any block in Manhattan, there are any number of different things you can identify - trash cans, taxi's, potholes...
 
@@ -68,10 +68,10 @@ In 2012, New York City’s Open Data Law was signed into effect, which meant tha
 
 The portal currently has thousands of datasets (and counting). These datasets have:
 
--   over six *billion* rows of data
--   over 50 *thousand* columns (essentially different datapoints)
--   over 22 *million* downloads
--   over 37 *million* visits
+- over six *billion* rows of data
+- over 50 *thousand* columns (essentially different datapoints)
+- over 22 *million* downloads
+- over 37 *million* visits
 
 *Wow.*
 
@@ -83,9 +83,9 @@ With access to all of this data on the NYC Open Data portal, what is actually po
 
 You can answer questions such as:
 
--   Which neighborhoods get the most 311 complaints?
--   Are certain areas under-resourced?
--   Which borough has the most motor-vehicle collisions?
+- Which neighborhoods get the most 311 complaints?
+- Are certain areas under-resourced?
+- Which borough has the most motor-vehicle collisions?
 
 And that is just scratching the surface. Of course, having data is one thing — using it is another.
 
@@ -97,9 +97,9 @@ The simplest way to work with NYC Open Data is to utilize their portal. It is a 
 
 One of the fantastic things about the NYC Open Data portal is the ability to work with and export the raw data. There are a few ways to do so:
 
--   CSV
--   Excel file
--   API (Application Programming Interface)
+- CSV
+- Excel file
+- API (Application Programming Interface)
 
 Note: Sometimes a given dataset might have *too* much data to download.
 

@@ -25,7 +25,7 @@
     "href": "current-members/jonah-dratfield.html#projects-publications",
     "title": "Jonah Dratfield",
     "section": "Projects & Publications",
-    "text": "Projects & Publications\n\nSocial Infrastructure & Well-Being\nThe Impact Speed Cameras Have on Safety"
+    "text": "Projects & Publications\n\nSocial Infrastructure & Well-Being\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation\nThe Impact Speed Cameras Have on Safety"
   },
   {
     "objectID": "current-members/jonah-dratfield.html#portfolio",
@@ -95,7 +95,7 @@
     "href": "current-members/emma-tupone.html#projects-publications",
     "title": "Emma Tupone",
     "section": "Projects & Publications",
-    "text": "Projects & Publications\n\nEnvironmental Stressors and Social Complaints in New York City"
+    "text": "Projects & Publications\n\nEnvironmental Stressors and Social Complaints in New York City\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "current-members/emma-tupone.html#portfolio",
@@ -109,7 +109,7 @@
     "href": "current-members/emma-tupone.html#contributions-to-the-lab",
     "title": "Emma Tupone",
     "section": "Contributions to the Lab",
-    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+    "text": "Contributions to the Lab\nEmma has contributed to the expansion of the OpenData R package ecosystem through the development of ausOpenData using the Lab’s OpenData Package Developer’s Guide. She also contributed research to the NYC Open Data Student Gallery, helping demonstrate how open public data can be used for reproducible student research."
   },
   {
     "objectID": "current-members/emma-tupone.html#links",
@@ -186,14 +186,14 @@
     "href": "contributors/laura-rose-werner.html",
     "title": "Laura Rose Werner",
     "section": "",
-    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC"
+    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/laura-rose-werner.html#projects-publications",
     "href": "contributors/laura-rose-werner.html#projects-publications",
     "title": "Laura Rose Werner",
     "section": "",
-    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC"
+    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/laura-rose-werner.html#portfolio",
@@ -221,14 +221,14 @@
     "href": "contributors/crystal-adote.html",
     "title": "Crystal Adote",
     "section": "",
-    "text": "Leading Causes of Death and Indoor Environmental Complaints"
+    "text": "Leading Causes of Death and Indoor Environmental Complaints\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/crystal-adote.html#projects-publications",
     "href": "contributors/crystal-adote.html#projects-publications",
     "title": "Crystal Adote",
     "section": "",
-    "text": "Leading Causes of Death and Indoor Environmental Complaints"
+    "text": "Leading Causes of Death and Indoor Environmental Complaints\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/crystal-adote.html#portfolio",
@@ -256,14 +256,14 @@
     "href": "contributors/isley-jean-pierre.html",
     "title": "Isley Jean-Pierre",
     "section": "",
-    "text": "From School To Juvenile Incarceration"
+    "text": "From School To Juvenile Incarceration\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/isley-jean-pierre.html#projects-publications",
     "href": "contributors/isley-jean-pierre.html#projects-publications",
     "title": "Isley Jean-Pierre",
     "section": "",
-    "text": "From School To Juvenile Incarceration"
+    "text": "From School To Juvenile Incarceration\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/isley-jean-pierre.html#portfolio",
@@ -396,7 +396,7 @@
     "href": "projects.html",
     "title": "Research, Publications & Software",
     "section": "",
-    "text": "The Open Data Lab develops open-source software, educational resources, and public-facing research that make civic data more accessible through reproducible workflows.\nTogether, these projects form a connected ecosystem where students, educators, researchers, and practitioners can learn, build, publish, and contribute using the same open tools.\nAll projects are developed as open educational or open-source resources, with publicly available code, documentation, and archived releases whenever possible."
+    "text": "The Open Data Lab develops open-source software, educational resources, and public-facing research that make civic data more accessible through reproducible workflows.\nTogether, these projects form a connected ecosystem where students, educators, researchers, and practitioners can learn, build, publish, and contribute using the same open tools.\nWhenever possible, Lab projects are developed as open educational or open-source resources, with publicly available code, documentation, and archived releases."
   },
   {
     "objectID": "projects.html#featured-projects",
@@ -417,7 +417,14 @@
     "href": "projects.html#software",
     "title": "Research, Publications & Software",
     "section": "Software",
-    "text": "Software\nThe Lab develops open-source R packages that provide a unified interface for accessing and analyzing public data. Together, these packages form a growing ecosystem designed to make civic data more accessible, reproducible, and consistent across multiple open data portals.\nEach package follows the same design philosophy, allowing users to browse datasets, retrieve data, and work with multiple open data portals using a familiar workflow.\nThe ecosystem is anchored by nycOpenData, which established the architecture and development standards that now guide every package in the collection.\n\nThe Foundation of the Package Ecosystem\nThe Open Data package ecosystem was built on the architecture established by nycOpenData, the Lab’s flagship R package for accessing NYC Open Data.\nIn 2026, nycOpenData successfully completed the independent software peer-review process conducted by rOpenSci, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.\nRather than developing each new package independently, the Lab uses the peer-reviewed design of nycOpenData as the foundation for every subsequent package. This shared architecture promotes a consistent user experience, simplifies maintenance, and allows improvements to be propagated across the broader ecosystem.\nAs additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.\n\n\nPackage Ecosystem\n\n\n\nPackage\nData Source\nGeographic Scope\nCRAN\nDocumentation\n\n\n\n\nnycOpenData\nNYC Open Data\nNew York City\n✅\n📖\n\n\nnysOpenData\nNYS Open Data\nNew York State\n✅\n📖\n\n\nmtaOpenData\nMTA Open Data\nTransportation\n✅\n📖\n\n\nchiOpenData\nChicago Data Portal\nChicago\n✅\n📖\n\n\nlaOpenData\nLos Angeles Open Data\nLos Angeles\n✅\n📖\n\n\nausOpenData\nAustin Open Data\nAustin\n✅\n📖\n\n\nSeattleOpenData\nSeattle Open Data\nSeattle\n✅\n📖\n\n\ncincinnatiOpenData\nCincinnati Open Data\nCincinnati\n✅\n👷\n\n\n\n\n\n\nReproducible Research Tools\n\nreproresearchR — Companion package supporting the Reproducible Research Using R textbook and reproducible workflows in R and Quarto."
+    "text": "Software\nThe Lab develops open-source R packages that provide a unified interface for accessing and analyzing public data. Together, these packages form a growing ecosystem designed to make civic data more accessible, reproducible, and consistent across multiple open data portals.\nEach package follows the same design philosophy, allowing users to browse datasets, retrieve data, and work with multiple open data portals using a familiar workflow.\nThe ecosystem is anchored by nycOpenData, which established the architecture and development standards that now guide every package in the collection.\n\nThe Foundation of the Package Ecosystem\nThe Open Data package ecosystem was built on the architecture established by nycOpenData, the Lab’s flagship R package for accessing NYC Open Data.\nIn 2026, nycOpenData successfully completed the independent software peer-review process conducted by rOpenSci, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.\nRather than developing each new package independently, the Lab uses the peer-reviewed design of nycOpenData as the foundation for every subsequent package. The OpenData Package Developer’s Guide provides a standardized framework for implementing this architecture across new city and state packages.\nAs additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.\n\n\n\nPackage Ecosystem\n\n\n\nPackage\nAuthor\nData Source\nGeographic Scope\nCRAN\nDocumentation\n\n\n\n\nnycOpenData\nChristian Martinez\nNYC Open Data\nNew York City\n✅\n📖\n\n\nnysOpenData\nChristian Martinez\nNYS Open Data\nNew York State\n✅\n📖\n\n\nmtaOpenData\nChristian Martinez\nMTA Open Data\nTransportation\n✅\n📖\n\n\nchiOpenData\nChristian Martinez\nChicago Data Portal\nChicago\n✅\n📖\n\n\nlaOpenData\nChristian Martinez\nLos Angeles Open Data\nLos Angeles\n✅\n📖\n\n\nausOpenData\nEmma V. Tupone\nAustin Open Data\nAustin\n✅\n📖\n\n\nSeattleOpenData\nShelby Gomes\nSeattle Open Data\nSeattle\n✅\n📖\n\n\ncincinnatiOpenData\nShelby Gomes\nCincinnati Open Data\nCincinnati\n✅\n👷\n\n\nnolaOpenData\nShelby Gomes\nNew Orleans Open Data\nNew Orleans\n🔎 Under Review\n👷\n\n\nctOpenData\nShelby Gomes\nConnecticut Open Data\nConnecticut\n🔎 Under Review\n👷\n\n\ndeOpenData\nShelby Gomes\nDelaware Open Data\nDelaware\n🔎 Under Review\n👷\n\n\nsfOpenData\nShelby Gomes\nSan Francisco Open Data\nSan Francisco\n🔎 Under Review\n👷\n\n\n\n\n\n\nReproducible Research Tools\n\nreproresearchR — Companion package supporting the Reproducible Research Using R textbook and reproducible workflows in R and Quarto."
+  },
+  {
+    "objectID": "projects.html#current-initiatives",
+    "href": "projects.html#current-initiatives",
+    "title": "Research, Publications & Software",
+    "section": "Current Initiatives",
+    "text": "Current Initiatives\n\nNYC 311 Dashboard\nThe Open Data Lab is developing an interactive dashboard that makes NYC 311 data easier to explore and understand. Using NYC Open Data and reproducible workflows, the project will allow users to investigate patterns in service requests across the city through accessible visualizations and interactive tools.\nThe dashboard is currently being developed by Civic Data Application Development Intern Emma V. Tupone.\n\n\n\nCUNY Sports Analytics Initiative\nThe Open Data Lab is building a student-driven sports analytics initiative that uses real collegiate athletics data to support CUNY coaches, players, and teams.\nStudents can contribute through sports analytics or data development, working on projects such as scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.\nApply to Join the Team"
   },
   {
     "objectID": "projects.html#get-involved",
@@ -445,7 +452,7 @@
     "href": "publications-media.html#featured-talks",
     "title": "Publications & Media",
     "section": "Featured Talks",
-    "text": "Featured Talks\n\nNYC Open Data Week 2026\nTeaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows\n\n🎥 Watch the talk\n\n📊 View slides\n\n\n\n\nposit::conf(2026)\nDesigning Reproducible Learning Ecosystems with R and Quarto\n\n🔗 Conference sessions\n\n\n\n\nuseR! 2026\nTeaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development\n\n🔗 Conference site\n\n\n\n\nNew York Open Statistical Programming Meetup\nLowering Barriers to Open Data: Classroom to CRAN\n\n🔗 Meetup video\n\n\n\n\nBrooklyn College 29th Annual Faculty Day Conference 2026\nReproducible Research Using R: The Impact of Open Data and Open Resources\n\n🔗 Conference site\n\n\n\n\nBrooklyn College Psychology Department In-House Conference 2026\nThe Accidental Author: Scaffolding Reproducible Research and Digital Scholarly Identity in an M.S. Psychology Classroom"
+    "text": "Featured Talks\n\nNYC Open Data Week 2026 — Teaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows\n🎥 Watch the talk · 📊 View slides\nposit::conf(2026) — Designing Reproducible Learning Ecosystems with R and Quarto\n🔗 Conference sessions\nuseR! 2026 — Teaching Reproducibility by Design: An End-to-End R Workflow Using Quarto, Open Data, and Package Development\n🔗 Conference site\nNew York Open Statistical Programming Meetup — Lowering Barriers to Open Data: Classroom to CRAN\n🎥 Watch the talk\nBrooklyn College 29th Annual Faculty Day Conference 2026 — Reproducible Research Using R: The Impact of Open Data and Open Resources\n🔗 Conference program\nBrooklyn College Psychology Department In-House Conference 2026 — The Accidental Author: Scaffolding Reproducible Research and Digital Scholarly Identity in an M.S. Psychology Classroom"
   },
   {
     "objectID": "publications-media.html#podcasts",
@@ -487,7 +494,7 @@
     "href": "index.html#explore-the-lab",
     "title": "The Open Data Lab",
     "section": "Explore the Lab",
-    "text": "Explore the Lab\n\nStart with Stories to see data brought to life through analysis and visualization\nVisit Projects to explore the broader ecosystem of work\nCheck out Tools for open-source packages supporting reproducible data access\nLearn more in Teaching & OER about the methodology behind the Lab\n\nStart by exploring the Stories, or learn more about the Lab’s tools and teaching approach."
+    "text": "Explore the Lab\n\nExplore Stories to see data brought to life through analysis and visualization\nDiscover Projects & Research to explore the Lab’s broader ecosystem of work and current initiatives\nMeet the People who make this work possible"
   },
   {
     "objectID": "internships/civic-data.html#overview",
@@ -592,14 +599,14 @@
     "href": "contributors/shannon-joyce.html",
     "title": "Shannon Joyce",
     "section": "",
-    "text": "Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC"
+    "text": "Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/shannon-joyce.html#projects-publications",
     "href": "contributors/shannon-joyce.html#projects-publications",
     "title": "Shannon Joyce",
     "section": "",
-    "text": "Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC"
+    "text": "Toxic Homes: Exploring Mold Exposure Complaint and Domestic Violence Report Trends in NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/shannon-joyce.html#portfolio",
@@ -627,14 +634,14 @@
     "href": "contributors/robert-hutto.html",
     "title": "Robert Hutto",
     "section": "",
-    "text": "The Madison Square Garden Effect in the NBA"
+    "text": "The Madison Square Garden Effect in the NBA\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/robert-hutto.html#projects-publications",
     "href": "contributors/robert-hutto.html#projects-publications",
     "title": "Robert Hutto",
     "section": "",
-    "text": "The Madison Square Garden Effect in the NBA"
+    "text": "The Madison Square Garden Effect in the NBA\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/robert-hutto.html#portfolio",
@@ -662,14 +669,14 @@
     "href": "contributors/joyce-escatel-flores.html",
     "title": "Joyce Escatel-Flores",
     "section": "",
-    "text": "NYC Restaurants and Museums"
+    "text": "NYC Restaurants and Museums\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/joyce-escatel-flores.html#projects-publications",
     "href": "contributors/joyce-escatel-flores.html#projects-publications",
     "title": "Joyce Escatel-Flores",
     "section": "",
-    "text": "NYC Restaurants and Museums"
+    "text": "NYC Restaurants and Museums\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "contributors/joyce-escatel-flores.html#portfolio",
@@ -746,7 +753,7 @@
     "href": "current-members/xinru-wang.html#projects-publications",
     "title": "Xinru Wang",
     "section": "Projects & Publications",
-    "text": "Projects & Publications\n\nBeating Around the Bush: Uncovering the Hidden Link Between Urban Trees and Wildlife Activity"
+    "text": "Projects & Publications\n\nBeating Around the Bush: Uncovering the Hidden Link Between Urban Trees and Wildlife Activity\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
   },
   {
     "objectID": "current-members/xinru-wang.html#portfolio",
@@ -798,6 +805,13 @@
     "text": "Selected Projects & Publications\n\nWelcome to NYC Open Data\nOpenData R Package Ecosystem\nNYC Open Data Student Gallery\nOpenData Package Developer’s Guide\nReproducible Research Using R\nTeaching Reproducible Research Using R\nReproducible Research in Practice: Student Portfolio Volume I"
   },
   {
+    "objectID": "current-members/christian-martinez.html#talks-presentations",
+    "href": "current-members/christian-martinez.html#talks-presentations",
+    "title": "Christian Martinez",
+    "section": "Talks & Presentations",
+    "text": "Talks & Presentations\nChristian regularly presents the Lab’s work on open data, reproducible research, open-source software, and teaching at conferences and professional events.\n\nView featured talks and presentations"
+  },
+  {
     "objectID": "current-members/christian-martinez.html#links",
     "href": "current-members/christian-martinez.html#links",
     "title": "Christian Martinez",
@@ -823,7 +837,7 @@
     "href": "current-members/shelby-gomes.html#contributions-to-the-lab",
     "title": "Shelby Lyn Gomes",
     "section": "Contributions to the Lab",
-    "text": "Contributions to the Lab\n\nSeattleOpenData\ncincinnatiOpenData"
+    "text": "Contributions to the Lab\nShelby has contributed to the expansion of the OpenData R package ecosystem, developing many packages using the Lab’s OpenData Package Developer’s Guide. Their work has expanded the ecosystem across additional cities and states while demonstrating how the Lab’s standardized framework can be used to develop reproducible, publicly available open-data tools."
   },
   {
     "objectID": "current-members/shelby-gomes.html#links",

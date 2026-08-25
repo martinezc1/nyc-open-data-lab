@@ -33,9 +33,6 @@ By designing courses and workflows around reproducibility and public output, the
 
 ## Explore the Lab
 
-- Start with [Stories](stories.qmd) to see data brought to life through analysis and visualization
-- Visit [Projects](projects.qmd) to explore the broader ecosystem of work
-- Check out [Tools](tools.qmd) for open-source packages supporting reproducible data access
-- Learn more in [Teaching & OER](teaching-oer.qmd) about the methodology behind the Lab
-
-Start by exploring the [Stories](stories.qmd), or learn more about the Lab’s tools and teaching approach.
+- Explore [Stories](stories.qmd) to see data brought to life through analysis and visualization
+- Discover [Projects & Research](projects.qmd) to explore the Lab's broader ecosystem of work and current initiatives
+- Meet the [People](contributors.qmd) who make this work possible

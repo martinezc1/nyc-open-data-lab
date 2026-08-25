@@ -5,12 +5,12 @@ description: "Public Engagement & Partnerships Associate"
 
 ## Summary
 
-As the Public Engagement & Partnerships Associate, they help connect the Lab’s work to broader communities and opportunities. Their work focuses on communicating the public and civic value of Lab projects, developing partnerships with external organizations, and researching career and workforce pathways that can help students translate their skills into meaningful opportunities.
+As the Public Engagement & Partnerships Associate, he helps connect the Lab’s work to broader communities and opportunities. His work focuses on communicating the public and civic value of Lab projects, developing partnerships with external organizations, and researching career and workforce pathways that can help students translate their skills into meaningful opportunities.
 
 ## Projects & Publications
 
 - [**Social Infrastructure & Well-Being**](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/02-Final-Social-Infrastructure-and-Well-Being-Jonah.html)
-- Presented research at [**NYC Open Data Week 2026**](../talks.qmd#sec-nyc-open-data-week-2026) as part of the Lab's NYC Open Data Student Gallery presentation
+- Presented research at [**NYC Open Data Week 2026**](../publications-media.qmd#sec-nyc-open-data-week-2026) as part of the Lab's NYC Open Data Student Gallery presentation
 - [**The Impact Speed Cameras Have on Safety**](../stories/crash-data.qmd)
 
 ------------------------------------------------------------------------

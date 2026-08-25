@@ -6,7 +6,7 @@ The Open Data Lab develops open-source software, educational resources, and publ
 
 Together, these projects form a connected ecosystem where students, educators, researchers, and practitioners can learn, build, publish, and contribute using the same open tools.
 
-All projects are developed as open educational or open-source resources, with publicly available code, documentation, and archived releases whenever possible.
+Whenever possible, Lab projects are developed as open educational or open-source resources, with publicly available code, documentation, and archived releases.
 
 ------------------------------------------------------------------------
 
@@ -95,9 +95,11 @@ The Open Data package ecosystem was built on the architecture established by `ny
 
 In 2026, `nycOpenData` successfully completed the independent software peer-review process conducted by **rOpenSci**, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.
 
-Rather than developing each new package independently, the Lab uses the peer-reviewed design of `nycOpenData` as the foundation for every subsequent package. This shared architecture promotes a consistent user experience, simplifies maintenance, and allows improvements to be propagated across the broader ecosystem.
+Rather than developing each new package independently, the Lab uses the peer-reviewed design of `nycOpenData` as the foundation for every subsequent package. The [**OpenData Package Developer's Guide**](#sec-opendata-developers-guide) provides a standardized framework for implementing this architecture across new city and state packages.
 
 As additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.
+
+------------------------------------------------------------------------
 
 ### Package Ecosystem {#sec-package-ecosystem}
 
@@ -123,6 +125,26 @@ As additional city packages are developed, they inherit the same underlying desi
 - [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1) — Companion package supporting the *Reproducible Research Using R* textbook and reproducible workflows in R and Quarto.
 
 ------------------------------------------------------------------------
+
+## Current Initiatives
+
+### NYC 311 Dashboard {#sec-nyc-311-dashboard}
+
+The Open Data Lab is developing an interactive dashboard that makes NYC 311 data easier to explore and understand. Using NYC Open Data and reproducible workflows, the project will allow users to investigate patterns in service requests across the city through accessible visualizations and interactive tools.
+
+The dashboard is currently being developed by Civic Data Application Development Intern [**Emma V. Tupone**](../current-members/emma-tupone.qmd).
+
+------------------------------------------------------------------------
+
+### CUNY Sports Analytics Initiative {#sec-cuny-sports-analytics}
+
+The Open Data Lab is building a student-driven sports analytics initiative that uses real collegiate athletics data to support CUNY coaches, players, and teams.
+
+Students can contribute through sports analytics or data development, working on projects such as scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.
+
+[Apply to Join the Team](https://docs.google.com/forms/d/e/1FAIpQLSdRmNDdMDB9ZJb2ZIJGHAzfwBdY25dl-Co0h42UarCo8MJx8g/viewform?usp=header){.btn .btn-primary}
+
+[![](../images/sports-one-pager.png){fig-alt="Become a CUNY Sports Analyst flyer" width="75%"}](../images/sports-one-pager.pdf)
 
 ------------------------------------------------------------------------
 

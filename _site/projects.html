@@ -162,8 +162,13 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
   <li><a href="#software" id="toc-software" class="nav-link" data-scroll-target="#software">Software</a>
   <ul class="collapse">
   <li><a href="#the-foundation-of-the-package-ecosystem" id="toc-the-foundation-of-the-package-ecosystem" class="nav-link" data-scroll-target="#the-foundation-of-the-package-ecosystem">The Foundation of the Package Ecosystem</a></li>
-  <li><a href="#sec-package-ecysystem" id="toc-sec-package-ecysystem" class="nav-link" data-scroll-target="#sec-package-ecysystem">Package Ecosystem</a></li>
+  <li><a href="#sec-package-ecosystem" id="toc-sec-package-ecosystem" class="nav-link" data-scroll-target="#sec-package-ecosystem">Package Ecosystem</a></li>
   <li><a href="#reproducible-research-tools" id="toc-reproducible-research-tools" class="nav-link" data-scroll-target="#reproducible-research-tools">Reproducible Research Tools</a></li>
+  </ul></li>
+  <li><a href="#current-initiatives" id="toc-current-initiatives" class="nav-link" data-scroll-target="#current-initiatives">Current Initiatives</a>
+  <ul class="collapse">
+  <li><a href="#sec-nyc-311-dashboard" id="toc-sec-nyc-311-dashboard" class="nav-link" data-scroll-target="#sec-nyc-311-dashboard">NYC 311 Dashboard</a></li>
+  <li><a href="#sec-cuny-sports-analytics" id="toc-sec-cuny-sports-analytics" class="nav-link" data-scroll-target="#sec-cuny-sports-analytics">CUNY Sports Analytics Initiative</a></li>
   </ul></li>
   <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get Involved</a></li>
   </ul>
@@ -193,7 +198,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 
 <p>The Open Data Lab develops open-source software, educational resources, and public-facing research that make civic data more accessible through reproducible workflows.</p>
 <p>Together, these projects form a connected ecosystem where students, educators, researchers, and practitioners can learn, build, publish, and contribute using the same open tools.</p>
-<p>All projects are developed as open educational or open-source resources, with publicly available code, documentation, and archived releases whenever possible.</p>
+<p>Whenever possible, Lab projects are developed as open educational or open-source resources, with publicly available code, documentation, and archived releases.</p>
 <hr>
 <section id="featured-projects" class="level2">
 <h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
@@ -264,20 +269,22 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <h2 class="anchored" data-anchor-id="software">Software</h2>
 <p>The Lab develops open-source R packages that provide a unified interface for accessing and analyzing public data. Together, these packages form a growing ecosystem designed to make civic data more accessible, reproducible, and consistent across multiple open data portals.</p>
 <p>Each package follows the same design philosophy, allowing users to browse datasets, retrieve data, and work with multiple open data portals using a familiar workflow.</p>
-<p>The ecosystem is anchored by <strong>nycOpenData</strong>, which established the architecture and development standards that now guide every package in the collection.</p>
+<p>The ecosystem is anchored by <code>nycOpenData</code>, which established the architecture and development standards that now guide every package in the collection.</p>
 <section id="the-foundation-of-the-package-ecosystem" class="level3">
 <h3 class="anchored" data-anchor-id="the-foundation-of-the-package-ecosystem">The Foundation of the Package Ecosystem</h3>
-<p>The Open Data package ecosystem was built on the architecture established by <strong>nycOpenData</strong>, the Lab’s flagship R package for accessing NYC Open Data.</p>
-<p>In 2026, <strong>nycOpenData</strong> successfully completed the independent software peer-review process conducted by <strong>rOpenSci</strong>, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.</p>
-<p>Rather than developing each new package independently, the Lab uses the peer-reviewed design of <strong>nycOpenData</strong> as the foundation for every subsequent package. This shared architecture promotes a consistent user experience, simplifies maintenance, and allows improvements to be propagated across the broader ecosystem.</p>
+<p>The Open Data package ecosystem was built on the architecture established by <code>nycOpenData</code>, the Lab’s flagship R package for accessing NYC Open Data.</p>
+<p>In 2026, <code>nycOpenData</code> successfully completed the independent software peer-review process conducted by <strong>rOpenSci</strong>, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.</p>
+<p>Rather than developing each new package independently, the Lab uses the peer-reviewed design of <code>nycOpenData</code> as the foundation for every subsequent package. The <a href="#sec-opendata-developers-guide"><strong>OpenData Package Developer’s Guide</strong></a> provides a standardized framework for implementing this architecture across new city and state packages.</p>
 <p>As additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.</p>
+<hr>
 </section>
-<section id="sec-package-ecysystem" class="level3">
-<h3 class="anchored" data-anchor-id="sec-package-ecysystem">Package Ecosystem</h3>
+<section id="sec-package-ecosystem" class="level3">
+<h3 class="anchored" data-anchor-id="sec-package-ecosystem">Package Ecosystem</h3>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Package</th>
+<th>Author</th>
 <th>Data Source</th>
 <th>Geographic Scope</th>
 <th style="text-align: center;">CRAN</th>
@@ -287,6 +294,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <tbody>
 <tr class="odd">
 <td><a href="https://cran.r-project.org/package=nycOpenData"><strong>nycOpenData</strong></a></td>
+<td>Christian Martinez</td>
 <td>NYC Open Data</td>
 <td>New York City</td>
 <td style="text-align: center;">✅</td>
@@ -294,6 +302,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </tr>
 <tr class="even">
 <td><a href="https://cran.r-project.org/package=nysOpenData"><strong>nysOpenData</strong></a></td>
+<td>Christian Martinez</td>
 <td>NYS Open Data</td>
 <td>New York State</td>
 <td style="text-align: center;">✅</td>
@@ -301,6 +310,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </tr>
 <tr class="odd">
 <td><a href="https://cran.r-project.org/package=mtaOpenData"><strong>mtaOpenData</strong></a></td>
+<td>Christian Martinez</td>
 <td>MTA Open Data</td>
 <td>Transportation</td>
 <td style="text-align: center;">✅</td>
@@ -308,6 +318,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </tr>
 <tr class="even">
 <td><a href="https://cran.r-project.org/package=chiOpenData"><strong>chiOpenData</strong></a></td>
+<td>Christian Martinez</td>
 <td>Chicago Data Portal</td>
 <td>Chicago</td>
 <td style="text-align: center;">✅</td>
@@ -315,6 +326,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </tr>
 <tr class="odd">
 <td><a href="https://cran.r-project.org/package=laOpenData"><strong>laOpenData</strong></a></td>
+<td>Christian Martinez</td>
 <td>Los Angeles Open Data</td>
 <td>Los Angeles</td>
 <td style="text-align: center;">✅</td>
@@ -322,6 +334,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </tr>
 <tr class="even">
 <td><a href="https://cran.r-project.org/package=ausOpenData"><strong>ausOpenData</strong></a></td>
+<td>Emma V. Tupone</td>
 <td>Austin Open Data</td>
 <td>Austin</td>
 <td style="text-align: center;">✅</td>
@@ -329,6 +342,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </tr>
 <tr class="odd">
 <td><a href="https://cran.r-project.org/package=SeattleOpenData"><strong>SeattleOpenData</strong></a></td>
+<td>Shelby Gomes</td>
 <td>Seattle Open Data</td>
 <td>Seattle</td>
 <td style="text-align: center;">✅</td>
@@ -336,9 +350,42 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </tr>
 <tr class="even">
 <td><a href="https://cran.r-project.org/package=CincinnatiOpenData"><strong>cincinnatiOpenData</strong></a></td>
+<td>Shelby Gomes</td>
 <td>Cincinnati Open Data</td>
 <td>Cincinnati</td>
 <td style="text-align: center;">✅</td>
+<td style="text-align: center;">👷</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/nyc-open-data-lab/nolaOpenData"><strong>nolaOpenData</strong></a></td>
+<td>Shelby Gomes</td>
+<td>New Orleans Open Data</td>
+<td>New Orleans</td>
+<td style="text-align: center;">🔎 Under Review</td>
+<td style="text-align: center;">👷</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/nyc-open-data-lab/ctOpenData"><strong>ctOpenData</strong></a></td>
+<td>Shelby Gomes</td>
+<td>Connecticut Open Data</td>
+<td>Connecticut</td>
+<td style="text-align: center;">🔎 Under Review</td>
+<td style="text-align: center;">👷</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/nyc-open-data-lab/deOpenData"><strong>deOpenData</strong></a></td>
+<td>Shelby Gomes</td>
+<td>Delaware Open Data</td>
+<td>Delaware</td>
+<td style="text-align: center;">🔎 Under Review</td>
+<td style="text-align: center;">👷</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/nyc-open-data-lab/sfOpenData"><strong>sfOpenData</strong></a></td>
+<td>Shelby Gomes</td>
+<td>San Francisco Open Data</td>
+<td>San Francisco</td>
+<td style="text-align: center;">🔎 Under Review</td>
 <td style="text-align: center;">👷</td>
 </tr>
 </tbody>
@@ -351,6 +398,22 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <li><a href="https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1">reproresearchR</a> — Companion package supporting the <em>Reproducible Research Using R</em> textbook and reproducible workflows in R and Quarto.</li>
 </ul>
 <hr>
+</section>
+</section>
+<section id="current-initiatives" class="level2">
+<h2 class="anchored" data-anchor-id="current-initiatives">Current Initiatives</h2>
+<section id="sec-nyc-311-dashboard" class="level3">
+<h3 class="anchored" data-anchor-id="sec-nyc-311-dashboard">NYC 311 Dashboard</h3>
+<p>The Open Data Lab is developing an interactive dashboard that makes NYC 311 data easier to explore and understand. Using NYC Open Data and reproducible workflows, the project will allow users to investigate patterns in service requests across the city through accessible visualizations and interactive tools.</p>
+<p>The dashboard is currently being developed by Civic Data Application Development Intern <a href="../current-members/emma-tupone.qmd"><strong>Emma V. Tupone</strong></a>.</p>
+<hr>
+</section>
+<section id="sec-cuny-sports-analytics" class="level3">
+<h3 class="anchored" data-anchor-id="sec-cuny-sports-analytics">CUNY Sports Analytics Initiative</h3>
+<p>The Open Data Lab is building a student-driven sports analytics initiative that uses real collegiate athletics data to support CUNY coaches, players, and teams.</p>
+<p>Students can contribute through sports analytics or data development, working on projects such as scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.</p>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdRmNDdMDB9ZJb2ZIJGHAzfwBdY25dl-Co0h42UarCo8MJx8g/viewform?usp=header" class="btn btn-primary">Apply to Join the Team</a></p>
+<p><a href="../images/sports-one-pager.pdf"><img src="../images/sports-one-pager.png" class="img-fluid" style="width:75.0%" alt="Become a CUNY Sports Analyst flyer"></a></p>
 <hr>
 </section>
 </section>
