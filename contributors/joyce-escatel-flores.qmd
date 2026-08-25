@@ -6,6 +6,7 @@ description: "Contributor to the NYC Open Data Lab"
 ## Projects & Publications
 
 - [NYC Restaurants and Museums](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/03-Final-Restaurant-and-Museum-Project-Joyce.html)
+- Presented research at [**NYC Open Data Week 2026**](../talks.qmd#sec-nyc-open-data-week-2026) as part of the Lab's NYC Open Data Student Gallery presentation
 
 ------------------------------------------------------------------------
 
@@ -20,7 +21,7 @@ A curated collection of work developed using reproducible workflows in R and Qua
 ## Contributions to the Lab
 
 - Contributor to the NYC Open Data Student Gallery\
-- Contributor to the development of the nycOpenData R package
+- Contributor to the development of the `nycOpenData` R package
 
 ------------------------------------------------------------------------
 

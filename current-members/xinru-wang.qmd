@@ -12,6 +12,7 @@ Learn more about the internship [here](../internships/test-analysis-internship.q
 ## Projects & Publications
 
 - [Beating Around the Bush: Uncovering the Hidden Link Between Urban Trees and Wildlife Activity](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/chapters/08-Beating-Around-the-Bush--Uncovering-the-Hidden-Link-Between-Urban-Trees-and-Wildlife-Activity-Xinru.html)
+- Presented research at [**NYC Open Data Week 2026**](../talks.qmd#sec-nyc-open-data-week-2026) as part of the Lab's NYC Open Data Student Gallery presentation
 
 ------------------------------------------------------------------------
 
