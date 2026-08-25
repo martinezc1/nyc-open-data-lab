@@ -35,6 +35,14 @@ Christian founded The Open Data Lab and leads its research, development, and edu
 
 ------------------------------------------------------------------------
 
+## Talks & Presentations
+
+Christian regularly presents the Lab's work on open data, reproducible research, open-source software, and teaching at conferences and professional events.
+
+- [**View featured talks and presentations**](../talks.qmd)
+
+------------------------------------------------------------------------
+
 ## Links
 
 - [GitHub](https://github.com/martinezc1)
