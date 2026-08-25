@@ -13,8 +13,7 @@ Learn more about the internship [here](../internships/software-internship.qmd).
 
 ## Contributions to the Lab
 
-- `SeattleOpenData`
-- `cincinnatiOpenData`
+Shelby has contributed to the expansion of the [**OpenData R package ecosystem**](../projects.qmd#sec-package-ecosystem), developing many packages using the Lab's *OpenData Package Developer's Guide*. Their work has expanded the ecosystem across additional cities and states while demonstrating how the Lab's standardized framework can be used to develop reproducible, publicly available open-data tools.
 
 ------------------------------------------------------------------------
 

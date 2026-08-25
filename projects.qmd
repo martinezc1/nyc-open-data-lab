@@ -99,18 +99,22 @@ Rather than developing each new package independently, the Lab uses the peer-rev
 
 As additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.
 
-### Package Ecosystem {#sec-package-ecysystem}
+### Package Ecosystem {#sec-package-ecosystem}
 
-| Package | Data Source | Geographic Scope | CRAN | Documentation |
-|---------------|---------------|---------------|:-------------:|:-------------:|
-| [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
-| [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | NYS Open Data | New York State | ✅ | [📖](https://martinezc1.github.io/nysOpenData/) |
-| [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | MTA Open Data | Transportation | ✅ | [📖](https://martinezc1.github.io/mtaOpenData/) |
-| [**chiOpenData**](https://cran.r-project.org/package=chiOpenData) | Chicago Data Portal | Chicago | ✅ | [📖](https://martinezc1.github.io/chiOpenData/) |
-| [**laOpenData**](https://cran.r-project.org/package=laOpenData) | Los Angeles Open Data | Los Angeles | ✅ | [📖](https://martinezc1.github.io/laOpenData/) |
-| [**ausOpenData**](https://cran.r-project.org/package=ausOpenData) | Austin Open Data | Austin | ✅ | [📖](https://martinezc1.github.io/ausOpenData/) |
-| [**SeattleOpenData**](https://cran.r-project.org/package=SeattleOpenData) | Seattle Open Data | Seattle | ✅ | [📖](https://nyc-open-data-lab.github.io/SeattleOpenData/) |
-| [**cincinnatiOpenData**](https://cran.r-project.org/package=CincinnatiOpenData) | Cincinnati Open Data | Cincinnati | ✅ | 👷 |
+| Package | Author | Data Source | Geographic Scope | CRAN | Documentation |
+|------------|------------|------------|------------|:----------:|:----------:|
+| [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | Christian Martinez | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
+| [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | Christian Martinez | NYS Open Data | New York State | ✅ | [📖](https://martinezc1.github.io/nysOpenData/) |
+| [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | Christian Martinez | MTA Open Data | Transportation | ✅ | [📖](https://martinezc1.github.io/mtaOpenData/) |
+| [**chiOpenData**](https://cran.r-project.org/package=chiOpenData) | Christian Martinez | Chicago Data Portal | Chicago | ✅ | [📖](https://martinezc1.github.io/chiOpenData/) |
+| [**laOpenData**](https://cran.r-project.org/package=laOpenData) | Christian Martinez | Los Angeles Open Data | Los Angeles | ✅ | [📖](https://martinezc1.github.io/laOpenData/) |
+| [**ausOpenData**](https://cran.r-project.org/package=ausOpenData) | Emma V. Tupone | Austin Open Data | Austin | ✅ | [📖](https://martinezc1.github.io/ausOpenData/) |
+| [**SeattleOpenData**](https://cran.r-project.org/package=SeattleOpenData) | Shelby Gomes | Seattle Open Data | Seattle | ✅ | [📖](https://nyc-open-data-lab.github.io/SeattleOpenData/) |
+| [**cincinnatiOpenData**](https://cran.r-project.org/package=CincinnatiOpenData) | Shelby Gomes | Cincinnati Open Data | Cincinnati | ✅ | 👷 |
+| [**nolaOpenData**](https://github.com/nyc-open-data-lab/nolaOpenData) | Shelby Gomes | New Orleans Open Data | New Orleans | 🔎 Under Review | 👷 |
+| [**ctOpenData**](https://github.com/nyc-open-data-lab/ctOpenData) | Shelby Gomes | Connecticut Open Data | Connecticut | 🔎 Under Review | 👷 |
+| [**deOpenData**](https://github.com/nyc-open-data-lab/deOpenData) | Shelby Gomes | Delaware Open Data | Delaware | 🔎 Under Review | 👷 |
+| [**sfOpenData**](https://github.com/nyc-open-data-lab/sfOpenData) | Shelby Gomes | San Francisco Open Data | San Francisco | 🔎 Under Review | 👷 |
 
 ------------------------------------------------------------------------
 
