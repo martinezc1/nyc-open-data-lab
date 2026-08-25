@@ -56,11 +56,33 @@ Browse contributor profiles below to learn more about their work and projects.
 
 ------------------------------------------------------------------------
 
-## Summer Internship Program
+## Join the Lab
 
-The Open Data Lab Summer Internship Program provides students with the opportunity to contribute to long-term, public-facing projects that extend beyond the classroom. Interns work closely with the Lab to develop open-source software, reproducible research, and analytical tools while gaining experience with collaborative software development, technical communication, and public scholarship.
+The Open Data Lab provides opportunities for students to contribute to real-world projects in civic data, open-source software, reproducible research, and applied analytics.
 
-Each internship track is designed around ownership of a meaningful project, giving interns the opportunity to create work that can be shared through GitHub, professional portfolios, conference presentations, and future research collaborations.
+Students can get involved through structured internships and ongoing Lab initiatives, with opportunities designed around meaningful project ownership, skill development, and public-facing work.
+
+::: {.callout-tip .join-callout}
+### Interested in getting involved or have an idea for how you could contribute?
+
+[**Get in touch**](mailto:c.martinez0@outlook.com) to discuss potential opportunities.
+:::
+
+### Summer Internship Program
+
+The Open Data Lab Summer Internship Program provides students with the opportunity to contribute to long-term projects that extend beyond the classroom. Interns work closely with the Lab to develop open-source software, reproducible research, and analytical tools while gaining experience with collaborative software development, technical communication, and public scholarship.
+
+Each internship track is designed around ownership of a meaningful project, giving interns the opportunity to create work that can contribute to GitHub portfolios, conference presentations, publications, and future research collaborations.
 
 ::: {#internships}
 :::
+
+### CUNY Sports Analytics Initiative
+
+The Open Data Lab is building a student-driven sports analytics team that uses real collegiate athletics data to support CUNY coaches, players, and teams.
+
+Students can contribute through sports analytics or data development, working on scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.
+
+[Apply to the CUNY Sports Analytics Team](https://docs.google.com/forms/d/e/1FAIpQLSdRmNDdMDB9ZJb2ZIJGHAzfwBdY25dl-Co0h42UarCo8MJx8g/viewform?usp=header){.btn .btn-primary}
+
+[Learn more about the CUNY Sports Analytics Initiative](projects.qmd#sec-cuny-sports-analytics)

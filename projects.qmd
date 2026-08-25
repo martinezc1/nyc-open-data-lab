@@ -104,7 +104,7 @@ As additional city packages are developed, they inherit the same underlying desi
 ### Package Ecosystem {#sec-package-ecosystem}
 
 | Package | Author | Data Source | Geographic Scope | CRAN | Documentation |
-|----|----|----|----|:--:|:--:|
+|------------|------------|------------|------------|:----------:|:----------:|
 | [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | Christian Martinez | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
 | [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | Christian Martinez | NYS Open Data | New York State | ✅ | [📖](https://martinezc1.github.io/nysOpenData/) |
 | [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | Christian Martinez | MTA Open Data | Transportation | ✅ | [📖](https://martinezc1.github.io/mtaOpenData/) |
@@ -142,7 +142,7 @@ The Open Data Lab is building a student-driven sports analytics initiative that 
 
 Students can contribute through sports analytics or data development, working on projects such as scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.
 
-[Apply to Join the Team](https://docs.google.com/forms/d/e/1FAIpQLSdRmNDdMDB9ZJb2ZIJGHAzfwBdY25dl-Co0h42UarCo8MJx8g/viewform?usp=header){.btn .btn-primary}
+[Apply to the CUNY Sports Analytics Team](https://docs.google.com/forms/d/e/1FAIpQLSdRmNDdMDB9ZJb2ZIJGHAzfwBdY25dl-Co0h42UarCo8MJx8g/viewform?usp=header){.btn .btn-primary}
 
 \[![](../images/sports-one-pager.png){fig-alt="Become a CUNY Sports Analyst flyer" width="75%"}
 
