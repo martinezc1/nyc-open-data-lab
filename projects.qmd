@@ -117,7 +117,7 @@ As additional city packages are developed, they inherit the same underlying desi
 | [**ctOpenData**](https://cran.r-project.org/package=ctOpenData) | Shelby Gomes | Connecticut Open Data | Connecticut | ✅ | [📖](https://nyc-open-data-lab.github.io/ctOpenData/) |
 | [**deOpenData**](https://cran.r-project.org/package=deOpenData) | Shelby Gomes | Delaware Open Data | Delaware | ✅ | [📖](https://nyc-open-data-lab.github.io/deOpenData/) |
 | [**sfOpenData**](https://cran.r-project.org/package=sfOpenData) | Shelby Gomes | San Francisco Open Data | San Francisco | ✅ | [📖](https://nyc-open-data-lab.github.io/sfOpenData/) |
-| [**coOpenData**](https://github.com/nyc-open-data-lab/coOpenData) | Shelby Gomes | Colorado Open Data | Colorado | 🔎 Under Review | [📖](https://nyc-open-data-lab.github.io/coOpenData/) |
+| [**coOpenData**](https://github.com/nyc-open-data-lab/coOpenData) | Shelby Gomes | Colorado Open Data | Colorado | ✅ | [📖](https://nyc-open-data-lab.github.io/coOpenData/) |
 
 ------------------------------------------------------------------------
 

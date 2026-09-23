@@ -8,6 +8,16 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
 ------------------------------------------------------------------------
 
+## Awards
+
+- **Posit Impact Award** — ***Open Source Contribution*** (2026)\
+  [🏆 View award](https://posit.co/blog/introducing-posit-impact-awards)
+
+- **Finalist, Open Education Awards for Excellence** — ***What We Share*** (2026)\
+  [🏆 View finalist announcement](https://awards.oeglobal.org/2026-shortlist/)
+
+------------------------------------------------------------------------
+
 ## Featured Talks
 
 - **NYC Open Data Week 2026** — *Teaching with NYC Open Data: Publishing Student Civic Research Through Reproducible Workflows*\
