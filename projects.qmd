@@ -12,6 +12,14 @@ Whenever possible, Lab projects are developed as open educational or open-source
 
 ## Featured Projects
 
+### NYC 311 Dashboard {#sec-nyc-dashboard}
+
+The **NYC 311 Dashboard** is an interactive tool for exploring recent 311 service requests across New York City. Built in R using the `nycOpenData` package, the dashboard allows users to explore patterns across complaint types, agencies, boroughs, and locations throughout the city. Data are automatically updated each day to provide a current view of how New Yorkers are using 311 services.
+
+The dashboard was developed by NYC Open Data Lab intern [**Emma Tupone**](current-members/emma-tupone.qmd), extending her work with open data and R into a public-facing data tool.
+
+- View the dashboard [here](https://martinezc1-nyc-311-dashboard.share.connect.posit.cloud).
+
 ### NYC Open Data Student Gallery {#sec-nyc-opendata-student-gallery}
 
 The NYC Open Data Student Gallery showcases graduate student research developed using NYC Open Data. Each project investigates a unique question about New York City through reproducible analysis, visualization, and data storytelling.
