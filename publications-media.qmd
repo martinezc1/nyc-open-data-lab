@@ -61,6 +61,10 @@ These features highlight the Lab’s approach to reproducible research, open dat
 
 ## Publications
 
+- [nycOpenData: The Data That Never Sleeps](https://joss.theoj.org/papers/10.21105/joss.11339)
+
+  - **The Journal of Open Source Software (JOSS)**
+
 - [The Journey of {nycOpenData}: From Classroom to Community](https://ropensci.org/blog/2026/08/06/the-journey-of-nycopendata-from-classroom-to-community/)
 
   - **rOpenSci**
