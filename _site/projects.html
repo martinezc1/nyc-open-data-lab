@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a58290d47af4766aca099a6c76ba7184.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e63a6d4442c7fd97bdaaeca52b07098d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -150,6 +153,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
   <ul>
   <li><a href="#featured-projects" id="toc-featured-projects" class="nav-link active" data-scroll-target="#featured-projects">Featured Projects</a>
   <ul class="collapse">
+  <li><a href="#sec-nyc-dashboard" id="toc-sec-nyc-dashboard" class="nav-link" data-scroll-target="#sec-nyc-dashboard">NYC 311 Dashboard</a></li>
   <li><a href="#sec-nyc-opendata-student-gallery" id="toc-sec-nyc-opendata-student-gallery" class="nav-link" data-scroll-target="#sec-nyc-opendata-student-gallery">NYC Open Data Student Gallery</a></li>
   <li><a href="#sec-opendata-developers-guide" id="toc-sec-opendata-developers-guide" class="nav-link" data-scroll-target="#sec-opendata-developers-guide">OpenData Package Developer’s Guide</a></li>
   </ul></li>
@@ -167,7 +171,6 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
   </ul></li>
   <li><a href="#current-initiatives" id="toc-current-initiatives" class="nav-link" data-scroll-target="#current-initiatives">Current Initiatives</a>
   <ul class="collapse">
-  <li><a href="#sec-nyc-311-dashboard" id="toc-sec-nyc-311-dashboard" class="nav-link" data-scroll-target="#sec-nyc-311-dashboard">NYC 311 Dashboard</a></li>
   <li><a href="#sec-cuny-sports-analytics" id="toc-sec-cuny-sports-analytics" class="nav-link" data-scroll-target="#sec-cuny-sports-analytics">CUNY Sports Analytics Initiative</a></li>
   </ul></li>
   <li><a href="#get-involved" id="toc-get-involved" class="nav-link" data-scroll-target="#get-involved">Get Involved</a></li>
@@ -202,15 +205,19 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <hr>
 <section id="featured-projects" class="level2">
 <h2 class="anchored" data-anchor-id="featured-projects">Featured Projects</h2>
+<section id="sec-nyc-dashboard" class="level3">
+<h3 class="anchored" data-anchor-id="sec-nyc-dashboard">NYC 311 Dashboard</h3>
+<p>The <strong>NYC 311 Dashboard</strong> is an interactive tool for exploring recent 311 service requests across New York City. Built in R using the <strong>nycOpenData</strong> package, the dashboard allows users to explore patterns across complaint types, agencies, boroughs, and locations throughout the city. Data are automatically updated each day to provide a current view of how New Yorkers are using 311 services.</p>
+<p>The dashboard was developed by The Open Data Lab intern <a href="./current-members/emma-tupone.html"><strong>Emma Tupone</strong></a>, extending her work with open data and R into a public-facing data tool.</p>
+<p><a href="https://martinezc1-nyc-311-dashboard.share.connect.posit.cloud" class="btn btn-primary">📊 View the dashboard</a></p>
+</section>
 <section id="sec-nyc-opendata-student-gallery" class="level3">
 <h3 class="anchored" data-anchor-id="sec-nyc-opendata-student-gallery">NYC Open Data Student Gallery</h3>
 <p>The NYC Open Data Student Gallery showcases graduate student research developed using NYC Open Data. Each project investigates a unique question about New York City through reproducible analysis, visualization, and data storytelling.</p>
 <p>The Gallery demonstrates how classroom work can become public scholarship with lasting value.</p>
 <p><strong>Resources</strong></p>
 <ul>
-<li>📖 <a href="https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/">Explore the Student Gallery</a></li>
-<li>💻 <a href="https://github.com/martinezc1/NYC-Open-Data-Student-Gallery">Source Code (GitHub)</a></li>
-<li>📦 <a href="https://doi.org/10.5281/zenodo.21397679">Archived Release (Zenodo)</a></li>
+<li>📖 <a href="https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/" class="btn btn-primary">Explore the Student Gallery</a></li>
 </ul>
 <hr>
 </section>
@@ -220,9 +227,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <p>The guide includes reusable package templates, implementation tutorials, development best practices, and documentation for creating open-source tools that follow a consistent design across cities.</p>
 <p><strong>Resources</strong></p>
 <ul>
-<li>📖 <a href="https://martinezc1-the-opendata-package-developers-guide.share.connect.posit.cloud/">Read the Guide</a></li>
-<li>💻 <a href="https://github.com/martinezc1/OpenDataPackageGuide">Source Code (GitHub)</a></li>
-<li>📦 <a href="https://doi.org/10.5281/zenodo.21383609">Archived Release (Zenodo)</a></li>
+<li>📖 <a href="https://martinezc1-the-opendata-package-developers-guide.share.connect.posit.cloud/" class="btn btn-primary">Read the Guide</a></li>
 </ul>
 <hr>
 </section>
@@ -234,10 +239,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <p>An open educational textbook introducing reproducible research using R and Quarto through authentic examples and real-world datasets.</p>
 <p><strong>Resources</strong></p>
 <ul>
-<li>📖 <a href="https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/">Read the textbook</a></li>
-<li>💻 <a href="https://github.com/martinezc1/Reproducible-Research-Using-R">Source Code (GitHub)</a></li>
-<li>📦 <a href="https://doi.org/10.5281/zenodo.19136755">Archived Release (Zenodo)</a></li>
-<li>📦 Companion Package: <a href="https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1">reproresearchR</a></li>
+<li>📖 <a href="https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/" class="btn btn-primary">Read the textbook</a></li>
 </ul>
 <hr>
 </section>
@@ -246,9 +248,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <p>A companion resource for instructors interested in adopting reproducible research workflows in their own classrooms.</p>
 <p><strong>Resources</strong></p>
 <ul>
-<li>📖 <a href="https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/">Read the instructor guide</a></li>
-<li>💻 <a href="https://github.com/martinezc1/teaching-reproducible-research-using-R">Source Code (GitHub)</a></li>
-<li>📦 <a href="https://doi.org/10.5281/zenodo.19139302">Archived Release (Zenodo)</a></li>
+<li>📖 <a href="https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/" class="btn btn-primary">Read the instructor guide</a></li>
 </ul>
 <hr>
 </section>
@@ -258,9 +258,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <p>These portfolios serve as public-facing evidence of students’ technical and analytical skills.</p>
 <p><strong>Resources</strong></p>
 <ul>
-<li>📖 <a href="https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/">Reproducible Research in Practice: Student Portfolio Volume I</a></li>
-<li>💻 <a href="https://github.com/martinezc1/student-portfolio-book">Source Code (GitHub)</a></li>
-<li>📦 <a href="https://doi.org/10.5281/zenodo.21397759">Archived Release (Zenodo)</a></li>
+<li>📖 <a href="https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/" class="btn btn-primary">Reproducible Research in Practice: Student Portfolio Volume I</a></li>
 </ul>
 <hr>
 </section>
@@ -306,7 +304,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <td>NYS Open Data</td>
 <td>New York State</td>
 <td style="text-align: center;">✅</td>
-<td style="text-align: center;"><a href="https://martinezc1.github.io/nysOpenData/">📖</a></td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/nysOpenData/">📖</a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://cran.r-project.org/package=mtaOpenData"><strong>mtaOpenData</strong></a></td>
@@ -314,7 +312,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <td>MTA Open Data</td>
 <td>Transportation</td>
 <td style="text-align: center;">✅</td>
-<td style="text-align: center;"><a href="https://martinezc1.github.io/mtaOpenData/">📖</a></td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/mtaOpenData/">📖</a></td>
 </tr>
 <tr class="even">
 <td><a href="https://cran.r-project.org/package=chiOpenData"><strong>chiOpenData</strong></a></td>
@@ -322,7 +320,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <td>Chicago Data Portal</td>
 <td>Chicago</td>
 <td style="text-align: center;">✅</td>
-<td style="text-align: center;"><a href="https://martinezc1.github.io/chiOpenData/">📖</a></td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/chiOpenData/">📖</a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://cran.r-project.org/package=laOpenData"><strong>laOpenData</strong></a></td>
@@ -330,7 +328,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <td>Los Angeles Open Data</td>
 <td>Los Angeles</td>
 <td style="text-align: center;">✅</td>
-<td style="text-align: center;"><a href="https://martinezc1.github.io/laOpenData/">📖</a></td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/laOpenData/">📖</a></td>
 </tr>
 <tr class="even">
 <td><a href="https://cran.r-project.org/package=ausOpenData"><strong>ausOpenData</strong></a></td>
@@ -338,7 +336,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <td>Austin Open Data</td>
 <td>Austin</td>
 <td style="text-align: center;">✅</td>
-<td style="text-align: center;"><a href="https://martinezc1.github.io/ausOpenData/">📖</a></td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/ausOpenData/">📖</a></td>
 </tr>
 <tr class="odd">
 <td><a href="https://cran.r-project.org/package=SeattleOpenData"><strong>SeattleOpenData</strong></a></td>
@@ -349,44 +347,52 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/SeattleOpenData/">📖</a></td>
 </tr>
 <tr class="even">
-<td><a href="https://cran.r-project.org/package=CincinnatiOpenData"><strong>cincinnatiOpenData</strong></a></td>
+<td><a href="https://cran.r-project.org/package=cincinnatiOpenData"><strong>cincinnatiOpenData</strong></a></td>
 <td>Shelby Gomes</td>
 <td>Cincinnati Open Data</td>
 <td>Cincinnati</td>
 <td style="text-align: center;">✅</td>
-<td style="text-align: center;">👷</td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/cincinnatiOpenData/">📖</a></td>
 </tr>
 <tr class="odd">
-<td><a href="https://github.com/nyc-open-data-lab/nolaOpenData"><strong>nolaOpenData</strong></a></td>
+<td><a href="https://cran.r-project.org/package=nolaOpenData"><strong>nolaOpenData</strong></a></td>
 <td>Shelby Gomes</td>
 <td>New Orleans Open Data</td>
 <td>New Orleans</td>
-<td style="text-align: center;">🔎 Under Review</td>
-<td style="text-align: center;">👷</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/nolaOpenData/">📖</a></td>
 </tr>
 <tr class="even">
-<td><a href="https://github.com/nyc-open-data-lab/ctOpenData"><strong>ctOpenData</strong></a></td>
+<td><a href="https://cran.r-project.org/package=ctOpenData"><strong>ctOpenData</strong></a></td>
 <td>Shelby Gomes</td>
 <td>Connecticut Open Data</td>
 <td>Connecticut</td>
-<td style="text-align: center;">🔎 Under Review</td>
-<td style="text-align: center;">👷</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/ctOpenData/">📖</a></td>
 </tr>
 <tr class="odd">
-<td><a href="https://github.com/nyc-open-data-lab/deOpenData"><strong>deOpenData</strong></a></td>
+<td><a href="https://cran.r-project.org/package=deOpenData"><strong>deOpenData</strong></a></td>
 <td>Shelby Gomes</td>
 <td>Delaware Open Data</td>
 <td>Delaware</td>
-<td style="text-align: center;">🔎 Under Review</td>
-<td style="text-align: center;">👷</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/deOpenData/">📖</a></td>
 </tr>
 <tr class="even">
-<td><a href="https://github.com/nyc-open-data-lab/sfOpenData"><strong>sfOpenData</strong></a></td>
+<td><a href="https://cran.r-project.org/package=sfOpenData"><strong>sfOpenData</strong></a></td>
 <td>Shelby Gomes</td>
 <td>San Francisco Open Data</td>
 <td>San Francisco</td>
-<td style="text-align: center;">🔎 Under Review</td>
-<td style="text-align: center;">👷</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/sfOpenData/">📖</a></td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/nyc-open-data-lab/coOpenData"><strong>coOpenData</strong></a></td>
+<td>Shelby Gomes</td>
+<td>Colorado Open Data</td>
+<td>Colorado</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><a href="https://nyc-open-data-lab.github.io/coOpenData/">📖</a></td>
 </tr>
 </tbody>
 </table>
@@ -402,12 +408,6 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </section>
 <section id="current-initiatives" class="level2">
 <h2 class="anchored" data-anchor-id="current-initiatives">Current Initiatives</h2>
-<section id="sec-nyc-311-dashboard" class="level3">
-<h3 class="anchored" data-anchor-id="sec-nyc-311-dashboard">NYC 311 Dashboard</h3>
-<p>The Open Data Lab is developing an interactive dashboard that makes NYC 311 data easier to explore and understand. Using NYC Open Data and reproducible workflows, the project will allow users to investigate patterns in service requests across the city through accessible visualizations and interactive tools.</p>
-<p>The dashboard is currently being developed by Civic Data Application Development Intern <a href="../current-members/emma-tupone.qmd"><strong>Emma V. Tupone</strong></a>.</p>
-<hr>
-</section>
 <section id="sec-cuny-sports-analytics" class="level3">
 <h3 class="anchored" data-anchor-id="sec-cuny-sports-analytics">CUNY Sports Analytics Initiative</h3>
 <p>The Open Data Lab is building a student-driven sports analytics initiative that uses real collegiate athletics data to support CUNY coaches, players, and teams.</p>
@@ -429,7 +429,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <li>🤝 Collaborate on new projects</li>
 </ul>
 <p>Interested in collaborating or contributing?</p>
-<p>📧 <a href="mailto:c.martinez0@outlook.com">Get in touch</a></p>
+<p>📧 <a href="mailto:c.martinez0@outlook.com" class="btn btn-primary">Get in touch</a></p>
 
 
 </section>

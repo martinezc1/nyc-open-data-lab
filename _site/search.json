@@ -49,34 +49,6 @@
     "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
   },
   {
-    "objectID": "current-members/vignesh-thallam.html",
-    "href": "current-members/vignesh-thallam.html",
-    "title": "Vignesh Thallam",
-    "section": "",
-    "text": "As a Sports Analytics Research Intern, they apply data science, reproducible research, and data visualization to collegiate basketball, transforming data from the Lab’s CUNY Basketball Database into actionable insights for coaches, players, and the broader basketball community.\nLearn more about the internship here."
-  },
-  {
-    "objectID": "current-members/vignesh-thallam.html#summary",
-    "href": "current-members/vignesh-thallam.html#summary",
-    "title": "Vignesh Thallam",
-    "section": "",
-    "text": "As a Sports Analytics Research Intern, they apply data science, reproducible research, and data visualization to collegiate basketball, transforming data from the Lab’s CUNY Basketball Database into actionable insights for coaches, players, and the broader basketball community.\nLearn more about the internship here."
-  },
-  {
-    "objectID": "current-members/vignesh-thallam.html#contributions-to-the-lab",
-    "href": "current-members/vignesh-thallam.html#contributions-to-the-lab",
-    "title": "Vignesh Thallam",
-    "section": "Contributions to the Lab",
-    "text": "Contributions to the Lab\nDeveloped the first Brooklyn College Men’s Basketball scouting report using the Lab’s CUNY Basketball Database, transforming historical team and player data into actionable insights to support game preparation and decision-making. The report is maintained internally to protect competitive information and is not publicly available."
-  },
-  {
-    "objectID": "current-members/vignesh-thallam.html#links",
-    "href": "current-members/vignesh-thallam.html#links",
-    "title": "Vignesh Thallam",
-    "section": "Links",
-    "text": "Links\n\nGitHub\nLinkedIn"
-  },
-  {
     "objectID": "current-members/emma-tupone.html",
     "href": "current-members/emma-tupone.html",
     "title": "Emma Tupone",
@@ -95,7 +67,7 @@
     "href": "current-members/emma-tupone.html#projects-publications",
     "title": "Emma Tupone",
     "section": "Projects & Publications",
-    "text": "Projects & Publications\n\nEnvironmental Stressors and Social Complaints in New York City\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
+    "text": "Projects & Publications\n\nEnvironmental Stressors and Social Complaints in New York City\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation\nDeveloper of the NYC 311 Dashboard"
   },
   {
     "objectID": "current-members/emma-tupone.html#portfolio",
@@ -182,37 +154,58 @@
     "text": "Collaborate\nThe Open Data Lab welcomes collaborations with educators, researchers, civic organizations, and open-source contributors.\nIf you’re interested in collaborating on research, developing open-source software, inviting me to speak, or exploring educational partnerships, I’d love to hear from you.\n📧 Email me"
   },
   {
-    "objectID": "contributors/laura-rose-werner.html",
-    "href": "contributors/laura-rose-werner.html",
-    "title": "Laura Rose Werner",
+    "objectID": "contributors/shelby-gomes.html",
+    "href": "contributors/shelby-gomes.html",
+    "title": "Shelby Lyn Gomes",
     "section": "",
-    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
+    "text": "As an Open Source Software Development Intern, they develop public, reusable R packages that make civic open data easier to access, analyze, and use, contributing to the Lab’s broader effort to expand access to open government data across cities.\nLearn more about the internship here."
   },
   {
-    "objectID": "contributors/laura-rose-werner.html#projects-publications",
-    "href": "contributors/laura-rose-werner.html#projects-publications",
-    "title": "Laura Rose Werner",
+    "objectID": "contributors/shelby-gomes.html#summary",
+    "href": "contributors/shelby-gomes.html#summary",
+    "title": "Shelby Lyn Gomes",
     "section": "",
-    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
+    "text": "As an Open Source Software Development Intern, they develop public, reusable R packages that make civic open data easier to access, analyze, and use, contributing to the Lab’s broader effort to expand access to open government data across cities.\nLearn more about the internship here."
   },
   {
-    "objectID": "contributors/laura-rose-werner.html#portfolio",
-    "href": "contributors/laura-rose-werner.html#portfolio",
-    "title": "Laura Rose Werner",
-    "section": "Portfolio",
-    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
-  },
-  {
-    "objectID": "contributors/laura-rose-werner.html#contributions-to-the-lab",
-    "href": "contributors/laura-rose-werner.html#contributions-to-the-lab",
-    "title": "Laura Rose Werner",
+    "objectID": "contributors/shelby-gomes.html#contributions-to-the-lab",
+    "href": "contributors/shelby-gomes.html#contributions-to-the-lab",
+    "title": "Shelby Lyn Gomes",
     "section": "Contributions to the Lab",
-    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+    "text": "Contributions to the Lab\nShelby has contributed to the expansion of the OpenData R package ecosystem, developing many packages using the Lab’s OpenData Package Developer’s Guide. Their work has expanded the ecosystem across additional cities and states while demonstrating how the Lab’s standardized framework can be used to develop reproducible, publicly available open-data tools."
   },
   {
-    "objectID": "contributors/laura-rose-werner.html#links",
-    "href": "contributors/laura-rose-werner.html#links",
-    "title": "Laura Rose Werner",
+    "objectID": "contributors/shelby-gomes.html#links",
+    "href": "contributors/shelby-gomes.html#links",
+    "title": "Shelby Lyn Gomes",
+    "section": "Links",
+    "text": "Links\n\nGitHub\nLinkedIn"
+  },
+  {
+    "objectID": "contributors/vignesh-thallam.html",
+    "href": "contributors/vignesh-thallam.html",
+    "title": "Vignesh Thallam",
+    "section": "",
+    "text": "As a Sports Analytics Research Intern, they apply data science, reproducible research, and data visualization to collegiate basketball, transforming data from the Lab’s CUNY Basketball Database into actionable insights for coaches, players, and the broader basketball community.\nLearn more about the internship here."
+  },
+  {
+    "objectID": "contributors/vignesh-thallam.html#summary",
+    "href": "contributors/vignesh-thallam.html#summary",
+    "title": "Vignesh Thallam",
+    "section": "",
+    "text": "As a Sports Analytics Research Intern, they apply data science, reproducible research, and data visualization to collegiate basketball, transforming data from the Lab’s CUNY Basketball Database into actionable insights for coaches, players, and the broader basketball community.\nLearn more about the internship here."
+  },
+  {
+    "objectID": "contributors/vignesh-thallam.html#contributions-to-the-lab",
+    "href": "contributors/vignesh-thallam.html#contributions-to-the-lab",
+    "title": "Vignesh Thallam",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\nDeveloped the first Brooklyn College Men’s Basketball scouting report using the Lab’s CUNY Basketball Database, transforming historical team and player data into actionable insights to support game preparation and decision-making. The report is maintained internally to protect competitive information and is not publicly available."
+  },
+  {
+    "objectID": "contributors/vignesh-thallam.html#links",
+    "href": "contributors/vignesh-thallam.html#links",
+    "title": "Vignesh Thallam",
     "section": "Links",
     "text": "Links\n\nGitHub\nLinkedIn"
   },
@@ -403,28 +396,28 @@
     "href": "projects.html#featured-projects",
     "title": "Research, Publications & Software",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\nNYC Open Data Student Gallery\nThe NYC Open Data Student Gallery showcases graduate student research developed using NYC Open Data. Each project investigates a unique question about New York City through reproducible analysis, visualization, and data storytelling.\nThe Gallery demonstrates how classroom work can become public scholarship with lasting value.\nResources\n\n📖 Explore the Student Gallery\n💻 Source Code (GitHub)\n📦 Archived Release (Zenodo)\n\n\n\n\nOpenData Package Developer’s Guide\nThe OpenData Package Developer’s Guide provides a complete framework for building city-specific R packages that interface with Socrata-based open data portals.\nThe guide includes reusable package templates, implementation tutorials, development best practices, and documentation for creating open-source tools that follow a consistent design across cities.\nResources\n\n📖 Read the Guide\n💻 Source Code (GitHub)\n📦 Archived Release (Zenodo)"
+    "text": "Featured Projects\n\nNYC 311 Dashboard\nThe NYC 311 Dashboard is an interactive tool for exploring recent 311 service requests across New York City. Built in R using the nycOpenData package, the dashboard allows users to explore patterns across complaint types, agencies, boroughs, and locations throughout the city. Data are automatically updated each day to provide a current view of how New Yorkers are using 311 services.\nThe dashboard was developed by The Open Data Lab intern Emma Tupone, extending her work with open data and R into a public-facing data tool.\n📊 View the dashboard\n\n\nNYC Open Data Student Gallery\nThe NYC Open Data Student Gallery showcases graduate student research developed using NYC Open Data. Each project investigates a unique question about New York City through reproducible analysis, visualization, and data storytelling.\nThe Gallery demonstrates how classroom work can become public scholarship with lasting value.\nResources\n\n📖 Explore the Student Gallery\n\n\n\n\nOpenData Package Developer’s Guide\nThe OpenData Package Developer’s Guide provides a complete framework for building city-specific R packages that interface with Socrata-based open data portals.\nThe guide includes reusable package templates, implementation tutorials, development best practices, and documentation for creating open-source tools that follow a consistent design across cities.\nResources\n\n📖 Read the Guide"
   },
   {
     "objectID": "projects.html#educational-resources",
     "href": "projects.html#educational-resources",
     "title": "Research, Publications & Software",
     "section": "Educational Resources",
-    "text": "Educational Resources\n\nReproducible Research Using R\nAn open educational textbook introducing reproducible research using R and Quarto through authentic examples and real-world datasets.\nResources\n\n📖 Read the textbook\n💻 Source Code (GitHub)\n📦 Archived Release (Zenodo)\n📦 Companion Package: reproresearchR\n\n\n\n\nTeaching Reproducible Research Using R\nA companion resource for instructors interested in adopting reproducible research workflows in their own classrooms.\nResources\n\n📖 Read the instructor guide\n💻 Source Code (GitHub)\n📦 Archived Release (Zenodo)\n\n\n\n\nReproducible Research in Practice: Student Portfolio Volume I\nStudents compile their work into professional Quarto portfolio books that document analyses, visualizations, and written reports in a single, reproducible publication.\nThese portfolios serve as public-facing evidence of students’ technical and analytical skills.\nResources\n\n📖 Reproducible Research in Practice: Student Portfolio Volume I\n💻 Source Code (GitHub)\n📦 Archived Release (Zenodo)"
+    "text": "Educational Resources\n\nReproducible Research Using R\nAn open educational textbook introducing reproducible research using R and Quarto through authentic examples and real-world datasets.\nResources\n\n📖 Read the textbook\n\n\n\n\nTeaching Reproducible Research Using R\nA companion resource for instructors interested in adopting reproducible research workflows in their own classrooms.\nResources\n\n📖 Read the instructor guide\n\n\n\n\nReproducible Research in Practice: Student Portfolio Volume I\nStudents compile their work into professional Quarto portfolio books that document analyses, visualizations, and written reports in a single, reproducible publication.\nThese portfolios serve as public-facing evidence of students’ technical and analytical skills.\nResources\n\n📖 Reproducible Research in Practice: Student Portfolio Volume I"
   },
   {
     "objectID": "projects.html#software",
     "href": "projects.html#software",
     "title": "Research, Publications & Software",
     "section": "Software",
-    "text": "Software\nThe Lab develops open-source R packages that provide a unified interface for accessing and analyzing public data. Together, these packages form a growing ecosystem designed to make civic data more accessible, reproducible, and consistent across multiple open data portals.\nEach package follows the same design philosophy, allowing users to browse datasets, retrieve data, and work with multiple open data portals using a familiar workflow.\nThe ecosystem is anchored by nycOpenData, which established the architecture and development standards that now guide every package in the collection.\n\nThe Foundation of the Package Ecosystem\nThe Open Data package ecosystem was built on the architecture established by nycOpenData, the Lab’s flagship R package for accessing NYC Open Data.\nIn 2026, nycOpenData successfully completed the independent software peer-review process conducted by rOpenSci, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.\nRather than developing each new package independently, the Lab uses the peer-reviewed design of nycOpenData as the foundation for every subsequent package. The OpenData Package Developer’s Guide provides a standardized framework for implementing this architecture across new city and state packages.\nAs additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.\n\n\n\nPackage Ecosystem\n\n\n\nPackage\nAuthor\nData Source\nGeographic Scope\nCRAN\nDocumentation\n\n\n\n\nnycOpenData\nChristian Martinez\nNYC Open Data\nNew York City\n✅\n📖\n\n\nnysOpenData\nChristian Martinez\nNYS Open Data\nNew York State\n✅\n📖\n\n\nmtaOpenData\nChristian Martinez\nMTA Open Data\nTransportation\n✅\n📖\n\n\nchiOpenData\nChristian Martinez\nChicago Data Portal\nChicago\n✅\n📖\n\n\nlaOpenData\nChristian Martinez\nLos Angeles Open Data\nLos Angeles\n✅\n📖\n\n\nausOpenData\nEmma V. Tupone\nAustin Open Data\nAustin\n✅\n📖\n\n\nSeattleOpenData\nShelby Gomes\nSeattle Open Data\nSeattle\n✅\n📖\n\n\ncincinnatiOpenData\nShelby Gomes\nCincinnati Open Data\nCincinnati\n✅\n👷\n\n\nnolaOpenData\nShelby Gomes\nNew Orleans Open Data\nNew Orleans\n🔎 Under Review\n👷\n\n\nctOpenData\nShelby Gomes\nConnecticut Open Data\nConnecticut\n🔎 Under Review\n👷\n\n\ndeOpenData\nShelby Gomes\nDelaware Open Data\nDelaware\n🔎 Under Review\n👷\n\n\nsfOpenData\nShelby Gomes\nSan Francisco Open Data\nSan Francisco\n🔎 Under Review\n👷\n\n\n\n\n\n\nReproducible Research Tools\n\nreproresearchR — Companion package supporting the Reproducible Research Using R textbook and reproducible workflows in R and Quarto."
+    "text": "Software\nThe Lab develops open-source R packages that provide a unified interface for accessing and analyzing public data. Together, these packages form a growing ecosystem designed to make civic data more accessible, reproducible, and consistent across multiple open data portals.\nEach package follows the same design philosophy, allowing users to browse datasets, retrieve data, and work with multiple open data portals using a familiar workflow.\nThe ecosystem is anchored by nycOpenData, which established the architecture and development standards that now guide every package in the collection.\n\nThe Foundation of the Package Ecosystem\nThe Open Data package ecosystem was built on the architecture established by nycOpenData, the Lab’s flagship R package for accessing NYC Open Data.\nIn 2026, nycOpenData successfully completed the independent software peer-review process conducted by rOpenSci, recognizing the package for its documentation, testing, usability, and adherence to open-source best practices.\nRather than developing each new package independently, the Lab uses the peer-reviewed design of nycOpenData as the foundation for every subsequent package. The OpenData Package Developer’s Guide provides a standardized framework for implementing this architecture across new city and state packages.\nAs additional city packages are developed, they inherit the same underlying design principles, making it easier for users to transition between data portals while relying on a familiar and reproducible workflow.\n\n\n\nPackage Ecosystem\n\n\n\nPackage\nAuthor\nData Source\nGeographic Scope\nCRAN\nDocumentation\n\n\n\n\nnycOpenData\nChristian Martinez\nNYC Open Data\nNew York City\n✅\n📖\n\n\nnysOpenData\nChristian Martinez\nNYS Open Data\nNew York State\n✅\n📖\n\n\nmtaOpenData\nChristian Martinez\nMTA Open Data\nTransportation\n✅\n📖\n\n\nchiOpenData\nChristian Martinez\nChicago Data Portal\nChicago\n✅\n📖\n\n\nlaOpenData\nChristian Martinez\nLos Angeles Open Data\nLos Angeles\n✅\n📖\n\n\nausOpenData\nEmma V. Tupone\nAustin Open Data\nAustin\n✅\n📖\n\n\nSeattleOpenData\nShelby Gomes\nSeattle Open Data\nSeattle\n✅\n📖\n\n\ncincinnatiOpenData\nShelby Gomes\nCincinnati Open Data\nCincinnati\n✅\n📖\n\n\nnolaOpenData\nShelby Gomes\nNew Orleans Open Data\nNew Orleans\n✅\n📖\n\n\nctOpenData\nShelby Gomes\nConnecticut Open Data\nConnecticut\n✅\n📖\n\n\ndeOpenData\nShelby Gomes\nDelaware Open Data\nDelaware\n✅\n📖\n\n\nsfOpenData\nShelby Gomes\nSan Francisco Open Data\nSan Francisco\n✅\n📖\n\n\ncoOpenData\nShelby Gomes\nColorado Open Data\nColorado\n✅\n📖\n\n\n\n\n\n\nReproducible Research Tools\n\nreproresearchR — Companion package supporting the Reproducible Research Using R textbook and reproducible workflows in R and Quarto."
   },
   {
     "objectID": "projects.html#current-initiatives",
     "href": "projects.html#current-initiatives",
     "title": "Research, Publications & Software",
     "section": "Current Initiatives",
-    "text": "Current Initiatives\n\nNYC 311 Dashboard\nThe Open Data Lab is developing an interactive dashboard that makes NYC 311 data easier to explore and understand. Using NYC Open Data and reproducible workflows, the project will allow users to investigate patterns in service requests across the city through accessible visualizations and interactive tools.\nThe dashboard is currently being developed by Civic Data Application Development Intern Emma V. Tupone.\n\n\n\nCUNY Sports Analytics Initiative\nThe Open Data Lab is building a student-driven sports analytics initiative that uses real collegiate athletics data to support CUNY coaches, players, and teams.\nStudents can contribute through sports analytics or data development, working on projects such as scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.\nApply to the CUNY Sports Analytics Team"
+    "text": "Current Initiatives\n\nCUNY Sports Analytics Initiative\nThe Open Data Lab is building a student-driven sports analytics initiative that uses real collegiate athletics data to support CUNY coaches, players, and teams.\nStudents can contribute through sports analytics or data development, working on projects such as scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.\nApply to the CUNY Sports Analytics Team"
   },
   {
     "objectID": "projects.html#get-involved",
@@ -448,6 +441,13 @@
     "text": "The Open Data Lab and its tools have been featured in external publications and community platforms focused on open data, data science, and education.\nThese features highlight the Lab’s approach to reproducible research, open data accessibility, and public-facing scholarship."
   },
   {
+    "objectID": "publications-media.html#awards",
+    "href": "publications-media.html#awards",
+    "title": "Publications & Media",
+    "section": "Awards",
+    "text": "Awards\n\nPosit Impact Award — Open Source Contribution (2026)\n🏆 View award\nFinalist, Open Education Awards for Excellence — What We Share (2026)\n🏆 View finalist announcement"
+  },
+  {
     "objectID": "publications-media.html#featured-talks",
     "href": "publications-media.html#featured-talks",
     "title": "Publications & Media",
@@ -466,35 +466,35 @@
     "href": "publications-media.html#publications",
     "title": "Publications & Media",
     "section": "Publications",
-    "text": "Publications\n\nThe Journey of {nycOpenData}: From Classroom to Community\n\nrOpenSci\n\nRelevance Drives Rigor: Lessons from Teaching with Open Data\n\nAEA365 (American Evaluation Association)\n\nFaculty Member Launches Open-Source Tool to Transform Access to New York City Civic Data\n\nBrooklyn College News\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nMedium (Antoine Soetewey)\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nStats and R"
+    "text": "Publications\n\nnycOpenData: The Data That Never Sleeps\n\nThe Journal of Open Source Software (JOSS)\n\nThe Journey of {nycOpenData}: From Classroom to Community\n\nrOpenSci\n\nRelevance Drives Rigor: Lessons from Teaching with Open Data\n\nAEA365 (American Evaluation Association)\n\nFaculty Member Launches Open-Source Tool to Transform Access to New York City Civic Data\n\nBrooklyn College News\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nMedium (Antoine Soetewey)\n\nnycOpenData: A Unified R Interface to NYC Open Data APIs\n\nStats and R"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "The Open Data Lab",
     "section": "",
-    "text": "The Open Data Lab is a public-facing initiative focused on transforming open data into reproducible research, civic insights, and accessible public scholarship.\nBuilt at the intersection of data science, education, and storytelling, the Lab brings together student research, open-source tools, and real-world analyses using data from the open data portals. Our work emphasizes reproducibility, transparency, and public impact—ensuring that data-driven work doesn’t end in the classroom, but continues to live, evolve, and contribute to conversations about the city."
+    "text": "The Open Data Lab is a public-facing research and development initiative focused on making open data more accessible, reproducible, and useful.\nBuilt at the intersection of data science, education, open-source software, and public scholarship, the Lab brings together students, researchers, and collaborators to build tools, conduct research, and create resources using public data. Our work emphasizes reproducibility, transparency, and real-world impact—creating projects that can live beyond the classroom and contribute to broader research, civic, and professional communities."
   },
   {
-    "objectID": "index.html#what-youll-find-here",
-    "href": "index.html#what-youll-find-here",
+    "objectID": "index.html#what-we-do",
+    "href": "index.html#what-we-do",
     "title": "The Open Data Lab",
-    "section": "What you’ll find here",
-    "text": "What you’ll find here\n\nPublish Civic Data Stories — through Open Data Stories, a living collection of analyses exploring New York City through public datasets\nDevelop Open-Source Tools — including R packages designed to make open data more accessible and reproducible\nBuild Public-Facing Student Research — transforming coursework into polished, shareable, and citable work\nTeach Reproducible Workflows — using R and Quarto to create end-to-end research pipelines\nPresent & Contribute Publicly — through conferences, publications, and civic data events"
+    "section": "What We Do",
+    "text": "What We Do\n\nDevelop Open-Source Software — building R packages and other tools that make public data easier to access, analyze, and use\nConduct Applied Research — using public data to investigate real-world questions and create useful analytical resources\nBuild Public-Facing Student Research — transforming student work into polished, shareable, and citable scholarship\nCreate Open Educational Resources — developing textbooks, guides, and reproducible workflows using R and Quarto\nCreate Opportunities for Students — providing pathways to contribute to software, research, analytics, and other meaningful Lab projects\nShare Our Work Publicly — through conferences, publications, open-source communities, and public events"
   },
   {
     "objectID": "index.html#why-this-exists",
     "href": "index.html#why-this-exists",
     "title": "The Open Data Lab",
     "section": "Why This Exists",
-    "text": "Why This Exists\nToo often, data work—especially student work—is temporary. It lives in assignments, disappears after grading, and never reaches a broader audience.\nThe Open Data Lab exists to change that.\nBy designing courses and workflows around reproducibility and public output, the Lab creates a system where work is not only completed, but published, shared, and built upon. The result is a growing ecosystem of civic data research that is open, accessible, and continuously expanding."
+    "text": "Why This Exists\nToo often, data work—especially student work—is temporary. It lives in assignments, disappears after grading, or remains inaccessible to the people who could learn from it or build upon it.\nThe Open Data Lab exists to change that.\nBy connecting open data, reproducible research, open-source development, and education, the Lab creates an ecosystem where work can be published, shared, reused, and expanded. Students gain opportunities to build meaningful work and contribute to real projects, while researchers, educators, practitioners, and the public gain access to tools and resources designed to make public data more useful."
   },
   {
     "objectID": "index.html#explore-the-lab",
     "href": "index.html#explore-the-lab",
     "title": "The Open Data Lab",
     "section": "Explore the Lab",
-    "text": "Explore the Lab\n\nExplore Stories to see data brought to life through analysis and visualization\nDiscover Projects & Research to explore the Lab’s broader ecosystem of work and current initiatives\nMeet the People who make this work possible"
+    "text": "Explore the Lab\n\nExplore Stories to see data brought to life through analysis and visualization\nDiscover Projects & Research to explore the Lab’s research, educational resources, software, and current initiatives\nMeet the People behind the work and learn how you can get involved"
   },
   {
     "objectID": "internships/civic-data.html#overview",
@@ -665,6 +665,41 @@
     "text": "Links\n\nGitHub\n\nLinkedIn\n\nORCID"
   },
   {
+    "objectID": "contributors/laura-rose-werner.html",
+    "href": "contributors/laura-rose-werner.html",
+    "title": "Laura Rose Werner",
+    "section": "",
+    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#projects-publications",
+    "href": "contributors/laura-rose-werner.html#projects-publications",
+    "title": "Laura Rose Werner",
+    "section": "",
+    "text": "Domestic Violence Incidents vs Recourse Allocation Across NYC\nPresented research at NYC Open Data Week 2026 as part of the Lab’s NYC Open Data Student Gallery presentation"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#portfolio",
+    "href": "contributors/laura-rose-werner.html#portfolio",
+    "title": "Laura Rose Werner",
+    "section": "Portfolio",
+    "text": "Portfolio\nA curated collection of work developed using reproducible workflows in R and Quarto.\n\n📘 View Portfolio Book"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#contributions-to-the-lab",
+    "href": "contributors/laura-rose-werner.html#contributions-to-the-lab",
+    "title": "Laura Rose Werner",
+    "section": "Contributions to the Lab",
+    "text": "Contributions to the Lab\n\nContributor to the NYC Open Data Student Gallery\n\nContributor to the development of the nycOpenData R package"
+  },
+  {
+    "objectID": "contributors/laura-rose-werner.html#links",
+    "href": "contributors/laura-rose-werner.html#links",
+    "title": "Laura Rose Werner",
+    "section": "Links",
+    "text": "Links\n\nGitHub\nLinkedIn"
+  },
+  {
     "objectID": "contributors/joyce-escatel-flores.html",
     "href": "contributors/joyce-escatel-flores.html",
     "title": "Joyce Escatel-Flores",
@@ -819,34 +854,6 @@
     "text": "Links\n\nGitHub\nLinkedIn\nORCID"
   },
   {
-    "objectID": "current-members/shelby-gomes.html",
-    "href": "current-members/shelby-gomes.html",
-    "title": "Shelby Lyn Gomes",
-    "section": "",
-    "text": "As an Open Source Software Development Intern, they develop public, reusable R packages that make civic open data easier to access, analyze, and use, contributing to the Lab’s broader effort to expand access to open government data across cities.\nLearn more about the internship here."
-  },
-  {
-    "objectID": "current-members/shelby-gomes.html#summary",
-    "href": "current-members/shelby-gomes.html#summary",
-    "title": "Shelby Lyn Gomes",
-    "section": "",
-    "text": "As an Open Source Software Development Intern, they develop public, reusable R packages that make civic open data easier to access, analyze, and use, contributing to the Lab’s broader effort to expand access to open government data across cities.\nLearn more about the internship here."
-  },
-  {
-    "objectID": "current-members/shelby-gomes.html#contributions-to-the-lab",
-    "href": "current-members/shelby-gomes.html#contributions-to-the-lab",
-    "title": "Shelby Lyn Gomes",
-    "section": "Contributions to the Lab",
-    "text": "Contributions to the Lab\nShelby has contributed to the expansion of the OpenData R package ecosystem, developing many packages using the Lab’s OpenData Package Developer’s Guide. Their work has expanded the ecosystem across additional cities and states while demonstrating how the Lab’s standardized framework can be used to develop reproducible, publicly available open-data tools."
-  },
-  {
-    "objectID": "current-members/shelby-gomes.html#links",
-    "href": "current-members/shelby-gomes.html#links",
-    "title": "Shelby Lyn Gomes",
-    "section": "Links",
-    "text": "Links\n\nGitHub\nLinkedIn"
-  },
-  {
     "objectID": "contributors.html",
     "href": "contributors.html",
     "title": "Contributors",
@@ -865,20 +872,20 @@
     "href": "contributors.html#current-lab-members",
     "title": "Contributors",
     "section": "Current Lab Members",
-    "text": "Current Lab Members\nBrowse lab members’ profiles below to learn more about their work and projects.\n\n\n\n\n\n\n\nChristian Martinez\n\n\nFounder & Director of The Open Data Lab\n\n\n\n\n\n\n\n\n\nEmma Tupone\n\n\nCivic Data Application Development Intern\n\n\n\n\n\n\n\n\n\nJonah Dratfield\n\n\nPublic Engagement & Partnerships Associate\n\n\n\n\n\n\n\n\n\nShelby Lyn Gomes\n\n\nOpen Source Software Development Intern\n\n\n\n\n\n\n\n\n\nVignesh Thallam\n\n\nSports Analytics Research Intern\n\n\n\n\n\n\n\n\n\nXinru Wang\n\n\nText Analytics & Computational Social Science Intern\n\n\n\n\n\nNo matching items"
+    "text": "Current Lab Members\nBrowse lab members’ profiles below to learn more about their work and projects.\n\n\n\n\n\n\n\nChristian Martinez\n\n\nFounder & Director of The Open Data Lab\n\n\n\n\n\n\n\n\n\nEmma Tupone\n\n\nCivic Data Application Development Intern\n\n\n\n\n\n\n\n\n\nJonah Dratfield\n\n\nPublic Engagement & Partnerships Associate\n\n\n\n\n\n\n\n\n\nXinru Wang\n\n\nText Analytics & Computational Social Science Intern\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "contributors.html#past-contributors",
     "href": "contributors.html#past-contributors",
     "title": "Contributors",
     "section": "Past Contributors",
-    "text": "Past Contributors\nBrowse contributor profiles below to learn more about their work and projects.\n\n\n\n\n\n\n\nCrystal Adote\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nIsley Jean-Pierre\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nJoyce Escatel-Flores\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nLaura Rose Werner\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nRobert Hutto\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nShannon Joyce\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\nNo matching items"
+    "text": "Past Contributors\nBrowse contributor profiles below to learn more about their work and projects.\n\n\n\n\n\n\n\nCrystal Adote\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nIsley Jean-Pierre\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nJoyce Escatel-Flores\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nLaura Rose Werner\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nRobert Hutto\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nShannon Joyce\n\n\nContributor to the NYC Open Data Lab\n\n\n\n\n\n\n\n\n\nShelby Lyn Gomes\n\n\nOpen Source Software Development Intern\n\n\n\n\n\n\n\n\n\nVignesh Thallam\n\n\nSports Analytics Research Intern\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "contributors.html#join-the-lab",
     "href": "contributors.html#join-the-lab",
     "title": "Contributors",
     "section": "Join the Lab",
-    "text": "Join the Lab\nThe Open Data Lab provides opportunities for students to contribute to real-world projects in civic data, open-source software, reproducible research, and applied analytics.\nStudents can get involved through structured internships and ongoing Lab initiatives, with opportunities designed around meaningful project ownership, skill development, and public-facing work.\n\n\n\n\n\n\nTipInterested in getting involved or have an idea for how you could contribute?\n\n\n\nGet in touch to discuss potential opportunities.\n\n\n\nSummer Internship Program\nThe Open Data Lab Summer Internship Program provides students with the opportunity to contribute to long-term projects that extend beyond the classroom. Interns work closely with the Lab to develop open-source software, reproducible research, and analytical tools while gaining experience with collaborative software development, technical communication, and public scholarship.\nEach internship track is designed around ownership of a meaningful project, giving interns the opportunity to create work that can contribute to GitHub portfolios, conference presentations, publications, and future research collaborations.\n\n\n\n\n\n\n\nCivic Data Application Development Track\n\n\n\n\n\n\n\n\n\nOpen Source Software Development Track\n\n\n\n\n\n\n\n\n\nSports Analytics Research Track\n\n\n\n\n\n\n\n\n\nText Analytics & Computational Social Science Track\n\n\n\n\n\nNo matching items\n\n\n\nCUNY Sports Analytics Initiative\nThe Open Data Lab is building a student-driven sports analytics team that uses real collegiate athletics data to support CUNY coaches, players, and teams.\nStudents can contribute through sports analytics or data development, working on scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.\nApply to the CUNY Sports Analytics Team\nLearn more about the CUNY Sports Analytics Initiative"
+    "text": "Join the Lab\nThe Open Data Lab provides opportunities for students to contribute to real-world projects in civic data, open-source software, reproducible research, and applied analytics.\nStudents can get involved through structured internships and ongoing Lab initiatives, with opportunities designed around meaningful project ownership, skill development, and public-facing work.\n\nSummer Internship Program\nThe Open Data Lab Summer Internship Program provides students with the opportunity to contribute to long-term projects that extend beyond the classroom. Interns work closely with the Lab to develop open-source software, reproducible research, and analytical tools while gaining experience with collaborative software development, technical communication, and public scholarship.\nEach internship track is designed around ownership of a meaningful project, giving interns the opportunity to create work that can contribute to GitHub portfolios, conference presentations, publications, and future research collaborations.\n\n\n\n\n\n\n\nCivic Data Application Development Track\n\n\n\n\n\n\n\n\n\nOpen Source Software Development Track\n\n\n\n\n\n\n\n\n\nSports Analytics Research Track\n\n\n\n\n\n\n\n\n\nText Analytics & Computational Social Science Track\n\n\n\n\n\nNo matching items\n\n\n\nCUNY Sports Analytics Initiative\nThe Open Data Lab is building a student-driven sports analytics team that uses real collegiate athletics data to support CUNY coaches, players, and teams.\nStudents can contribute through sports analytics or data development, working on scouting reports, performance analysis, data visualization, database development, and reproducible analytical workflows.\nApply to the CUNY Sports Analytics Team\nLearn more about the CUNY Sports Analytics Initiative"
   }
 ]

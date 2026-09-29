@@ -28,9 +28,7 @@ The Gallery demonstrates how classroom work can become public scholarship with l
 
 **Resources**
 
-- 📖 [Explore the Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/NYC-Open-Data-Student-Gallery)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21397679)
+[📖 Explore the Student Gallery](https://martinezc1-nyc-open-data-student-gallery.share.connect.posit.cloud/){.btn .btn-primary}
 
 ------------------------------------------------------------------------
 
@@ -42,9 +40,7 @@ The guide includes reusable package templates, implementation tutorials, develop
 
 **Resources**
 
-- 📖 [Read the Guide](https://martinezc1-the-opendata-package-developers-guide.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/OpenDataPackageGuide)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21383609)
+[📖 Read the Guide](https://martinezc1-the-opendata-package-developers-guide.share.connect.posit.cloud/){.btn .btn-primary}
 
 ------------------------------------------------------------------------
 
@@ -56,10 +52,7 @@ An open educational textbook introducing reproducible research using R and Quart
 
 **Resources**
 
-- 📖 [Read the textbook](https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/Reproducible-Research-Using-R)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.19136755)
-- 📦 Companion Package: [reproresearchR](https://www.rdocumentation.org/packages/reproresearchR/versions/0.1.1)
+[📖 Read the textbook](https://martinezc1-reproducible-research-using-r.share.connect.posit.cloud/){.btn .btn-primary}
 
 ------------------------------------------------------------------------
 
@@ -69,9 +62,7 @@ A companion resource for instructors interested in adopting reproducible researc
 
 **Resources**
 
-- 📖 [Read the instructor guide](https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/teaching-reproducible-research-using-R)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.19139302)
+[📖 Read the instructor guide](https://martinezc1-teaching-reproducible-research-using-r.share.connect.posit.cloud/){.btn .btn-primary}
 
 ------------------------------------------------------------------------
 
@@ -83,9 +74,7 @@ These portfolios serve as public-facing evidence of students' technical and anal
 
 **Resources**
 
-- 📖 [Reproducible Research in Practice: Student Portfolio Volume I](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/)
-- 💻 [Source Code (GitHub)](https://github.com/martinezc1/student-portfolio-book)
-- 📦 [Archived Release (Zenodo)](https://doi.org/10.5281/zenodo.21397759)
+[📖 Reproducible Research in Practice: Student Portfolio Volume I](https://martinezc1-reproducible-research-using-r--student-work-in-pract.share.connect.posit.cloud/){.btn .btn-primary}
 
 ------------------------------------------------------------------------
 
@@ -112,7 +101,7 @@ As additional city packages are developed, they inherit the same underlying desi
 ### Package Ecosystem {#sec-package-ecosystem}
 
 | Package | Author | Data Source | Geographic Scope | CRAN | Documentation |
-|----|----|----|----|:--:|:--:|
+|------------|------------|------------|------------|:----------:|:----------:|
 | [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | Christian Martinez | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
 | [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | Christian Martinez | NYS Open Data | New York State | ✅ | [📖](https://nyc-open-data-lab.github.io/nysOpenData/) |
 | [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | Christian Martinez | MTA Open Data | Transportation | ✅ | [📖](https://nyc-open-data-lab.github.io/mtaOpenData/) |
@@ -136,14 +125,6 @@ As additional city packages are developed, they inherit the same underlying desi
 ------------------------------------------------------------------------
 
 ## Current Initiatives
-
-### NYC 311 Dashboard {#sec-nyc-311-dashboard}
-
-The Open Data Lab is developing an interactive dashboard that makes NYC 311 data easier to explore and understand. Using NYC Open Data and reproducible workflows, the project will allow users to investigate patterns in service requests across the city through accessible visualizations and interactive tools.
-
-The dashboard is currently being developed by Civic Data Application Development Intern [**Emma V. Tupone**](../current-members/emma-tupone.qmd).
-
-------------------------------------------------------------------------
 
 ### CUNY Sports Analytics Initiative {#sec-cuny-sports-analytics}
 
@@ -171,4 +152,4 @@ Whether you're a student, educator, researcher, or developer, there are many way
 
 Interested in collaborating or contributing?
 
-📧 [Get in touch](mailto:c.martinez0@outlook.com)
+[📧 Get in touch](mailto:c.martinez0@outlook.com){.btn .btn-primary}

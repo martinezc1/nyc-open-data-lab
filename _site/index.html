@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a58290d47af4766aca099a6c76ba7184.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e63a6d4442c7fd97bdaaeca52b07098d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -148,7 +151,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-youll-find-here" id="toc-what-youll-find-here" class="nav-link active" data-scroll-target="#what-youll-find-here">What you’ll find here</a></li>
+  <li><a href="#what-we-do" id="toc-what-we-do" class="nav-link active" data-scroll-target="#what-we-do">What We Do</a></li>
   <li><a href="#why-this-exists" id="toc-why-this-exists" class="nav-link" data-scroll-target="#why-this-exists">Why This Exists</a></li>
   <li><a href="#explore-the-lab" id="toc-explore-the-lab" class="nav-link" data-scroll-target="#explore-the-lab">Explore the Lab</a></li>
   </ul>
@@ -160,7 +163,7 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">The Open Data Lab</h1>
-<p class="subtitle lead">Turning Open Data into reproducible research, public insights, and student-driven publications.</p>
+<p class="subtitle lead">Building open tools, reproducible research, and opportunities through public data.</p>
 </div>
 
 
@@ -177,8 +180,8 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </header>
 
 
-<p>The Open Data Lab is a public-facing initiative focused on transforming open data into reproducible research, civic insights, and accessible public scholarship.</p>
-<p>Built at the intersection of data science, education, and storytelling, the Lab brings together student research, open-source tools, and real-world analyses using data from the open data portals. Our work emphasizes reproducibility, transparency, and public impact—ensuring that data-driven work doesn’t end in the classroom, but continues to live, evolve, and contribute to conversations about the city.</p>
+<p>The Open Data Lab is a public-facing research and development initiative focused on making open data more accessible, reproducible, and useful.</p>
+<p>Built at the intersection of data science, education, open-source software, and public scholarship, the Lab brings together students, researchers, and collaborators to build tools, conduct research, and create resources using public data. Our work emphasizes reproducibility, transparency, and real-world impact—creating projects that can live beyond the classroom and contribute to broader research, civic, and professional communities.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/diagram.png" class="img-fluid figure-img" alt="A connected ecosystem linking teaching, tools, and public-facing research."></p>
@@ -186,30 +189,31 @@ gtag('config', 'G-F3NM2QR1Y0', { 'anonymize_ip': true});
 </figure>
 </div>
 <hr>
-<section id="what-youll-find-here" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-find-here">What you’ll find here</h2>
+<section id="what-we-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-do">What We Do</h2>
 <ul>
-<li><strong>Publish Civic Data Stories</strong> — through Open Data Stories, a living collection of analyses exploring New York City through public datasets</li>
-<li><strong>Develop Open-Source Tools</strong> — including R packages designed to make open data more accessible and reproducible</li>
-<li><strong>Build Public-Facing Student Research</strong> — transforming coursework into polished, shareable, and citable work</li>
-<li><strong>Teach Reproducible Workflows</strong> — using R and Quarto to create end-to-end research pipelines</li>
-<li><strong>Present &amp; Contribute Publicly</strong> — through conferences, publications, and civic data events</li>
+<li><strong>Develop Open-Source Software</strong> — building R packages and other tools that make public data easier to access, analyze, and use</li>
+<li><strong>Conduct Applied Research</strong> — using public data to investigate real-world questions and create useful analytical resources</li>
+<li><strong>Build Public-Facing Student Research</strong> — transforming student work into polished, shareable, and citable scholarship</li>
+<li><strong>Create Open Educational Resources</strong> — developing textbooks, guides, and reproducible workflows using R and Quarto</li>
+<li><strong>Create Opportunities for Students</strong> — providing pathways to contribute to software, research, analytics, and other meaningful Lab projects</li>
+<li><strong>Share Our Work Publicly</strong> — through conferences, publications, open-source communities, and public events</li>
 </ul>
 <hr>
 </section>
 <section id="why-this-exists" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-exists">Why This Exists</h2>
-<p>Too often, data work—especially student work—is temporary. It lives in assignments, disappears after grading, and never reaches a broader audience.</p>
+<p>Too often, data work—especially student work—is temporary. It lives in assignments, disappears after grading, or remains inaccessible to the people who could learn from it or build upon it.</p>
 <p><em>The Open Data Lab exists to change that.</em></p>
-<p>By designing courses and workflows around reproducibility and public output, the Lab creates a system where work is not only completed, but published, shared, and built upon. The result is a growing ecosystem of civic data research that is open, accessible, and continuously expanding.</p>
+<p>By connecting open data, reproducible research, open-source development, and education, the Lab creates an ecosystem where work can be published, shared, reused, and expanded. Students gain opportunities to build meaningful work and contribute to real projects, while researchers, educators, practitioners, and the public gain access to tools and resources designed to make public data more useful.</p>
 <hr>
 </section>
 <section id="explore-the-lab" class="level2">
 <h2 class="anchored" data-anchor-id="explore-the-lab">Explore the Lab</h2>
 <ul>
 <li>Explore <a href="./stories.html">Stories</a> to see data brought to life through analysis and visualization</li>
-<li>Discover <a href="./projects.html">Projects &amp; Research</a> to explore the Lab’s broader ecosystem of work and current initiatives</li>
-<li>Meet the <a href="./contributors.html">People</a> who make this work possible</li>
+<li>Discover <a href="./projects.html">Projects &amp; Research</a> to explore the Lab’s research, educational resources, software, and current initiatives</li>
+<li>Meet the <a href="./contributors.html">People</a> behind the work and learn how you can get involved</li>
 </ul>
 
 
