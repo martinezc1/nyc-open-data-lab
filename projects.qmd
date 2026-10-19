@@ -101,7 +101,7 @@ As additional city packages are developed, they inherit the same underlying desi
 ### Package Ecosystem {#sec-package-ecosystem}
 
 | Package | Author | Data Source | Geographic Scope | CRAN | Documentation |
-|------------|------------|------------|------------|:----------:|:----------:|
+|----|----|----|----|:--:|:--:|
 | [**nycOpenData**](https://cran.r-project.org/package=nycOpenData) | Christian Martinez | NYC Open Data | New York City | ✅ | [📖](https://docs.ropensci.org/nycOpenData/index.html) |
 | [**nysOpenData**](https://cran.r-project.org/package=nysOpenData) | Christian Martinez | NYS Open Data | New York State | ✅ | [📖](https://nyc-open-data-lab.github.io/nysOpenData/) |
 | [**mtaOpenData**](https://cran.r-project.org/package=mtaOpenData) | Christian Martinez | MTA Open Data | Transportation | ✅ | [📖](https://nyc-open-data-lab.github.io/mtaOpenData/) |
@@ -114,7 +114,8 @@ As additional city packages are developed, they inherit the same underlying desi
 | [**ctOpenData**](https://cran.r-project.org/package=ctOpenData) | Shelby Gomes | Connecticut Open Data | Connecticut | ✅ | [📖](https://nyc-open-data-lab.github.io/ctOpenData/) |
 | [**deOpenData**](https://cran.r-project.org/package=deOpenData) | Shelby Gomes | Delaware Open Data | Delaware | ✅ | [📖](https://nyc-open-data-lab.github.io/deOpenData/) |
 | [**sfOpenData**](https://cran.r-project.org/package=sfOpenData) | Shelby Gomes | San Francisco Open Data | San Francisco | ✅ | [📖](https://nyc-open-data-lab.github.io/sfOpenData/) |
-| [**coOpenData**](https://github.com/nyc-open-data-lab/coOpenData) | Shelby Gomes | Colorado Open Data | Colorado | ✅ | [📖](https://nyc-open-data-lab.github.io/coOpenData/) |
+| [**coOpenData**](https://cran.r-project.org/package=coOpenData) | Shelby Gomes | Colorado Open Data | Colorado | ✅ | [📖](https://nyc-open-data-lab.github.io/coOpenData/) |
+| [**CUNYsports**](https://cran.r-project.org/package=CUNYsports) | Christian Martinez | City University of New York (CUNY) | New York City | ✅ | [📖](https://nyc-open-data-lab.github.io/CUNYsports/index.html) |
 
 ------------------------------------------------------------------------
 
